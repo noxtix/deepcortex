@@ -13,7 +13,7 @@ export default function TermsPage() {
                 <h1>Terms of Service</h1>
                 <p className="lead">Last updated: December 16, 2025</p>
 
-                <p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the DeepCortex website operate by us.</p>
+                <p>Please read these Terms of Service (&quot;Terms&quot;, &quot;Terms of Service&quot;) carefully before using the DeepCortex website operate by us.</p>
 
                 <h2>1. Conditions of Use</h2>
                 <p>By using this website, you certify that you have read and reviewed this Agreement and that you agree to comply with its terms. If you do not want to be bound by the terms of this Agreement, you are advised to leave the website accordingly.</p>

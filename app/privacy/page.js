@@ -13,7 +13,7 @@ export default function PrivacyPage() {
                 <h1>Privacy Policy</h1>
                 <p className="lead">Last updated: December 16, 2025</p>
 
-                <p>This Privacy Policy describes how DeepCortex ("we", "us", or "our") collects, uses, and discloses your personal information when you visit our website.</p>
+                <p>This Privacy Policy describes how DeepCortex (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, and discloses your personal information when you visit our website.</p>
 
                 <h2>1. Information We Collect</h2>
                 <p>We may collect information about you in a variety of ways. The information we may collect on the Site includes:</p>

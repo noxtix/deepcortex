@@ -66,8 +66,8 @@ export default function Home() {
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${(selectedCategory === cat || (cat === 'All' && !selectedCategory))
-                  ? 'bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
-                  : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
+                ? 'bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
+                : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
                 }`}
             >
               {cat}
@@ -92,7 +92,7 @@ export default function Home() {
         ) : (
           <div className="text-center py-20 bg-slate-900/30 rounded-3xl border border-slate-800 border-dashed">
             <h3 className="text-xl font-bold text-slate-300 mb-2">No tools found</h3>
-            <p className="text-slate-500 mb-6">We couldn't find any tools matching your criteria.</p>
+            <p className="text-slate-500 mb-6">We couldn&apos;t find any tools matching your criteria.</p>
             <button className="text-emerald-400 hover:text-emerald-300 font-medium underline underline-offset-4">
               Submit a tool?
             </button>
