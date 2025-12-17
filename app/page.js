@@ -1,5 +1,5 @@
 'use client';
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
 import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
 import AdUnit from '@/components/AdUnit';
@@ -7,7 +7,7 @@ import toolsData from '@/data/tools.json';
 import { Search } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 
-export default function Home() {
+function ToolDirectory() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -112,5 +112,13 @@ export default function Home() {
         )}
       </section>
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-950 flex items-center justify-center text-slate-400">Loading tools...</div>}>
+      <ToolDirectory />
+    </Suspense>
   );
 }
