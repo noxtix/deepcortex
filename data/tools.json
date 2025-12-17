@@ -1,0 +1,204 @@
+[
+    {
+        "id": "cursor-ai",
+        "name": "Cursor",
+        "tagline": "The AI code editor that builds software for you.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://cursor.sh",
+        "shortDescription": "A fork of VS Code with built-in AI that can write entire features.",
+        "fullReview": "<h2>What is Cursor?</h2><p>Cursor is not just another plugin; it is a full-fledged <strong>fork of VS Code</strong> designed from the ground up to pair-program with you. Imagine VS Code, but with an AI that understands your entire codebase, can refactor entire files, and even fix terminal errors with a single click. For students and junior developers, it reduces the barrier to entry significantly.</p><h2>Key Features</h2><ul><li><strong>Chat with Codebase:</strong> Unlike ChatGPT which only knows what you paste, Cursor indexes your workspace. You can ask, &quot;Where is the auth logic defined?&quot; and it will point you to the exact file.</li><li><strong>Auto-Debug:</strong> When your terminal throws an error, a new &quot;Auto-Debug&quot; button appears. Click it, and Cursor analyzes the stack trace and suggests a fix instantly.</li><li><strong>Copilot++:</strong> This feature predicts your next edit, not just the next word. It allows for extremely fast implementation of boilerplate code.</li></ul><h2>Is the Pro Plan worth it?</h2><p>Access to the basic features is free, but the Pro plan ($20/mo) unlocks the faster GPT-4 and Claude 3.5 Sonnet models. For professional developers, the time saved in debugging alone justifies the cost. For students, the free tier is generous enough to get started.</p><h2>The Verdict</h2><p>Cursor is currently the <strong>gold standard</strong> for AI coding environments. It feels native, fast, and remarkably intelligent. If you are starting a new project in 2025, you should be using Cursor.</p>",
+        "pros": [
+            "Built on VS Code",
+            "Privacy mode available",
+            "Codebase awareness",
+            "Supports Chrome extensions"
+        ],
+        "cons": [
+            "Paid tier is expensive",
+            "Requires installation",
+            "Learning curve for new shortcuts"
+        ]
+    },
+    {
+        "id": "github-copilot",
+        "name": "GitHub Copilot",
+        "tagline": "Your AI pair programmer.",
+        "category": "Coding",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://github.com/features/copilot",
+        "shortDescription": "The most widely used AI code completion tool, integrated into every major IDE.",
+        "fullReview": "",
+        "pros": [
+            "Integrated into GitHub",
+            "Huge community support",
+            "Available in VS Code, JetBrains, etc."
+        ],
+        "cons": [
+            "No free tier for individuals (mostly)",
+            "Can hallucinate APIs"
+        ]
+    },
+    {
+        "id": "tabnine",
+        "name": "Tabnine",
+        "tagline": "AI assistant for software developers.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://www.tabnine.com/",
+        "shortDescription": "Privacy-focused AI code completion that runs locally on your machine.",
+        "fullReview": "",
+        "pros": [
+            "High privacy standards",
+            "Offline mode",
+            "Low latency"
+        ],
+        "cons": [
+            "Less powerful than GPT-4 models",
+            "Limited context awareness"
+        ]
+    },
+    {
+        "id": "replit",
+        "name": "Replit",
+        "tagline": "Collaborative browser-based IDE.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://replit.com/",
+        "shortDescription": "An online IDE that lets you code, build, and deploy projects from your browser.",
+        "fullReview": "",
+        "pros": [
+            "Zero setup required",
+            "Multiplayer coding",
+            "Built-in deployment"
+        ],
+        "cons": [
+            "Web-based lag",
+            "Limited for massive projects"
+        ]
+    },
+    {
+        "id": "windsurf",
+        "name": "Windsurf",
+        "tagline": "The flow state IDE.",
+        "category": "Coding",
+        "pricing": "Early Access",
+        "rating": 4.8,
+        "affiliateLink": "https://windsurf.ai/",
+        "shortDescription": "A new challenger focusing on maintaining developer flow with predictive AI.",
+        "fullReview": "",
+        "pros": [
+            "Innovative UX",
+            "Focus on flow",
+            "Deep context"
+        ],
+        "cons": [
+            "New/Beta",
+            "Smaller community"
+        ]
+    },
+    {
+        "id": "figstack",
+        "name": "Figstack",
+        "tagline": "Understand code in any language.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.4,
+        "affiliateLink": "https://www.figstack.com/",
+        "shortDescription": "Helps developers read, write, and understand code across different languages.",
+        "fullReview": "",
+        "pros": [
+            "Great for learning",
+            "Language translation",
+            "Docstring generation"
+        ],
+        "cons": [
+            "Not a full IDE",
+            "Niche use case"
+        ]
+    },
+    {
+        "id": "blackbox-ai",
+        "name": "Blackbox AI",
+        "tagline": "Coding assistant for faster development.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.3,
+        "affiliateLink": "https://www.blackbox.ai/",
+        "shortDescription": "AI Chat and Autocomplete to help you code faster.",
+        "fullReview": "",
+        "pros": [
+            "Good for quick snippets",
+            "Visual Studio extension",
+            "Video search"
+        ],
+        "cons": [
+            "Variable quality",
+            "Interface clutter"
+        ]
+    },
+    {
+        "id": "codeium",
+        "name": "Codeium",
+        "tagline": "Free AI Code Completion & Chat.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://codeium.com/",
+        "shortDescription": "A powerful, free alternative to GitHub Copilot with chat capabilities.",
+        "fullReview": "",
+        "pros": [
+            "Completely free for individuals",
+            "Fast",
+            "Wide IDE support"
+        ],
+        "cons": [
+            "Newer than Copilot",
+            "Enterprise features locked"
+        ]
+    },
+    {
+        "id": "warp",
+        "name": "Warp",
+        "tagline": "The terminal for the 21st century.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://www.warp.dev/",
+        "shortDescription": "A Rust-based terminal with AI command search and collaborative features.",
+        "fullReview": "",
+        "pros": [
+            "Modern UI",
+            "AI Command Search",
+            "Fast (Rust-based)"
+        ],
+        "cons": [
+            "Mac-first (Windows beta)",
+            "Requires login"
+        ]
+    },
+    {
+        "id": "dora-run",
+        "name": "Dora.run",
+        "tagline": "AI 3D and Animation generator.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://www.dora.run/",
+        "shortDescription": "Generate 3D websites and animations with natural language prompts.",
+        "fullReview": "",
+        "pros": [
+            "No-code 3D",
+            "Stunning visuals",
+            "Easy export"
+        ],
+        "cons": [
+            "Learning curve for editor",
+            "Performance heavy"
+        ]
+    }
+]

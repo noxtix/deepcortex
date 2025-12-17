@@ -1,101 +1,104 @@
-import Image from "next/image";
+'use client';
+import { useState, useMemo } from 'react';
+import Navbar from '@/components/Navbar';
+import ToolCard from '@/components/ToolCard';
+import AdUnit from '@/components/AdUnit';
+import toolsData from '@/data/tools.json';
+import { Search } from 'lucide-react';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+  // Extract unique categories
+  const categories = ['All', ...new Set(toolsData.map(tool => tool.category))];
+
+  // Filter tools logic
+  const filteredTools = useMemo(() => {
+    return toolsData.filter(tool => {
+      const matchesSearch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        tool.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory = selectedCategory && selectedCategory !== 'All'
+        ? tool.category === selectedCategory
+        : true;
+      return matchesSearch && matchesCategory;
+    });
+  }, [searchQuery, selectedCategory]);
+
+  return (
+    <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
+      <Navbar />
+
+      {/* Hero Section incorporated here to bind search state */}
+      <div className="py-20 text-center px-4">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-slate-100 mb-6 tracking-tight">
+          Augment Your <span className="text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)]">Intelligence.</span>
+        </h1>
+        <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+          The curated directory of AI tools for developers and creators.
+        </p>
+        <div className="max-w-lg mx-auto relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search for AI tools..."
+              className="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-full py-4 pl-12 pr-6 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 shadow-xl placeholder:text-slate-500"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-500 w-5 h-5" />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+
+        {/* Ad Unit Above Grid */}
+        <div className="mb-12">
+          <AdUnit />
+        </div>
+
+        {/* Category Pills */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${(selectedCategory === cat || (cat === 'All' && !selectedCategory))
+                  ? 'bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
+                  : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
+                }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-2">
+            <span className="w-2 h-8 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span>
+            {selectedCategory && selectedCategory !== 'All' ? `${selectedCategory} Tools` : 'All Tools'}
+          </h2>
+          <span className="text-slate-500 text-sm font-medium bg-slate-900 border border-slate-800 px-3 py-1 rounded-full">{filteredTools.length} tools found</span>
+        </div>
+
+        {filteredTools.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredTools.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20 bg-slate-900/30 rounded-3xl border border-slate-800 border-dashed">
+            <h3 className="text-xl font-bold text-slate-300 mb-2">No tools found</h3>
+            <p className="text-slate-500 mb-6">We couldn't find any tools matching your criteria.</p>
+            <button className="text-emerald-400 hover:text-emerald-300 font-medium underline underline-offset-4">
+              Submit a tool?
+            </button>
+          </div>
+        )}
+      </section>
+    </main>
   );
 }
