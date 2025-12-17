@@ -200,5 +200,806 @@
             "Learning curve for editor",
             "Performance heavy"
         ]
+    },
+    {
+        "id": "midjourney",
+        "name": "Midjourney",
+        "tagline": "The gold standard for AI art.",
+        "category": "Image Gen",
+        "pricing": "Paid",
+        "rating": 4.9,
+        "affiliateLink": "https://midjourney.com",
+        "shortDescription": "Generates the most realistic and artistic AI images available today via Discord.",
+        "fullReview": "<h2>What is Midjourney?</h2><p>Midjourney is an independent research lab capable of generating the most photorealistic and artistically compelling images in the AI space. Operating primarily through Discord, it allows users to create stunning visuals from simple text prompts. It is widely considered the best-in-class tool for artistic realism.</p><h2>Key Features</h2><ul><li><strong>Unmatched Realism:</strong> Consistently produces images that are indistinguishable from photos or high-end digital art.</li><li><strong>Stylization Control:</strong> Offers deep control over artistic styles, aspect ratios, and chaos levels.</li><li><strong>Zoom & Pan:</strong> Allows you to outpaint and expand your creations infinitely.</li></ul><h2>Pricing</h2><p>Midjourney is a paid service, starting at $10/month. There is no free tier currently, but the quality justifies the price for professionals.</p><h2>The Verdict</h2><p>If you need the <strong>highest quality</strong> AI images and are comfortable using Discord, Midjourney is the tool to beat.</p>",
+        "pros": [
+            "Best-in-class quality",
+            "Active community",
+            "Continuous model updates"
+        ],
+        "cons": [
+            "Discord interface is clunky",
+            "No free tier",
+            "Public generation by default"
+        ]
+    },
+    {
+        "id": "leonardo-ai",
+        "name": "Leonardo.ai",
+        "tagline": "Production-quality assets for your creative projects.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://leonardo.ai",
+        "shortDescription": "A powerful image generator specifically tuned for game assets and consistent characters.",
+        "fullReview": "<h2>What is Leonardo.ai?</h2><p>Leonardo.ai is a platform built for creative control. Unlike others that just generate random images, Leonardo offers fine-grained control over models, allowing you to train your own datasets for consistent character and style generation. It is a favorite among game developers.</p><h2>Key Features</h2><ul><li><strong>Model Training:</strong> Upload your own images to train custom models for specific styles or characters.</li><li><strong>Canvas Editor:</strong> A unified interface for inpainting, outpainting, and refining images.</li><li><strong>Generous Free Tier:</strong> Daily free tokens allow for significant usage without paying.</li></ul><h2>Pricing</h2><p>Leonardo offers a generous free tier with 150 daily tokens. Paid plans start for those needing private generation and faster processing.</p><h2>The Verdict</h2><p>For <strong>game developers</strong> and creators needing consistent assets, Leonardo.ai is the superior choice.</p>",
+        "pros": [
+            "Trainable models",
+            "Great web interface",
+            "Daily free credits"
+        ],
+        "cons": [
+            "Can be overwhelming",
+            "Slower generation on free tier"
+        ]
+    },
+    {
+        "id": "adobe-firefly",
+        "name": "Adobe Firefly",
+        "tagline": "Safe generative AI for creators.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://firefly.adobe.com",
+        "shortDescription": "Generative AI integrated into Photoshop, safe for commercial use.",
+        "fullReview": "<h2>What is Adobe Firefly?</h2><p>Firefly is Adobe's family of creative generative AI models. Trained on Adobe Stock images, it is designed to be commercially safe, meaning you won't run into copyright issues. It powers the famous 'Generative Fill' in Photoshop.</p><h2>Key Features</h2><ul><li><strong>Commercial Safety:</strong> Trained on licensed images, making it safe for enterprise use.</li><li><strong>Text Effects:</strong> Unique capability to generate styled text and typography.</li><li><strong>Integration:</strong> Seamlessly built into Adobe Creative Cloud apps.</li></ul><h2>Pricing</h2><p>Available for free via the web app with credit limits. Included in Adobe Creative Cloud subscriptions.</p><h2>The Verdict</h2><p>The <strong>safest bet</strong> for professional designers and corporate workflows.</p>",
+        "pros": [
+            "Commercially safe",
+            "Photoshop integration",
+            "High resolution"
+        ],
+        "cons": [
+            "Strict content filters",
+            "Less stylistic variety than Midjourney"
+        ]
+    },
+    {
+        "id": "canva-magic",
+        "name": "Canva Magic Studio",
+        "tagline": "AI design for everyone.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://canva.com",
+        "shortDescription": "Easy-to-use AI tools embedded directly into the world's most popular design platform.",
+        "fullReview": "<h2>What is Canva Magic Studio?</h2><p>Canva has integrated a suite of AI tools under 'Magic Studio'. This includes Magic Media (text-to-image), Magic Edit, and Magic Eraser. It brings the power of generative AI to the easy drag-and-drop interface of Canva.</p><h2>Key Features</h2><ul><li><strong>Magic Switch:</strong> Instantly resize and transform designs for different platforms.</li><li><strong>Magic Media:</strong> Generate images and videos directly on your canvas.</li><li><strong>Ease of Use:</strong> No prompts engineering expertise required.</li></ul><h2>Pricing</h2><p>Basic features are free. Magic Studio's full power requires Canva Pro ($15/mo).</p><h2>The Verdict</h2><p>The best tool for <strong>social media managers</strong> and non-designers needing quick results.</p>",
+        "pros": [
+            "Extremely easy to use",
+            "All-in-one platform",
+            "Huge template library"
+        ],
+        "cons": [
+            "Generic art styles",
+            "Not for high-end professional art"
+        ]
+    },
+    {
+        "id": "dalle-3",
+        "name": "DALL-E 3",
+        "tagline": "Imagination, accurately generated.",
+        "category": "Image Gen",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://openai.com/dall-e-3",
+        "shortDescription": "The easiest image generator to prompt, built directly into ChatGPT.",
+        "fullReview": "<h2>What is DALL-E 3?</h2><p>DALL-E 3 is OpenAI's latest image generation model. Its superpower is its integration with ChatGPT, allowing it to understand complex, conversational prompts better than any other model. You don't need to learn arcane prompt keywords; just describe what you want.</p><h2>Key Features</h2><ul><li><strong>Prompt Adherence:</strong> Follows complex instructions and text rendering remarkably well.</li><li><strong>ChatGPT Integration:</strong> Use ChatGPT to brainstorm and refine your image prompts.</li><li><strong>Safety:</strong> Built-in mitigations against harmful content.</li></ul><h2>Pricing</h2><p>Included in ChatGPT Plus ($20/mo). Also available via API.</p><h2>The Verdict</h2><p>The <strong>smartest</strong> image generator. Best for complex scenes requiring specific details.</p>",
+        "pros": [
+            "Excellent prompt adherence",
+            "Renders text well",
+            "Conversational interface"
+        ],
+        "cons": [
+            "Overly restrictive safety filters",
+            "Plastic/smooth aesthetic"
+        ]
+    },
+    {
+        "id": "recraft",
+        "name": "Recraft",
+        "tagline": "Infinite vector art generation.",
+        "category": "Image Gen",
+        "pricing": "Free",
+        "rating": 4.7,
+        "affiliateLink": "https://recraft.ai",
+        "shortDescription": "The first Generative AI design tool created specifically for vector art and icons.",
+        "fullReview": "<h2>What is Recraft?</h2><p>Recraft stands out by focusing on vector graphics. Unlike most AI that generates pixels, Recraft generates SVGs that can be scaled infinitely. It is perfect for logos, icons, and illustrations.</p><h2>Key Features</h2><ul><li><strong>Vector Generation:</strong> Download designs as SVGs for professional use.</li><li><strong>Style Control:</strong> Strictly enforces flat, outline, or 3D vector styles.</li><li><strong>Color Palette:</strong> Lock your brand colors for consistent output.</li></ul><h2>Pricing</h2><p>Completely free, with unlimited generations for now.</p><h2>The Verdict</h2><p>A <strong>must-have</strong> for logo designers and illustrators needing vector assets.</p>",
+        "pros": [
+            "Vector (SVG) output",
+            "Clean UI",
+            "Brand consistency"
+        ],
+        "cons": [
+            "Limited to illustration styles",
+            "Not for photorealism"
+        ]
+    },
+    {
+        "id": "krea-ai",
+        "name": "Krea AI",
+        "tagline": "Real-time generation and upscaling.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://krea.ai",
+        "shortDescription": "Generate images in real-time as you draw, plus high-end upscaling.",
+        "fullReview": "<h2>What is Krea AI?</h2><p>Krea AI offers a magical 'Real-time Generation' canvas. As you sketch rough shapes or move objects, the AI generates a polished image instantly. It feels like painting with imagination. It also features a top-tier enhancer/upscaler.</p><h2>Key Features</h2><ul><li><strong>Real-time Canvas:</strong> See changes instantly as you draw and prompt.</li><li><strong>Upscaler:</strong> Enhances low-res images to 4K with added detail.</li><li><strong>Pattern Tool:</strong> Create seamless AI patterns easily.</li></ul><h2>Pricing</h2><p>free tier available. Pro plans offer faster generation and private mode.</p><h2>The Verdict</h2><p>The most <strong>fun and interactive</strong> AI tool for brainstorming and speed.</p>",
+        "pros": [
+            "Instant feedback",
+            "Incredible upscaler",
+            "Interactive canvas"
+        ],
+        "cons": [
+            "Can be buggy",
+            "Real-time quality varies"
+        ]
+    },
+    {
+        "id": "clipdrop",
+        "name": "Clipdrop",
+        "tagline": "The ultimate ecosystem of creative editing apps.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://clipdrop.co",
+        "shortDescription": "A suite of tools for cleanup, background removal, relighting, and uncropping.",
+        "fullReview": "<h2>What is Clipdrop?</h2><p>Acquired by Jasper, Clipdrop is a toolbox of specific AI utilities. Rather than just generation, it focuses on editing: removing backgrounds, cleaning up objects, relighting photos, and expanding borders (uncrop).</p><h2>Key Features</h2><ul><li><strong>Cleanup:</strong> Remove objects and people from photos magically.</li><li><strong>Relight:</strong> Change the lighting of a photo after it's taken.</li><li><strong>Stable Diffusion XL:</strong> Access to the powerful SDXL model for generation.</li></ul><h2>Pricing</h2><p>Generous free access to most tools. Pro unlocks higher resolution and queue priority.</p><h2>The Verdict</h2><p>Essential utility belt for <strong>photographers</strong> and e-commerce managers.</p>",
+        "pros": [
+            "Excellent utility tools",
+            "Mobile app available",
+            "Fast processing"
+        ],
+        "cons": [
+            "Subscription needed for HD",
+            "Tools are fragmented"
+        ]
+    },
+    {
+        "id": "magnific-ai",
+        "name": "Magnific AI",
+        "tagline": "Hallucinate higher resolution.",
+        "category": "Image Gen",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://magnific.ai",
+        "shortDescription": "The world's most advanced AI upscaler that adds detail where there was none.",
+        "fullReview": "<h2>What is Magnific AI?</h2><p>Magnific isn't just an upscaler; it relies on 'hallucination' to dream up new details. It takes a low-res, blurry image and transforms it into an ultra-sharp, high-detail masterpiece. It effectively allows you to 'zoom and enhance' like in the movies.</p><h2>Key Features</h2><ul><li><strong>Creativity Slider:</strong> Control how much new detail the AI invents.</li><li><strong>Fractal Detail:</strong> Adds micro-texture to skin, landscapes, and objects.</li><li><strong>High Res:</strong> Upscale images to massive resolutions suitable for print.</li></ul><h2>Pricing</h2><p>Expensive premium tool, starting around $39/mo. Targeted at professionals.</p><h2>The Verdict</h2><p>The <strong>ultimate finishing tool</strong> for AI artists wanting print-ready quality.</p>",
+        "pros": [
+            "Unrivaled detail",
+            "Simple interface",
+            "Magic-like results"
+        ],
+        "cons": [
+            "Very expensive",
+            "Can alter face likeness"
+        ]
+    },
+    {
+        "id": "ideogram",
+        "name": "Ideogram",
+        "tagline": "Typography inside generative AI.",
+        "category": "Image Gen",
+        "pricing": "Free",
+        "rating": 4.6,
+        "affiliateLink": "https://ideogram.ai",
+        "shortDescription": "Finally, an AI that can spell correctly inside images.",
+        "fullReview": "<h2>What is Ideogram?</h2><p>Most AI models fail at text. Ideogram was built to solve this. It excels at generating images with coherent, stylish text embedded directly in the art. Perfect for t-shirt designs, posters, and logos.</p><h2>Key Features</h2><ul><li><strong>Reliable Text:</strong> Renders names, slogans, and quotes accurately.</li><li><strong>Style Tags:</strong> Easy-to-use tag system for controlling aesthetics.</li><li><strong>Community Feed:</strong> Remix prompts from other users easily.</li></ul><h2>Pricing</h2><p>Currently free public beta.</p><h2>The Verdict</h2><p>If you need <strong>text in your image</strong>, start with Ideogram.</p>",
+        "pros": [
+            "Best text rendering",
+            "Great for merchandise",
+            "Simple prompting"
+        ],
+        "cons": [
+            "Lower realism than Midjourney",
+            "Public profile only"
+        ]
+    },
+    {
+        "id": "runway-gen2",
+        "name": "Runway Gen-2",
+        "tagline": "Text-to-Video generation.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://runwayml.com",
+        "shortDescription": "Produce realistic video clips from simple text prompts or existing images.",
+        "fullReview": "<h2>What is Runway Gen-2?</h2><p>Runway is a pioneer in the AI video space. Their Gen-2 model allows users to turn text descriptions into realistic video clips. It also features powerful video-to-video style transfer, widely used in professional production workflows.</p><h2>Key Features</h2><ul><li><strong>Motion Brush:</strong> Select specific areas of an image and direct their movement.</li><li><strong>Text-to-Video:</strong> Generate 4-second clips from scratch using text.</li><li><strong>Style Transfer:</strong> Apply the style of an image to a video clip.</li></ul><h2>Pricing</h2><p>Free trial available with credits. Standard plan starts at $12/month.</p><h2>The Verdict</h2><p>The industry standard for <strong>creative video generation</strong> and experimentation.</p>",
+        "pros": [
+            "High creative control",
+            "Motion Brush features",
+            "Professional toolset"
+        ],
+        "cons": [
+            "Clips are short",
+            "Credit consumption is fast"
+        ]
+    },
+    {
+        "id": "pika-labs",
+        "name": "Pika Labs",
+        "tagline": "Idea to video in seconds.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://pika.art",
+        "shortDescription": "A specialized AI for animating illustrations and generating whimsical video content.",
+        "fullReview": "<h2>What is Pika Labs?</h2><p>Pika (available via Discord and Web) focuses on animation. It excels at taking a still image—especially cartoons or anime—and breathing life into it. Its motion feels smoother and more fluid than many realistic video generators.</p><h2>Key Features</h2><ul><li><strong>Image Animation:</strong> Upload a drawing or photo and make it move.</li><li><strong>Lip Sync:</strong> Automatically sync character mouths to audio tracks.</li><li><strong>Modify Region:</strong> Change specific parts of a video (like sunglasses on a character).</li></ul><h2>Pricing</h2><p>Freemium model with daily credits. Paid plans unlock higher resolution.</p><h2>The Verdict</h2><p>Best choice for <strong>animating characters</strong> and stylized artwork.</p>",
+        "pros": [
+            "Fluid animation",
+            "Great for anime/art",
+            "Modify region tool"
+        ],
+        "cons": [
+            "Lower realism than Runway",
+            "Short duration limit"
+        ]
+    },
+    {
+        "id": "heygen",
+        "name": "HeyGen",
+        "tagline": "AI spokesperson video generator.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://heygen.com",
+        "shortDescription": "Create professional videos with AI avatars that speak perfectly in any language.",
+        "fullReview": "<h2>What is HeyGen?</h2><p>HeyGen has taken the internet by storm with its incredibly realistic AI avatars. It allows you to create a digital clone of yourself, or use stock avatars, and have them speak any text in any language with perfect lip-sync. It's revolutionizing marketing and training videos.</p><h2>Key Features</h2><ul><li><strong>Instant Avatar:</strong> Create a digital twin of yourself with just 2 minutes of footage.</li><li><strong>Video Translate:</strong> Translate a video into another language while re-syncing the lips.</li><li><strong>Templates:</strong> Hundreds of business templates for quick creation.</li></ul><h2>Pricing</h2><p>Free trial (1 credit). Paid plans start at $24/month.</p><h2>The Verdict</h2><p>The <strong>viral sensation</strong> for marketing videos and personalized outreach.</p>",
+        "pros": [
+            "Incredibly realistic lip-sync",
+            "Video translation",
+            "Custom avatars"
+        ],
+        "cons": [
+            "Expensive for high usage",
+            "Can feel uncanny"
+        ]
+    },
+    {
+        "id": "elevenlabs",
+        "name": "ElevenLabs",
+        "tagline": "The most realistic AI audio.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://elevenlabs.io",
+        "shortDescription": "Generate lifelike speech in any voice, style, and language.",
+        "fullReview": "<h2>What is ElevenLabs?</h2><p>While technically audio, ElevenLabs is the backbone of modern AI video. It generates the most human-like text-to-speech voices available. Its 'Speech-to-Speech' feature allows you to change your voice while keeping the emotion and intonation intact.</p><h2>Key Features</h2><ul><li><strong>Voice Cloning:</strong> Clone your own voice with just a minute of audio.</li><li><strong>Dubbing Studio:</strong> Automatically translate and dub videos.</li><li><strong>Sound Effects:</strong> Generate SFX for your videos via text prompts.</li></ul><h2>Pricing</h2><p>Generous free tier (10k chars/mo). Starter plan is very affordable ($1 first month).</p><h2>The Verdict</h2><p>The <strong>undisputed king</strong> of AI voice generation.</p>",
+        "pros": [
+            "Unmatched voice quality",
+            "Great free tier",
+            "Voice cloning is fast"
+        ],
+        "cons": [
+            "Cloning can be misused",
+            "Character limits on free tier"
+        ]
+    },
+    {
+        "id": "descript",
+        "name": "Descript",
+        "tagline": "Edit video by editing text.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://descript.com",
+        "shortDescription": "An all-in-one video and podcast editor that works like a doc.",
+        "fullReview": "<h2>What is Descript?</h2><p>Descript changes the paradigm of video editing. instead of a timeline, you edit a transcript. Delete a word from the text, and it's cut from the video. It also includes 'Overdub', allowing you to type words that the speaker didn't say, using their AI-cloned voice.</p><h2>Key Features</h2><ul><li><strong>Studio Sound:</strong> Removes background noise and echo with one click.</li><li><strong>Overdub:</strong> Correct audio mistakes by typing new words.</li><li><strong>Eye Contact:</strong> AI seamlessly fixes your gaze so you look at the camera.</li></ul><h2>Pricing</h2><p>Free version available. Creator entry pricing is $12/month.</p><h2>The Verdict</h2><p>The best editor for <strong>podcasters</strong> and talking-head creators.</p>",
+        "pros": [
+            "Revolutionary workflow",
+            "Studio Sound is magic",
+            "Easy for non-editors"
+        ],
+        "cons": [
+            "Can be buggy/slow",
+            "Requires internet for AI features"
+        ]
+    },
+    {
+        "id": "sora",
+        "name": "Sora",
+        "tagline": "Creating video from text.",
+        "category": "Video",
+        "pricing": "Waitlist",
+        "rating": 5.0,
+        "affiliateLink": "https://openai.com/sora",
+        "shortDescription": "OpenAI's unreleased model capable of creating realistic 60-second video clips.",
+        "fullReview": "<h2>What is Sora?</h2><p>Sora is OpenAI's groundbreaking text-to-video model. Unlike competitors that generate short, choppy clips, Sora can generate up to a minute of high-fidelity video with complex camera motions and multiple characters. It understands physics and object permanence to a degree unseen before.</p><h2>Key Features</h2><ul><li><strong>Long Duration:</strong> Generates up to 60 seconds of video.</li><li><strong>Consistency:</strong> Maintain character and style consistency across a shot.</li><li><strong>Physics Simulation:</strong> Simulates complex interactions like reflections and fluid dynamics.</li></ul><h2>Pricing</h2><p>Currently in Red Teaming / Private Access only. Pricing unannounced.</p><h2>The Verdict</h2><p>The <strong>future</strong> of AI video, currently accessible only to a select few.</p>",
+        "pros": [
+            "State-of-the-art realism",
+            "Long clip duration",
+            "Understanding of physics"
+        ],
+        "cons": [
+            "Not publicly available",
+            "High compute requirements"
+        ]
+    },
+    {
+        "id": "luma-dream-machine",
+        "name": "Luma Dream Machine",
+        "tagline": "High-quality video generation for everyone.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://lumalabs.ai",
+        "shortDescription": "A fast, free-to-try video generator capable of impressive realism and consistency.",
+        "fullReview": "<h2>What is Luma Dream Machine?</h2><p>Released by Luma Labs, Dream Machine is a transformer model built for speed and quality. It creates 5-second clips with coherent motion. It is currently one of the few high-quality alternatives to Sora that is actually available to the public.</p><h2>Key Features</h2><ul><li><strong>Speed:</strong> Generates 120 frames in 120 seconds.</li><li><strong>Keyframing:</strong> Allows you to specify the start and end frames of a video.</li><li><strong>Open Access:</strong> Available to try for free on their website.</li></ul><h2>Pricing</h2><p>Free tier allows 30 generations per month. Paid plans scale up.</p><h2>The Verdict</h2><p>The best <strong>publicly available</strong> alternative to Sora right now.</p>",
+        "pros": [
+            "Free access",
+            "Start/End frame control",
+            "Fast generation"
+        ],
+        "cons": [
+            "Morphing issues",
+            "Limited to 5 seconds"
+        ]
+    },
+    {
+        "id": "opus-clip",
+        "name": "Opus Clip",
+        "tagline": "1 long video, 10 viral shorts.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://opus.pro",
+        "shortDescription": "Automatically repurposes long-form podcasts and videos into viral shorts.",
+        "fullReview": "<h2>What is Opus Clip?</h2><p>Opus Clip uses AI to analyze your long videos (like podcasts or streams) and find the most engaging 'hooks'. It then automatically crops them to vertical (9:16), adds animated captions, and gives them a virality score.</p><h2>Key Features</h2><ul><li><strong>AI Curation:</strong> Identifies the best moments automatically.</li><li><strong>Auto-Captioning:</strong> Adds trendy, animated captions like Alex Hormozi.</li><li><strong>Face Tracking:</strong> Keeps the speaker centered in the vertical frame.</li></ul><h2>Pricing</h2><p>Generous free trial. Pro starts at $19/month.</p><h2>The Verdict</h2><p>Essential for <strong>content creators</strong> wanting to dominate TikTok and Reels.</p>",
+        "pros": [
+            "Huge time saver",
+            "Great caption styles",
+            "Virality score"
+        ],
+        "cons": [
+            "Only works well on talking heads",
+            "Subscription for HD"
+        ]
+    },
+    {
+        "id": "invideo-ai",
+        "name": "InVideo AI",
+        "tagline": "YouTube videos created from prompts.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://invideo.io",
+        "shortDescription": "Generates complete narrated videos with stock footage from a single text prompt.",
+        "fullReview": "<h2>What is InVideo AI?</h2><p>InVideo AI is designed for faceless YouTube channels and explainer videos. You type a topic like 'History of Rome', and it writes a script, selects relevant stock footage, adds a voiceover, and edits it all together into a complete video.</p><h2>Key Features</h2><ul><li><strong>Script-to-Video:</strong> Handles the entire production pipeline.</li><li><strong>Voice Cloning:</strong> Uses realistic AI voices for narration.</li><li><strong>Stock Library:</strong> Access to millions of premium stock clips (iStock/Shutterstock).</li></ul><h2>Pricing</h2><p>Free plan with watermarks. Plus plan starts at $20/month.</p><h2>The Verdict</h2><p>The fastest way to launch a <strong>faceless YouTube channel</strong>.</p>",
+        "pros": [
+            "Complete workflow automation",
+            "Huge stock library",
+            "Easy editing commands"
+        ],
+        "cons": [
+            "Can feel generic",
+            "Stock footage can repeat"
+        ]
+    },
+    {
+        "id": "synthesia",
+        "name": "Synthesia",
+        "tagline": "AI video generation platform.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://synthesia.io",
+        "shortDescription": "Create professional corporate training and sales videos without cameras.",
+        "fullReview": "<h2>What is Synthesia?</h2><p>Synthesia focuses on the corporate world. It replaces boring text documents and PDFs with engaging videos featuring professional AI avatars. It is widely used for L&D (Learning and Development), onboarding, and personalized sales pitches.</p><h2>Key Features</h2><ul><li><strong>140+ Avatars:</strong> diverse range of professional presenters.</li><li><strong>120+ Languages:</strong> Instantly localize your training material.</li><li><strong>Screen Recorder:</strong> Built-in tool to record screen and add avatar overlay.</li></ul><h2>Pricing</h2><p>Personal plan starts at $22/month.</p><h2>The Verdict</h2><p>The standard for <strong>corporate communications</strong> and eLearning.</p>",
+        "pros": [
+            "Professional avatars",
+            "Great for enterprise",
+            "Easy text updates"
+        ],
+        "cons": [
+            "Stiff movement",
+            "Not for creative entertainment"
+        ]
+    },
+    {
+        "id": "quillbot",
+        "name": "Quillbot",
+        "tagline": "Your AI paraphrasing tool.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://quillbot.com",
+        "shortDescription": "An AI-powered paraphrasing tool that helps rewrite content while keeping the original meaning.",
+        "fullReview": "<h2>What is Quillbot?</h2><p>Quillbot is an essential tool for students and professional writers. It uses advanced AI to paraphrase any text into various modes (Standard, Fluency, Formal, Simple, Creative, etc.), helping you avoid plagiarism and improve clarity.</p><h2>Key Features</h2><ul><li><strong>Paraphraser:</strong> Rewrites text in varying degrees of complexity.</li><li><strong>Grammar Checker:</strong> Free tool to fix errors and polish your writing.</li><li><strong>Co-Writer:</strong> An all-in-one writing space that integrates research and citations.</li></ul><h2>Pricing</h2><p>Generous free version available. Premium unlocks unlimited limits and faster processing.</p><h2>The Verdict</h2><p>The best tool for improving <strong>readability</strong> and rephrasing content.</p>",
+        "pros": [
+            "Excellent rewording",
+            "Citation generator included",
+            "Easy browser extension"
+        ],
+        "cons": [
+            "Character limits on free text",
+            "Can sometimes lose nuance"
+        ]
+    },
+    {
+        "id": "notion-ai",
+        "name": "Notion AI",
+        "tagline": "Your connected workspace AI.",
+        "category": "Writing",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://notion.so/product/ai",
+        "shortDescription": "Integrated AI that writes, summarizes, and answers questions directly inside your Notion workspace.",
+        "fullReview": "<h2>What is Notion AI?</h2><p>Notion AI isn't just a chatbot; it's deeply integrated into your notes and docs. It can summarize long meetings, extract action items, rewrite messy notes into polished prose, and even brainstorm ideas, all without leaving your workspace.</p><h2>Key Features</h2><ul><li><strong>Q&A:</strong> Ask questions about your own workspace content (e.g., 'What did we decide about the roadmap?').</li><li><strong>Autofill:</strong> Automatically extract data from notes into database properties.</li><li><strong>Writer Assistance:</strong> Change tone, fix spelling, or translate text instantly.</li></ul><h2>Pricing</h2><p>Add-on to Notion plans, typically $8-10/member/month.</p><h2>The Verdict</h2><p>If you use Notion, this is a <strong>no-brainer</strong> productivity booster.</p>",
+        "pros": [
+            "Deep workspace integration",
+            "Context-aware Q&A",
+            "Seamless workflow"
+        ],
+        "cons": [
+            "Paid add-on",
+            "Limited outside Notion"
+        ]
+    },
+    {
+        "id": "jasper",
+        "name": "Jasper",
+        "tagline": "AI marketing co-pilot.",
+        "category": "Writing",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://jasper.ai",
+        "shortDescription": "A robust AI writing platform tailored for enterprise marketing teams and brand voice consistency.",
+        "fullReview": "<h2>What is Jasper?</h2><p>Formerly Jarvis, Jasper is built for marketers. Unlike generic tools, it allows you to train it on your specific 'Brand Voice' so that every blog post, email, and ad copy sounds exactly like your company. It also includes SEO integrations.</p><h2>Key Features</h2><ul><li><strong>Brand Voice:</strong> Upload your content to teach Jasper your unique style.</li><li><strong>Campaign Creation:</strong> Generate assets for an entire marketing campaign in one click.</li><li><strong>Art Generation:</strong> Includes an image generator for blog thumbnails.</li></ul><h2>Pricing</h2><p>Starts around $39/seat/month. Focused on business/teams.</p><h2>The Verdict</h2><p>The top choice for <strong>marketing teams</strong> needing scale and consistency.</p>",
+        "pros": [
+            "Brand voice control",
+            "SEO Surfer integration",
+            "Enterprise security"
+        ],
+        "cons": [
+            "Expensive for solo users",
+            "Learning curve"
+        ]
+    },
+    {
+        "id": "copy-ai",
+        "name": "Copy.ai",
+        "tagline": "Marketing copy in seconds.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://copy.ai",
+        "shortDescription": "A fast and easy tool for generating social media posts, emails, and product descriptions.",
+        "fullReview": "<h2>What is Copy.ai?</h2><p>Copy.ai focuses on speed and short-form content. It provides hundreds of templates for specific use cases (like 'Instagram Caption', 'Cold Email', or 'Product Description'). It's less about long-form essays and more about getting that social post done <em>now</em>.</p><h2>Key Features</h2><ul><li><strong>Templates:</strong> Massive library of pre-set workflows.</li><li><strong>Workflow Builder:</strong> Chain prompts together to automate repetitive tasks.</li><li><strong>Infobase:</strong> Save key company info to re-use in generations.</li></ul><h2>Pricing</h2><p>Forever free plan (2,000 words/mo). Pro plan offers unlimited words.</p><h2>The Verdict</h2><p>Perfect for <strong>social media managers</strong> needing quick creative sparks.</p>",
+        "pros": [
+            "Huge template library",
+            "Very easy to use",
+            "Good free plan"
+        ],
+        "cons": [
+            "Not great for long articles",
+            "Content can be formulaic"
+        ]
+    },
+    {
+        "id": "jenni-ai",
+        "name": "Jenni AI",
+        "tagline": "Supercharge your research and writing.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://jenni.ai",
+        "shortDescription": "An AI writing assistant specifically designed for academic papers and research with citations.",
+        "fullReview": "<h2>What is Jenni AI?</h2><p>Jenni is built for academia. It helps you write essays and research papers by auto-completing your sentences based on your context. Crucially, it integrates with research libraries to automatically find and format citations for the claims you make.</p><h2>Key Features</h2><ul><li><strong>AI Autocomplete:</strong> Suggests the next line of your paper as you type.</li><li><strong>Citation Finder:</strong> Search for real academic sources and add them in APA/MLA style.</li><li><strong>Plagiarism Check:</strong> Built-in checker to ensure originality.</li></ul><h2>Pricing</h2><p>Free plan available. paid plans unlock unlimited words.</p><h2>The Verdict</h2><p>A lifesaver for <strong>students and researchers</strong> working on papers.</p>",
+        "pros": [
+            "Real citations",
+            "Academic focus",
+            "Clean writing interface"
+        ],
+        "cons": [
+            "Niche use case",
+            "Subscription for unlimited"
+        ]
+    },
+    {
+        "id": "perplexity-ai",
+        "name": "Perplexity",
+        "tagline": "Where knowledge begins.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://perplexity.ai",
+        "shortDescription": "An AI-powered search engine that gives you direct answers with sources, not just links.",
+        "fullReview": "<h2>What is Perplexity?</h2><p>Perplexity is challenging Google. Instead of giving you a list of blue links, it reads various sources and synthesizes a direct answer to your question, complete with footnotes citing where the information came from. It's the best way to do research fast.</p><h2>Key Features</h2><ul><li><strong>Copilot:</strong> An interactive search assistant that asks clarifying questions.</li><li><strong>Sources:</strong> Every claim is backed by a clickable citation.</li><li><strong>Focus Modes:</strong> Narrow search to Academic papers, YouTube, or Reddit.</li></ul><h2>Pricing</h2><p>Excellent free version. Pro ($20/mo) unlocks GPT-4 and Claude 3 Opus.</p><h2>The Verdict</h2><p>The <strong>best research tool</strong> on the market today. It replaces Google for many users.</p>",
+        "pros": [
+            "Answers with sources",
+            "Access to top models",
+            "Clean, ad-free UI"
+        ],
+        "cons": [
+            "Can occasionally hallucinate",
+            "Limited creative writing"
+        ]
+    },
+    {
+        "id": "chatpdf",
+        "name": "ChatPDF",
+        "tagline": "Chat with any PDF.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://chatpdf.com",
+        "shortDescription": "Upload a PDF and ask it questions. Perfect for summarizing reports and textbooks.",
+        "fullReview": "<h2>What is ChatPDF?</h2><p>ChatPDF solves the problem of information overload. You can upload extensive documents—legal contracts, scientific papers, or financial reports—and then chat with them. Ask for a summary, specific data points, or a simplified explanation of a complex paragraph.</p><h2>Key Features</h2><ul><li><strong>Semantic Search:</strong> Understands the context of your document to find precise answers.</li><li><strong>Multi-file Chat:</strong> Organize PDFs into folders and chat with them.</li><li><strong>Citation:</strong> Points you to the page number where the answer was found.</li></ul><h2>Pricing</h2><p>Free for small files. Plus plan needed for massive PDFs.</p><h2>The Verdict</h2><p>Essential for anyone who reads <strong>long documents</strong> daily.</p>",
+        "pros": [
+            "Fast analysis",
+            "Page number citations",
+            "Easy to use"
+        ],
+        "cons": [
+            "File size limits on free",
+            "Only works on text PDFs"
+        ]
+    },
+    {
+        "id": "grammarly",
+        "name": "Grammarly",
+        "tagline": "Great writing, simplified.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://grammarly.com",
+        "shortDescription": "The world's most popular AI writing assistant for grammar, tone, and clarity.",
+        "fullReview": "<h2>What is Grammarly?</h2><p>Grammarly is ubiquitous. It goes beyond simple spell-checking to analyze the tone, clarity, and delivery of your writing. With its new 'GrammarlyGO' generative AI features, it can now also rewrite text and generate drafts for you.</p><h2>Key Features</h2><ul><li><strong>Tone Detector:</strong> Tells you if you sound confident, friendly, or angry.</li><li><strong>Clarity:</strong> Suggests removals of unnecessary words for punchier writing.</li><li><strong>Everywhere:</strong> Works in Email, Slack, Word, and Browser.</li></ul><h2>Pricing</h2><p>Robust free version. Premium is unmatched for professional polish.</p><h2>The Verdict</h2><p>The <strong>essential safety net</strong> for professional communication.</p>",
+        "pros": [
+            "Works everywhere",
+            "Highly accurate",
+            "Tone analysis"
+        ],
+        "cons": [
+            "Premium is pricey",
+            "Can be intrusive sometimes"
+        ]
+    },
+    {
+        "id": "writesonic",
+        "name": "Writesonic",
+        "tagline": "Best AI writer for SEO.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://writesonic.com",
+        "shortDescription": "An AI writer specialized in creating SEO-optimized blog posts that rank on Google.",
+        "fullReview": "<h2>What is Writesonic?</h2><p>Writesonic separates itself with its Article Writer 6.0. It doesn't just write text; it researches real-time data from Google Search to ensure your article is factual and up-to-date. It is designed specifically to help content rank in search engines.</p><h2>Key Features</h2><ul><li><strong>SEO Mode:</strong> Integrates with Semrush/Surfer data (add-on).</li><li><strong>Real-Time Data:</strong> Fetches latest news to write accurate articles.</li><li><strong>Brand Voice:</strong> customizable style settings.</li></ul><h2>Pricing</h2><p>Free trial available. Paid plans based on word usage.</p><h2>The Verdict</h2><p>Top tier choice for <strong>SEO content marketers</strong> and bloggers.</p>",
+        "pros": [
+            "Factual writing",
+            "SEO optimization",
+            "Good long-form output"
+        ],
+        "cons": [
+            "Credit system",
+            "UI is a bit busy"
+        ]
+    },
+    {
+        "id": "rytr",
+        "name": "Rytr",
+        "tagline": "Best budget AI writer.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.4,
+        "affiliateLink": "https://rytr.me",
+        "shortDescription": "A simple, affordable AI writing assistant for emails, blogs, and ads.",
+        "fullReview": "<h2>What is Rytr?</h2><p>Rytr is perfect for those who want AI writing without a massive monthly bill. It offers a clean, simple interface to generate content for over 40 use cases. While it may lack the advanced features of Jasper, it provides incredible value.</p><h2>Key Features</h2><ul><li><strong>Multiple Languages:</strong> strong support for writing in non-English languages.</li><li><strong>Tone Selection:</strong> Choose from over 20 tones of voice.</li><li><strong>Plagiarism Checker:</strong> Built-in check included in plans.</li></ul><h2>Pricing</h2><p>Very generous free plan. Unlimited plan is extremely affordable (~$9-29/mo).</p><h2>The Verdict</h2><p>The best <strong>value-for-money</strong> AI writer on the market.</p>",
+        "pros": [
+            "Very affordable",
+            "Simple UI",
+            "Dark mode"
+        ],
+        "cons": [
+            "Less powerful models",
+            "Short-form focus"
+        ]
+    },
+    {
+        "id": "gamma",
+        "name": "Gamma",
+        "tagline": "A new medium for presenting ideas.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://gamma.app",
+        "shortDescription": "Generate beautiful presentations, documents, and webpages in seconds.",
+        "fullReview": "<h2>What is Gamma?</h2><p>Gamma is an alternative to PowerPoint and Google Slides. Instead of moving boxes around on slides, you write a document or a few prompts, and Gamma turns it into a slide deck, website, or document. It handles the formatting and design entirely.</p><h2>Key Features</h2><ul><li><strong>AI Generation:</strong> Create a full deck from a single sentence topic.</li><li><strong>Smart Themes:</strong> Change the entire look of your presentation with one click.</li><li><strong>Embed Anything:</strong> Embed live websites, videos, and charts directly into slides.</li></ul><h2>Pricing</h2><p>Generous free tier (400 credits). Plus/Pro plans for unlimited usage.</p><h2>The Verdict</h2><p>The fastest way to build <strong>presentations</strong> without design skills.</p>",
+        "pros": [
+            "Beautiful default designs",
+            "Fast generation",
+            "Flexible output formats"
+        ],
+        "cons": [
+            "Less layout control than PPT",
+            "Web-first format"
+        ]
+    },
+    {
+        "id": "otter-ai",
+        "name": "Otter.ai",
+        "tagline": "Your AI meeting assistant.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://otter.ai",
+        "shortDescription": "Get real-time automated meeting notes, summaries, and action items.",
+        "fullReview": "<h2>What is Otter.ai?</h2><p>Otter joins your Zoom, Teams, or Google Meet calls and automatically records and transcribes the conversation. It then uses AI to summarize the meeting, extract key takeaways, and assign action items to participants.</p><h2>Key Features</h2><ul><li><strong>OtterPilot:</strong> Auto-joins meetings to take notes for you.</li><li><strong>Live Transcription:</strong> See text appear live as people speak.</li><li><strong>Chat with Meeting:</strong> Ask questions about what was said after the call.</li></ul><h2>Pricing</h2><p>Free plan available (300 mins/mo). Pro starts at $10/mo.</p><h2>The Verdict</h2><p>Essential for anyone with <strong>too many meetings</strong>.</p>",
+        "pros": [
+            "Accuracy is great",
+            "Searchable audio",
+            "Speaker identification"
+        ],
+        "cons": [
+            "Free plan limits",
+            "Can be distracting in calls"
+        ]
+    },
+    {
+        "id": "zapier",
+        "name": "Zapier",
+        "tagline": "Automation for everyone.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://zapier.com",
+        "shortDescription": "Connect your apps and automate your workflows with AI.",
+        "fullReview": "<h2>What is Zapier?</h2><p>Zapier is the glue of the internet. It connects over 6,000 apps. With its new AI features, you can now build 'Zaps' (automations) just by describing what you want in plain English. For example: 'When I get a lead in Facebook, add them to Notion and Slack me'.</p><h2>Key Features</h2><ul><li><strong>Copilot:</strong> Build workflows by chatting with AI.</li><li><strong>Integration:</strong> Connects practically every SaaS tool in existence.</li><li><strong>Tables & Interfaces:</strong> Build mini-apps on top of your data.</li></ul><h2>Pricing</h2><p>Free for simple tasks. Professional plans scale with usage.</p><h2>The Verdict</h2><p>The <strong>backbone</strong> of modern business automation.</p>",
+        "pros": [
+            "Massive integration library",
+            "Reliable",
+            "No-code interface"
+        ],
+        "cons": [
+            "Can get expensive",
+            "Complex logic is tricky"
+        ]
+    },
+    {
+        "id": "beautiful-ai",
+        "name": "Beautiful.ai",
+        "tagline": "It's all on brand.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://beautiful.ai",
+        "shortDescription": "Presentation software that locks your slides to professional design rules.",
+        "fullReview": "<h2>What is Beautiful.ai?</h2><p>Beautiful.ai forces your slides to look good. Unlike PowerPoint where you can mess up alignment, Beautiful.ai uses 'Smart Slide' templates that adapt as you add content. If you add five bullet points, it automatically resizes and aligns them perfectly.</p><h2>Key Features</h2><ul><li><strong>Smart Templates:</strong> Slides that design themselves.</li><li><strong>Brand Control:</strong> Lock fonts and colors for team consistency.</li><li><strong>DesignerBot:</strong> Generate an initial draft with AI prompts.</li></ul><h2>Pricing</h2><p>14-day free trial. Individuals start at $12/mo.</p><h2>The Verdict</h2><p>Best for corporate teams needing <strong>consistent branding</strong>.</p>",
+        "pros": [
+            "Impossible to make ugly slides",
+            "Great stock library",
+            "Time-saving"
+        ],
+        "cons": [
+            "Rigid templates",
+            "No free tier"
+        ]
+    },
+    {
+        "id": "tldv",
+        "name": "tl;dv",
+        "tagline": "The meeting recorder for Zoom and Meet.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://tldv.io",
+        "shortDescription": "Record, transcribe, and highlight your meetings instantly.",
+        "fullReview": "<h2>What is tl;dv?</h2><p>tl;dv (Too Long; Didn't View) focuses on user research and sales calls. It records your Google Meet or Zoom calls and allows you to timestamp important moments live. It then provides AI summaries in multiple languages.</p><h2>Key Features</h2><ul><li><strong>Timestamps:</strong> Mark key moments during the call.</li><li><strong>Clips:</strong> Create short clips of user feedback to share with devs.</li><li><strong>Global Search:</strong> Search across all your meeting transcripts.</li></ul><h2>Pricing</h2><p>Very generous free tier (unlimited recordings). Pro for integrations.</p><h2>The Verdict</h2><p>A favorite for <strong>Product Managers</strong> and User Researchers.</p>",
+        "pros": [
+            "Unlimited free recordings",
+            "Great clipping tool",
+            "Multi-language support"
+        ],
+        "cons": [
+            "Video processing time",
+            "Storage limits eventually"
+        ]
+    },
+    {
+        "id": "goblin-tools",
+        "name": "Goblin Tools",
+        "tagline": "AI for the neurodivergent brain.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://goblin.tools",
+        "shortDescription": "A collection of simple AI tools to help with executive dysfunction and task breakdown.",
+        "fullReview": "<h2>What is Goblin Tools?</h2><p>Goblin Tools is a unique, heartwarming set of single-purpose AI tools designed to help people who struggle with tasks. The 'Magic ToDo' breaks down big scary tasks (like 'Clean the kitchen') into tiny manageable steps automatically.</p><h2>Key Features</h2><ul><li><strong>Magic ToDo:</strong> Automatically breaks tasks into sub-steps.</li><li><strong>Formalizer:</strong> Rewrites your text to sound more professional or polite.</li><li><strong>Judge:</strong> Analyzes the tone of a text (e.g., 'Is this email passive-aggressive?').</li></ul><h2>Pricing</h2><p>Free on web. Small one-time fee for mobile app.</p><h2>The Verdict</h2><p>A <strong>must-bookmark</strong> for anyone who gets overwhelmed easily.</p>",
+        "pros": [
+            "Simple and accessible",
+            "Completely free on web",
+            "Genuinely helpful"
+        ],
+        "cons": [
+            "Basic interface",
+            "Not for enterprise use"
+        ]
+    },
+    {
+        "id": "rewind-ai",
+        "name": "Rewind",
+        "tagline": "The search engine for your life.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://rewind.ai",
+        "shortDescription": "Records everything you've seen, said, or heard on your Mac and makes it searchable.",
+        "fullReview": "<h2>What is Rewind?</h2><p>Rewind runs locally on your Mac. It compresses and stores your screen and audio history. You can then ask it things like 'What was that email I was writing yesterday morning?' or 'What did John say in the meeting last week?'.</p><h2>Key Features</h2><ul><li><strong>Timeline:</strong> Scroll back through time on your screen.</li><li><strong>Privacy:</strong> All data is stored locally on your machine, not the cloud.</li><li><strong>Meeting Scribe:</strong> Automatic summaries of your meetings.</li></ul><h2>Pricing</h2><p>Free trial. Basic plan $12/month.</p><h2>The Verdict</h2><p>A superpower for <strong>memory augmentation</strong>. Only on Mac.</p>",
+        "pros": [
+            "Local privacy",
+            "Incredible compression",
+            "Magical search"
+        ],
+        "cons": [
+            "Mac only (Apple Silicon)",
+            "Storage usage"
+        ]
+    },
+    {
+        "id": "arc-search",
+        "name": "Arc Search",
+        "tagline": "Browse for me.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.9,
+        "affiliateLink": "https://arc.net",
+        "shortDescription": "A mobile browser that browses for you, summarizing multiple tabs into one page.",
+        "fullReview": "<h2>What is Arc Search?</h2><p>From The Browser Company, Arc Search reinvents mobile browsing. Its 'Browse for Me' feature takes your query, reads 6 different websites, and builds a custom webpage for you with all the answers, so you don't have to click links.</p><h2>Key Features</h2><ul><li><strong>Browse for Me:</strong> AI summarization of multiple search results.</li><li><strong>Clean UI:</strong> Automatically blocks ads and trackers and annoying banners.</li><li><strong>Sync:</strong> Syncs perfectly with Arc on Desktop.</li></ul><h2>Pricing</h2><p>Completely free.</p><h2>The Verdict</h2><p>The <strong>best mobile browser</strong> experience currently available.</p>",
+        "pros": [
+            "Browse for Me is game-changing",
+            "Beautiful design",
+            "Ad blocking built-in"
+        ],
+        "cons": [
+            "iOS first",
+            "Different from Chrome habits"
+        ]
+    },
+    {
+        "id": "superhuman",
+        "name": "Superhuman",
+        "tagline": "The fastest email experience ever.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://superhuman.com",
+        "shortDescription": "A premium email client with AI features designed to get you to Inbox Zero.",
+        "fullReview": "<h2>What is Superhuman?</h2><p>Superhuman is an email client built for speed. It uses keyboard shortcuts for everything. Its new AI features allow you to write emails from bullet points, summarize long threads, and automatically sort your inbox.</p><h2>Key Features</h2><ul><li><strong>Superhuman AI:</strong> Draft replies and summarize threads instantly.</li><li><strong>Split Inbox:</strong> Automatically categorizes email for focus.</li><li><strong>Speed:</strong> Everything is instant; no loading times.</li></ul><h2>Pricing</h2><p>Expensive ($30/month). No free tier.</p><h2>The Verdict</h2><p>Worth it for <strong>CEOs and Executives</strong> who live in email.</p>",
+        "pros": [
+            "Incredibly fast",
+            "Keyboard workflow",
+            "Beautiful design"
+        ],
+        "cons": [
+            "Very expensive",
+            "Only for Gmail/Outlook"
+        ]
+    },
+    {
+        "id": "cron-calendar",
+        "name": "Cron (Notion Calendar)",
+        "tagline": "The next-generation calendar.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.9,
+        "affiliateLink": "https://calendar.notion.so",
+        "shortDescription": "A beautifully designed calendar app acquired by Notion, featuring time-zone intelligence.",
+        "fullReview": "<h2>What is Cron?</h2><p>Now rebranded as Notion Calendar, Cron is widely loved for its design and speed. It handles time zones better than any other calendar, allowing you to overlay multiple time zones and propose meeting times with a shortcut.</p><h2>Key Features</h2><ul><li><strong>Time Zones:</strong> Visual sidebar to see time across the world easily.</li><li><strong>Meeting Slots:</strong> Quickly copy free slots to paste in emails.</li><li><strong>Notion Integration:</strong> Link docs directly to your calendar invites.</li></ul><h2>Pricing</h2><p>Free for all users.</p><h2>The Verdict</h2><p>The best <strong>calendar app</strong> on desktop, period.</p>",
+        "pros": [
+            "Stunning design",
+            "Time zone tools",
+            "Fast and free"
+        ],
+        "cons": [
+            "Mobile app is newer",
+            "Requires Google/Notion account"
+        ]
     }
 ]

@@ -164,7 +164,7 @@ export default function ToolPage({ params }) {
                                 <h3 className="text-emerald-400 font-bold mb-2">Want your tool listed?</h3>
                                 <p className="text-slate-400 text-sm mb-4">Get in front of thousands of developers.</p>
                                 <a
-                                    href="https://google.com/forms" // Placeholder as requested, user said "INSERT_YOUR_GOOGLE_FORM_LINK_HERE" but provided no link, so I will placeholders.
+                                    href="https://forms.gle/9MHi5zb8qQen7Ai17"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-block text-xs bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-2 rounded-lg transition-colors cursor-pointer"

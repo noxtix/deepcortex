@@ -1,17 +1,29 @@
 'use client';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
 import AdUnit from '@/components/AdUnit';
 import toolsData from '@/data/tools.json';
 import { Search } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 
 export default function Home() {
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   // Extract unique categories
   const categories = ['All', ...new Set(toolsData.map(tool => tool.category))];
+
+  // Sync state with URL params
+  useEffect(() => {
+    const category = searchParams.get('category');
+    if (category) {
+      setSelectedCategory(category);
+    } else {
+      setSelectedCategory('All');
+    }
+  }, [searchParams]);
 
   // Filter tools logic
   const filteredTools = useMemo(() => {
