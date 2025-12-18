@@ -30,7 +30,12 @@ export default function TermsPage() {
                 <h2>5. Limitation on Liability</h2>
                 <p>DeepCortex is not liable for any damages that may occur to you as a result of your misuse of our website.</p>
 
-                <h2>6. Changes to This Agreement</h2>
+                <h2>6. Disclaimers</h2>
+                <p><strong>Informational Purposes Only:</strong> The content provided on DeepCortex is for informational purposes only. We do not guarantee the accuracy, completeness, or usefulness of this information.</p>
+                <p><strong>No Liability:</strong> We are not responsible for the tools listed here. DeepCortex is a directory and does not own, operate, or control the third-party AI tools listed. We are not liable for any damages arising from your use of these third-party tools.</p>
+                <p><strong>Trademarks:</strong> We do not own the trademarks of the tools listed. All trademarks, logos, and brand names are the property of their respective owners. Use of these names, trademarks, and brands does not imply endorsement.</p>
+
+                <h2>7. Changes to This Agreement</h2>
                 <p>We reserve the right to edit, modify, and change this Agreement any time. We shall let our users know of these changes through electronic mail. This Agreement is an understanding between DeepCortex and the user, and this supersedes and replaces all prior agreements regarding the use of this website.</p>
             </div>
         </main>

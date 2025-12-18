@@ -36,8 +36,24 @@ export default function PrivacyPage() {
                 <h2>4. Affiliate Disclosure</h2>
                 <p>DeepCortex participates in various affiliate marketing programs, which means we may get paid commissions on editorially chosen products purchased through our links to retailer sites.</p>
 
-                <h2>5. Contact Us</h2>
-                <p>If you have questions or comments about this Privacy Policy, please contact us at hello@deepcortex.ai.</p>
+                <h2>5. GDPR Data Protection Rights</h2>
+                <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+                <ul>
+                    <li>The right to access – You have the right to request copies of your personal data.</li>
+                    <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate.</li>
+                    <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
+                </ul>
+
+                <h2>6. CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+                <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+                <ul>
+                    <li>Request that a business that collects a consumer&apos;s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</li>
+                    <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
+                    <li>Request that a business that sells a consumer&apos;s personal data, not sell the consumer&apos;s personal data.</li>
+                </ul>
+
+                <h2>7. Contact Us</h2>
+                <p>If you have questions or comments about this Privacy Policy, please contact us at contact@deepcortex.tech.</p>
             </div>
         </main>
     );

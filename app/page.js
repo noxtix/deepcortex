@@ -34,6 +34,10 @@ function ToolDirectory() {
         ? tool.category === selectedCategory
         : true;
       return matchesSearch && matchesCategory;
+    }).sort((a, b) => {
+      // Sort Featured items first
+      if (a.isFeatured === b.isFeatured) return 0;
+      return a.isFeatured ? -1 : 1;
     });
   }, [searchQuery, selectedCategory]);
 

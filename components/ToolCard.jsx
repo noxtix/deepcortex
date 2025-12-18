@@ -4,16 +4,23 @@ import { Star, ArrowUpRight } from 'lucide-react';
 
 const ToolCard = ({ tool }) => {
     return (
-        <div className="group bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] flex flex-col h-full backdrop-blur-sm">
+        <div className={`group rounded-2xl p-6 transition-all hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] flex flex-col h-full backdrop-blur-sm ${tool.isFeatured ? 'bg-slate-900/80 border border-amber-500/50 shadow-[0_0_20px_rgba(245,158,11,0.1)] hover:border-amber-400' : 'bg-slate-900/50 border border-slate-800 hover:border-emerald-500/50'}`}>
             <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-2xl font-bold text-emerald-400 group-hover:scale-110 transition-transform">
+                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold transition-transform group-hover:scale-110 ${tool.isFeatured ? 'bg-amber-500/10 text-amber-500 ring-1 ring-amber-500/50' : 'bg-slate-800 text-emerald-400'}`}>
                         {tool.name.charAt(0)}
                     </div>
                     <div>
-                        <h3 className="text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition-colors">
-                            {tool.name}
-                        </h3>
+                        <div className="flex items-center gap-2">
+                            <h3 className="text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition-colors">
+                                {tool.name}
+                            </h3>
+                            {tool.isFeatured && (
+                                <span className="text-[10px] font-bold text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.2)] animate-pulse">
+                                    Featured
+                                </span>
+                            )}
+                        </div>
                         <p className="text-xs text-slate-500">{tool.category}</p>
                     </div>
                 </div>
