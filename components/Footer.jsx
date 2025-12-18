@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Twitter, Github } from 'lucide-react';
 
 export default function Footer() {
@@ -10,7 +11,14 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="text-center md:text-left">
                         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-2 justify-center md:justify-start">
-                            <span className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg"></span>
+                            <div className="relative w-8 h-8">
+                                <Image
+                                    src="/logo.png"
+                                    alt="DeepCortex Logo"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
                             DeepCortex
                         </h2>
                         <p className="text-slate-500 mt-2 text-sm">

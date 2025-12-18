@@ -1,6 +1,5 @@
-'use client';
 import Link from 'next/link';
-import { Brain } from 'lucide-react';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -8,8 +7,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2 text-emerald-400 font-bold text-xl hover:text-emerald-300 transition-colors">
-              <Brain className="w-8 h-8" />
+            <Link href="/" className="flex items-center gap-3 text-emerald-400 font-bold text-xl hover:text-emerald-300 transition-colors">
+              <div className="relative w-8 h-8">
+                <Image
+                  src="/logo.png"
+                  alt="DeepCortex Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <span>DeepCortex</span>
             </Link>
           </div>
