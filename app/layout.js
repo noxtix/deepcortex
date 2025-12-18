@@ -14,10 +14,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-title: "DeepCortex | The Brain of AI Tools",
+export const metadata = {
+  title: "DeepCortex | The Brain of AI Tools",
   description: "Curated directory of the best AI tools for coding, writing, and productivity.",
-    icons: {
-  icon: '/icon.png',
+  icons: {
+    icon: '/icon.png',
   },
 };
 
