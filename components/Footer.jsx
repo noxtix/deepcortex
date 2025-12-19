@@ -44,7 +44,7 @@ export default function Footer() {
                         <a href="#" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
                             <Github className="w-5 h-5" />
                         </a>
-                        <a href="https://www.instagram.com/deepcortex.tech/?igsh=N3Y1aTRtcTZtMGU%3D#" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
+                        <a href="https://www.instagram.com/deepcortex.tech?igsh=ZW82bTNjeG9obmFm" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
                             <Instagram className="w-5 h-5" />
                         </a>
                     </div>
