@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Twitter, Github } from 'lucide-react';
+import { Twitter, Github, Instagram } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -43,6 +43,9 @@ export default function Footer() {
                         </a>
                         <a href="#" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
                             <Github className="w-5 h-5" />
+                        </a>
+                        <a href="https://www.instagram.com/deepcortex.tech/?igsh=N3Y1aTRtcTZtMGU%3D#" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
+                            <Instagram className="w-5 h-5" />
                         </a>
                     </div>
                 </div>
