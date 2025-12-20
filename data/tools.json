@@ -1100,5 +1100,305 @@
             "It's just a game",
             "Old UI"
         ]
+    },
+    {
+        "id": "elevenlabs",
+        "name": "ElevenLabs",
+        "tagline": "The most realistic AI text-to-speech.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://elevenlabs.io",
+        "shortDescription": "Generates lifelike speech in any voice and language with unmatched emotional range.",
+        "fullReview": "<h3>First Impressions</h3><p>I pasted a paragraph of my blog post and selected the 'Adam' voice. The result was indistinguishable from a human recording. The intonation, pauses, and breath sounds were all there. It's frighteningly good.</p><h3>Best Feature: Voice Cloning</h3><p>I uploaded a 1-minute sample of my own voice, and within seconds, it could speak anything I typed. It captured my accent and cadence perfectly. Great for podcasters fixing mistakes without re-recording.</p><h3>The Verdict</h3><p>This is the gold standard for AI voice. If you need narration for videos, audiobooks, or games, ElevenLabs is the tool to beat.</p>",
+        "pros": [
+            "Unmatched realism",
+            "Instant voice cloning",
+            "Multilingual support"
+        ],
+        "cons": [
+            "Character limit on free tier",
+            "Cloning requires subscription"
+        ]
+    },
+    {
+        "id": "udio",
+        "name": "Udio",
+        "tagline": "Create music from simple text.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://www.udio.com",
+        "shortDescription": "Generates high-fidelity music tracks with vocals, challenging Suno for the top spot.",
+        "fullReview": "<h3>First Impressions</h3><p>I asked for 'a 1980s synth-pop anthem about coffee'. Udio spat out two tracks that sounded like lost demos from Depeche Mode. The vocal clarity is slightly better than Suno, though the song structure felt a bit more chaotic.</p><h3>Best Feature: Remixing</h3><p>You can take a generated track and 'remix' it, changing the genre or lyrics while keeping the core melody. It gives you more granular control over the final output.</p><h3>The Verdict</h3><p>Use Udio if you want clearer vocals and more experimental sounds. It's a powerhouse for musical creativity.</p>",
+        "pros": [
+            "High fidelity vocals",
+            "Advanced remix controls",
+            "32-second initial clips"
+        ],
+        "cons": [
+            "Interface can be confusing",
+            "Generation times vary"
+        ]
+    },
+    {
+        "id": "murf-ai",
+        "name": "Murf.ai",
+        "tagline": "Go from text to speech with a versatile AI voice generator.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://murf.ai",
+        "shortDescription": "Studio-quality voiceovers for presentations, videos, and professional use cases.",
+        "fullReview": "<h3>First Impressions</h3><p>Murf feels like a professional studio. The dashboard allows you to sync voiceovers directly to video timelines. The voices are crisp and corporate-friendly, perfect for explainer videos.</p><h3>Best Feature: Team Collaboration</h3><p>Unlike other tools, Murf is built for teams. You can share projects and collaborate on scripts. It integrates well with Canva and Google Slides.</p><h3>The Verdict</h3><p>If you fit the corporate / L&D mold, Murf is excellent. For creative or indie projects, ElevenLabs might be spicier.</p>",
+        "pros": [
+            "Video sync capabilities",
+            "Canva integration",
+            "Professional voice catalogue"
+        ],
+        "cons": [
+            "Expensive for teams",
+            "Less emotional range than ElevenLabs"
+        ]
+    },
+    {
+        "id": "speechify",
+        "name": "Speechify",
+        "tagline": "Turn any text into audio.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://speechify.com",
+        "shortDescription": "The leading text-to-speech reader that listens to docs, articles, and PDFs.",
+        "fullReview": "<h3>First Impressions</h3><p>I installed the Chrome extension and opened a long article. Speechify started reading it to me in 'Snoop Dogg’s' voice. It completely changed my consumption habits. I can now 'read' while cooking or driving.</p><h3>Best Feature: Reading Speed</h3><p>You can crank the speed up to 2x or 3x without losing clarity. It's a productivity hack for students and researchers who need to digest massive amounts of text.</p><h3>The Verdict</h3><p>It’s more of a consumption tool than a creation tool, but it's essential for accessibility and productivity.</p>",
+        "pros": [
+            "Celebrity voices",
+            "Cross-platform sync",
+            "OCR for physical books"
+        ],
+        "cons": [
+            "Premium is pricey",
+            "Some voices sound robotic"
+        ]
+    },
+    {
+        "id": "luma-dream-machine",
+        "name": "Luma Dream Machine",
+        "tagline": "Build high-quality video from text and images.",
+        "category": "Video",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://lumalabs.ai/dream-machine",
+        "shortDescription": "A cutting-edge video generation model capable of consistent characters and physics.",
+        "fullReview": "<h3>First Impressions</h3><p>Everyone was hyping this up, so I tried it. I uploaded a photo of a car and asked it to 'drive off into the sunset'. It understood the physics of the wheels and the lighting change perfectly. It feels a generation ahead of standard GIF-style video AI.</p><h3>Best Feature: Keyframe Control</h3><p>You can define the start and end frames, and Luma fills in the middle. This allows for directed storytelling, not just random generation.</p><h3>The Verdict</h3><p>It's currently one of the best free video generators available. The speed is impressive—generating 5 seconds of video in just a couple of minutes.</p>",
+        "pros": [
+            "Start/End frame control",
+            "Fast generation",
+            "High motion consistency"
+        ],
+        "cons": [
+            "5 second limit per clip",
+            "Server load can be high"
+        ]
+    },
+    {
+        "id": "runway-gen-2",
+        "name": "Runway Gen-2",
+        "tagline": "Everything you need to make anything you want.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://runwayml.com",
+        "shortDescription": "Professional-grade cinematic AI video generation with granular controls.",
+        "fullReview": "<h3>First Impressions</h3><p>Runway isn't just a toy; it's a creative suite. The Gen-2 model creates cinematic texture that looks ready for Netflix. The interface is complex because it offers real power—motion brush, camera controls, etc.</p><h3>Best Feature: Motion Brush</h3><p>You can paint over specific areas of an image (like clouds or a river) and tell just that part to move. It offers control that text prompts simply can't match.</p><h3>The Verdict</h3><p>If you are a filmmaker or artist, Runway is the tool. It's expensive, but it offers the control required for professional work.</p>",
+        "pros": [
+            "Motion brush control",
+            "Cinematic quality",
+            "Full editing suite"
+        ],
+        "cons": [
+            "Credits system is expensive",
+            "Steep learning curve"
+        ]
+    },
+    {
+        "id": "pika-labs",
+        "name": "Pika Labs",
+        "tagline": "Idea to video in seconds.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://pika.art",
+        "shortDescription": "Specializes in animation and video effects, accessible via Discord and Web.",
+        "fullReview": "<h3>First Impressions</h3><p>I used Pika to animate a logo. The 'Lip Sync' feature allowed me to make a static character speak with surprisingly accurate mouth movements. It feels fantastic for animation styles.</p><h3>Best Feature: Lip Sync</h3><p>It's one of the few video AIs that natively handles lip syncing within the generation flow. Perfect for creating animated characters.</p><h3>The Verdict</h3><p>Pika sits nicely between simple and professional. It's great for social media content and short animations.</p>",
+        "pros": [
+            "Great for animation",
+            "Lip sync feature",
+            "Expand canvas option"
+        ],
+        "cons": [
+            "Discord UI is clunky",
+            "Web app has waitlists"
+        ]
+    },
+    {
+        "id": "kling-ai",
+        "name": "Kling AI",
+        "tagline": "Next-gen realistic video generation.",
+        "category": "Video",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://klingai.com",
+        "shortDescription": "A new realistic video generator capable of longer, coherent clips.",
+        "fullReview": "<h3>First Impressions</h3><p>Kling appeared out of nowhere and shocked everyone with 10-second clips that held consistency. I tried generating a clip of a woman eating spaghetti—the ultimate test—and it actually handled the fork interaction relatively well.</p><h3>Best Feature: Duration</h3><p>It can generate longer clips (up to 5-10s) that maintain coherence better than many competitors who fall apart after 2 seconds.</p><h3>The Verdict</h3><p>It's distinctively realistic. While access can be tricky depending on the region, the quality is undeniable.</p>",
+        "pros": [
+            "Longer coherent clips",
+            "High realism",
+            "Complex motion handling"
+        ],
+        "cons": [
+            "Access availability",
+            "Slow generation times"
+        ]
+    },
+    {
+        "id": "haiper",
+        "name": "Haiper",
+        "tagline": "Powerful creative foundation capabilities.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://haiper.ai",
+        "shortDescription": "Short form video creation tool focused on social media content.",
+        "fullReview": "<h3>First Impressions</h3><p>Haiper feels built for TikTok. The clips are short, punchy, and generally high quality. I used the 'restyle video' feature to turn a video of my dog into a claymation style. It worked surprisingly well.</p><h3>Best Feature: Video Restyling</h3><p>Taking existing footage and applying a heavy AI style filter is where Haiper shines. It's great for trends.</p><h3>The Verdict</h3><p>A solid contender in the video space, especially if you are looking for stylization over pure generation from scratch.</p>",
+        "pros": [
+            "Video-to-video restyling",
+            "Easy to use",
+            "Good artistic styles"
+        ],
+        "cons": [
+            "Short duration limits",
+            "Inconsistent server uptime"
+        ]
+    },
+    {
+        "id": "leonardo-ai",
+        "name": "Leonardo.ai",
+        "tagline": "Generate production-quality game assets.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://leonardo.ai",
+        "shortDescription": "The darling of game developers, known for consistent style and asset generation.",
+        "fullReview": "<h3>First Impressions</h3><p>Midjourney is great, but Leonardo gives you control. I trained a custom model on my own sketches in about 10 minutes. After that, every image I generated looked like *my* art style. It's a game dev's dream.</p><h3>Best Feature: Custom Models</h3><p>The ability to fine-tune models easily is unmatched. You don't need code; you just upload images and name your model.</p><h3>The Verdict</h3><p>The best UI in the image gen game. If you need consistency for a project (like a comic or game), choose Leonardo.</p>",
+        "pros": [
+            "Train custom models",
+            "Canvas editor",
+            "Generous daily free tier"
+        ],
+        "cons": [
+            "Complex for beginners",
+            "Coin system can be confusing"
+        ]
+    },
+    {
+        "id": "adobe-firefly",
+        "name": "Adobe Firefly",
+        "tagline": "Generative AI for creators.",
+        "category": "Image Gen",
+        "pricing": "Free",
+        "rating": 4.6,
+        "affiliateLink": "https://firefly.adobe.com",
+        "shortDescription": "Ethical image generation integrated into the Adobe Creative Cloud ecosystem.",
+        "fullReview": "<h3>First Impressions</h3><p>I used the 'Generative Fill' in Photoshop (powered by Firefly). I circled an empty table and typed 'vase of flowers'. It matched the lighting, perspective, and grain of the original photo perfectly. It feels safer to use commercially.</p><h3>Best Feature: Ethical Data</h3><p>It's trained on Adobe Stock images, meaning it's commercially safe. You won't accidentally generate Mickey Mouse and get sued.</p><h3>The Verdict</h3><p>It might not be as wildly creative as Midjourney, but for professional workflows, it fits perfectly.</p>",
+        "pros": [
+            "Commercially safe",
+            "Text effects",
+            "Integrated in Photoshop"
+        ],
+        "cons": [
+            "Struggles with photorealism",
+            "Strict content filters"
+        ]
+    },
+    {
+        "id": "krea-ai",
+        "name": "Krea AI",
+        "tagline": "Real-time generation and upscaling.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://www.krea.ai",
+        "shortDescription": "Real-time image generation that updates as you draw or move shapes.",
+        "fullReview": "<h3>First Impressions</h3><p>The real-time generation is mind-bending. I dragged a circle across the canvas, and the AI instantly morphed a moon into a sun in the artwork on the right. It feels like painting with intelligence.</p><h3>Best Feature: Upscaler</h3><p>Their upscaler and enhancer is legendary. I took a blurry, pixelated photo from 2005 and it restored the details on the face with scary accuracy.</p><h3>The Verdict</h3><p>Krea is pushing the boundaries of real-time interaction. The enhancer alone is worth the bookmark.</p>",
+        "pros": [
+            "Real-time feedback",
+            "Incredible enhancer/upscaler",
+            "Pattern tool"
+        ],
+        "cons": [
+            "Requires good internet",
+            "Real-time is beta"
+        ]
+    },
+    {
+        "id": "clipdrop",
+        "name": "Clipdrop",
+        "tagline": "Create stunning visuals in seconds.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://clipdrop.co",
+        "shortDescription": "An ecosystem of image editing apps by Stability AI (Remove BG, Relight, etc.).",
+        "fullReview": "<h3>First Impressions</h3><p>I used the 'Relight' feature. I uploaded a flatly lit portrait, added a virtual blue light source on the left and a red one on the right. The AI recalculated the shadows on the face instantly. It saves hours of Photoshop work.</p><h3>Best Feature: Cleanup</h3><p>The object remover is top tier. You just scribble over an unwanted person in the background, and they vanish with realistic infill.</p><h3>The Verdict</h3><p>A swiss-army knife for designers. You won't use it for generating art from scratch, but for fixing everything else.</p>",
+        "pros": [
+            "Relight feature",
+            "Uncrop tool",
+            "Cleanup tool"
+        ],
+        "cons": [
+            "Some tools require pro",
+            "Mobile app is better than web"
+        ]
+    },
+    {
+        "id": "looka",
+        "name": "Looka",
+        "tagline": "Design your own beautiful brand.",
+        "category": "Image Gen",
+        "pricing": "Paid",
+        "rating": 4.5,
+        "affiliateLink": "https://looka.com",
+        "shortDescription": "AI-powered logo design and brand identity platform for entrepreneurs.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed in my company name and selected a few colors. Looka generated hundreds of logo variations. Unlike other logo makers that just slap an icon on text, Looka actually pairs fonts and layouts nicely.</p><h3>Best Feature: Brand Kit</h3><p>It doesn't just give you a logo; it shows you business cards, social media headers, and merchandise mockups with your new brand applied.</p><h3>The Verdict</h3><p>If you aren't a designer and need a brand identity fast, this is the best automated solution. It's expensive for a 'free' logo maker, but you pay for the Brand Kit.</p>",
+        "pros": [
+            "Full brand kit generation",
+            "High quality vector output",
+            "Easy customization"
+        ],
+        "cons": [
+            "One-time purchase is pricey",
+            "Generic symbols sometimes"
+        ]
+    },
+    {
+        "id": "magnific-ai",
+        "name": "Magnific AI",
+        "tagline": "The most advanced AI upscaler.",
+        "category": "Image Gen",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://magnific.ai",
+        "shortDescription": "Hallucinates details to upscale images to insane resolutions.",
+        "fullReview": "<h3>First Impressions</h3><p>I uploaded a low-res AI generation. Magnific didn't just sharpen it; it added skin texture, individual eyelashes, and fabric weaves that weren't there before. It creates detail, it doesn't just find it.</p><h3>Best Feature: Hallucination Slider</h3><p>You can control 'Creativity'. Turn it up, and it adds new details. Turn it down, and it stays faithful to the original. This control is vital for professionals.</p><h3>The Verdict</h3><p>It's widely considered the best upscaler on the market right now. It's expensive, but for print or high-end production, it's magic.</p>",
+        "pros": [
+            "Adds realistic detail",
+            "High resolution output",
+            "Creativity control"
+        ],
+        "cons": [
+            "Very expensive",
+            "Can alter faces too much"
+        ]
     }
 ]

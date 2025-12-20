@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-1">
-              {['Coding', 'Writing', 'Image Gen', 'Video', 'Productivity', 'Fun'].map((category) => (
+              {['Coding', 'Writing', 'Image Gen', 'Video', 'Audio', 'Productivity', 'Fun'].map((category) => (
                 <Link
                   key={category}
                   href={`/?category=${category}`}
