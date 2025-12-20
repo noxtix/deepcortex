@@ -33,23 +33,28 @@ function ToolDirectory() {
   };
 
   // Filter tools logic
-  const filteredTools = useMemo(() => {
-    return toolsData.filter(tool => {
-      const matchesSearch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        tool.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesCategory = selectedCategory && selectedCategory !== 'All'
-        ? tool.category === selectedCategory
-        : true;
-      const matchesPrice = selectedPrice && selectedPrice !== 'All'
-        ? tool.pricing === selectedPrice
-        : true;
-      return matchesSearch && matchesCategory && matchesPrice;
-    }).sort((a, b) => {
-      // Sort Featured items first
-      if (a.isFeatured === b.isFeatured) return 0;
-      return a.isFeatured ? -1 : 1;
-    });
-  }, [searchQuery, selectedCategory, selectedPrice]);
+  // Filter tools logic
+  // Removed useMemo to force re-calculation and ensure freshness
+  console.log('Filtering with:', { selectedCategory, selectedPrice });
+
+  const filteredTools = toolsData.filter(tool => {
+    const matchesSearch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      tool.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
+
+    const matchesCategory = selectedCategory && selectedCategory !== 'All'
+      ? tool.category === selectedCategory
+      : true;
+
+    const matchesPrice = selectedPrice && selectedPrice !== 'All'
+      ? tool.pricing.toLowerCase() === selectedPrice.toLowerCase()
+      : true;
+
+    return matchesSearch && matchesCategory && matchesPrice;
+  }).sort((a, b) => {
+    // Sort Featured items first
+    if (a.isFeatured === b.isFeatured) return 0;
+    return a.isFeatured ? -1 : 1;
+  });
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
