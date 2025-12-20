@@ -11,6 +11,9 @@ function ToolDirectory() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedPrice, setSelectedPrice] = useState('All');
+
+  const priceOptions = ['All', 'Free', 'Freemium', 'Paid'];
 
   // Extract unique categories
   const categories = ['All', ...new Set(toolsData.map(tool => tool.category))];
@@ -33,13 +36,16 @@ function ToolDirectory() {
       const matchesCategory = selectedCategory && selectedCategory !== 'All'
         ? tool.category === selectedCategory
         : true;
-      return matchesSearch && matchesCategory;
+      const matchesPrice = selectedPrice && selectedPrice !== 'All'
+        ? tool.pricing === selectedPrice
+        : true;
+      return matchesSearch && matchesCategory && matchesPrice;
     }).sort((a, b) => {
       // Sort Featured items first
       if (a.isFeatured === b.isFeatured) return 0;
       return a.isFeatured ? -1 : 1;
     });
-  }, [searchQuery, selectedCategory]);
+  }, [searchQuery, selectedCategory, selectedPrice]);
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
@@ -73,6 +79,22 @@ function ToolDirectory() {
         {/* Ad Unit Above Grid */}
         <div className="mb-12">
           <AdUnit />
+        </div>
+
+        {/* Price Filter Pills */}
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
+          {priceOptions.map((price) => (
+            <button
+              key={price}
+              onClick={() => setSelectedPrice(price)}
+              className={`px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${(selectedPrice === price)
+                ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/50'
+                : 'bg-slate-900 text-slate-500 border border-slate-800 hover:border-slate-700 hover:text-slate-300'
+                }`}
+            >
+              {price}
+            </button>
+          ))}
         </div>
 
         {/* Category Pills */}
