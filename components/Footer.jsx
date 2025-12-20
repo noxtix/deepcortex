@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Twitter, Github, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -38,12 +38,7 @@ export default function Footer() {
 
                     {/* Socials */}
                     <div className="flex gap-4">
-                        <a href="#" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
-                            <Twitter className="w-5 h-5" />
-                        </a>
-                        <a href="#" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
-                            <Github className="w-5 h-5" />
-                        </a>
+                        {/* Twitter and Github removed as per request */}
                         <a href="https://www.instagram.com/deepcortex.tech?igsh=ZW82bTNjeG9obmFm" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
                             <Instagram className="w-5 h-5" />
                         </a>
