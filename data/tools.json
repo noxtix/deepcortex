@@ -1400,5 +1400,405 @@
             "Very expensive",
             "Can alter faces too much"
         ]
+    },
+    {
+        "id": "consensus",
+        "name": "Consensus",
+        "tagline": "Evidence-based answers, faster.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://consensus.app",
+        "shortDescription": "A search engine that uses AI to find answers in scientific research papers.",
+        "fullReview": "<h3>First Impressions</h3><p>I asked 'Does caffeine improve coding performance?'. Consensus didn't give me a blog post; it summarized 5 academic papers, telling me 'Yes, but with diminishing returns'. It felt like having a PhD research assistant.</p><h3>Best Feature: Synthesized Answer</h3><p>It reads the abstract of multiple papers and writes a single paragraph summary. It saves hours of reading time.</p><h3>The Verdict</h3><p>If you need facts, not opinions, this is the only search engine you should use.</p>",
+        "pros": [
+            "Cites academic papers",
+            "Synthesizes results",
+            "No ads/seo spam"
+        ],
+        "cons": [
+            "Limited to science topics",
+            "Abstract only usually"
+        ]
+    },
+    {
+        "id": "scispace",
+        "name": "Scispace",
+        "tagline": "Do hours of research in minutes.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://typeset.io",
+        "shortDescription": "An amazing tool to explain, summarize, and manage research papers.",
+        "fullReview": "<h3>First Impressions</h3><p>I uploaded a dense cryptography paper. I highlighted a confusing equation and asked 'Explain this in simple terms'. Scispace broke it down instantly. It's the ultimate study buddy.</p><h3>Best Feature: Copilot</h3><p>You can chat with the paper. 'What are the limitations of this study?' and it finds the answer in the text. It makes reading dense papers accessible.</p><h3>The Verdict</h3><p>A mandatory tool for students and researchers. It removes the friction from academic reading.</p>",
+        "pros": [
+            "Explains math/tables",
+            "Chat with PDF",
+            "Literature review generator"
+        ],
+        "cons": [
+            "Can be slow with large PDFs",
+            "citation format varies"
+        ]
+    },
+    {
+        "id": "elicit",
+        "name": "Elicit",
+        "tagline": "The AI Research Assistant.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://elicit.org",
+        "shortDescription": "Automates the literature review process by finding and summarizing papers.",
+        "fullReview": "<h3>First Impressions</h3><p>I needed to find papers on 'AI in healthcare ethics'. Elicit found 10 top papers and created a table comparing their methodologies and findings. I did a week's worth of lit review work in 10 minutes.</p><h3>Best Feature: Data Extraction</h3><p>It can extract specific details (like 'Sample Size' or 'Funding Source') from multiple papers at once into a neat spreadsheet.</p><h3>The Verdict</h3><p>For serious researchers, Elicit is a superpower. It ensures you never miss a key paper.</p>",
+        "pros": [
+            "Automated lit review",
+            "Extracts data to table",
+            "High trust score"
+        ],
+        "cons": [
+            "Credits burn fast",
+            "UI is utilitarian"
+        ]
+    },
+    {
+        "id": "fireflies-ai",
+        "name": "Fireflies.ai",
+        "tagline": "Automate your meeting notes.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://fireflies.ai",
+        "shortDescription": "An AI meeting assistant that records, transcribes, and searches your voice conversations.",
+        "fullReview": "<h3>First Impressions</h3><p>It joined my Google Meet silently. After the call, I got a transcript where I could search for 'budget'. It jumped to the exact moment we discussed money. It's like Ctrl+F for real life.</p><h3>Best Feature: Soundbites</h3><p>I can create a 30-second clip of the most important part of the meeting and share it on Slack. It saves everyone from listening to the whole hour.</p><h3>The Verdict</h3><p>Great for teams who hate minutes. It creates a searchable knowledge base of every conversation.</p>",
+        "pros": [
+            "Search across all meetings",
+            " CRM integrations",
+            "Soundbite sharing"
+        ],
+        "cons": [
+            "Transcription isn't perfect",
+            "Bot can be intrusive"
+        ]
+    },
+    {
+        "id": "tome",
+        "name": "Tome",
+        "tagline": "The AI storytelling format.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://tome.app",
+        "shortDescription": "Generates narrative presentations with text and DALL-E images automatically.",
+        "fullReview": "<h3>First Impressions</h3><p>Tome isn't for bullet points; it's for stories. I typed 'A story about a startup raising money'. It created a beautifully illustrated visual book. It feels more like a pitch deck than a slide deck.</p><h3>Best Feature: Visuals</h3><p>Every slide comes with an AI-generated image that matches the text. It looks incredibly premium and unique.</p><h3>The Verdict</h3><p>Best for founders and creative pitches. It captures emotion better than PowerPoint ever could.</p>",
+        "pros": [
+            "Stunning visual style",
+            "Mobile-first design",
+            "Integrated image gen"
+        ],
+        "cons": [
+            "Not for data-heavy decks",
+            "Export options limited"
+        ]
+    },
+    {
+        "id": "make-com",
+        "name": "Make",
+        "tagline": "Design workflows visually.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://make.com",
+        "shortDescription": "A visual automation platform that lets you connect apps with complex logic.",
+        "fullReview": "<h3>First Impressions</h3><p>Used to be Integromat. It looks like a mind map. Unlike Zapier's linear lists, Make lets you branch, loop, and filter data visually. I built a system that reads emails, summarizes them with GPT, and saves them to Notion only if they are urgent.</p><h3>Best Feature: Visual Canvas</h3><p>Watching the data bubbles move through your workflow is satisfying and helpful for debugging. You can see exactly where the logic breaks.</p><h3>The Verdict</h3><p>The developer's choice for automation. It's cheaper and more powerful than Zapier, but has a steeper learning curve.</p>",
+        "pros": [
+            "Visual logic builder",
+            "Cheaper than Zapier",
+            "Infinite complexity"
+        ],
+        "cons": [
+            "Steep learning curve",
+            "Can be overwhelming"
+        ]
+    },
+    {
+        "id": "v0-dev",
+        "name": "v0.dev",
+        "tagline": "Generate UI with simple text.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://v0.dev",
+        "shortDescription": "Vercel's generative UI system that outputs copy-paste React/Tailwind code.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'A dark mode dashboard with a sidebar and chart widgets'. v0 generated three distinct variations in seconds. The code was clean, using shadcn/ui components. I copied it into my project and it just worked.</p><h3>Best Feature: Iteration</h3><p>You can chat with the result. 'Make the sidebar smaller' or 'Add a user profile dropdown'. It refines the code based on your feedback.</p><h3>The Verdict</h3><p>The fastest way to build frontend components. It kills the 'blank canvas' problem for React developers.</p>",
+        "pros": [
+            "Clean React/Tailwind code",
+            "Shadcn/ui compatible",
+            "Fast iteration loop"
+        ],
+        "cons": [
+            "Only for UI/Frontend",
+            "Credits system"
+        ]
+    },
+    {
+        "id": "bolt-new",
+        "name": "Bolt.new",
+        "tagline": "Prompt, run, edit, deploy.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://bolt.new",
+        "shortDescription": "A browser-based AI web developer that builds full-stack apps instantly.",
+        "fullReview": "<h3>First Impressions</h3><p>I went to bolt.new and typed 'Make a todo app'. It didn't just write code; it spun up a preview environment immediately. I could edit the code and see changes in real-time. It feels like the future of development.</p><h3>Best Feature: Full Stack</h3><p>It handles the setup, dependencies, and running of the app. You don't update node_modules; you just build.</p><h3>The Verdict</h3><p>Incredible for quick prototypes and MVPs. It removes the localhost friction entirely.</p>",
+        "pros": [
+            "Instant dev environment",
+            "Full stack capabilities",
+            "Browser-based"
+        ],
+        "cons": [
+            "Hard to export sometimes",
+            "Not for large monoliths"
+        ]
+    },
+    {
+        "id": "lovable",
+        "name": "Lovable",
+        "tagline": "Software that builds itself.",
+        "category": "Coding",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://lovable.dev",
+        "shortDescription": "GPT-4 powered app builder that focuses on clean, maintainable code.",
+        "fullReview": "<h3>First Impressions</h3><p>Lovable takes the 'describe your app' concept and applies it to production standards. The code it generates isn't spaghetti; it follows best practices. It feels like hiring a senior freelancer.</p><h3>Best Feature: Data Integration</h3><p>It understands how to connect to databases (Supabase, etc.) better than most generators. It builds the backend logic, not just the pretty frontend.</p><h3>The Verdict</h3><p>A serious tool for founders building SaaS products. It's paid, but cheaper than a dev shop.</p>",
+        "pros": [
+            "High quality code",
+            "Database aware",
+            "Production ready output"
+        ],
+        "cons": [
+            "Paid only",
+            "Complex for non-techies"
+        ]
+    },
+    {
+        "id": "phind",
+        "name": "Phind",
+        "tagline": "The search engine for developers.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://phind.com",
+        "shortDescription": "An AI search engine optimized for technical questions and coding problems.",
+        "fullReview": "<h3>First Impressions</h3><p>I searched 'How to center a div in Tailwind'. Phind didn't give me 10 links; it gave me the exact class 'flex justify-center items-center' and a code snippet. It stays in context.</p><h3>Best Feature: Pair Programmer Mode</h3><p>You can toggle it to be more conversational. It asks clarifying questions to debug your issue.</p><h3>The Verdict</h3><p>StackOverflow is dead. Phind is where I go to fix bugs fast.</p>",
+        "pros": [
+            "Developer focused",
+            "Accurate code snippets",
+            "Fast sources"
+        ],
+        "cons": [
+            "UI is minimalist",
+            "Limited non-coding knowledge"
+        ]
+    },
+    {
+        "id": "amazon-q",
+        "name": "Amazon Q",
+        "tagline": "Generative AI for your AWS stack.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://aws.amazon.com/q",
+        "shortDescription": "An enterprise-grade coding assistant integrated deeply with AWS services.",
+        "fullReview": "<h3>First Impressions</h3><p>If you use AWS, you know the pain of documentation. Q solves this. I asked 'How do I configure S3 for public access?' and it gave me the exact CLI command and JSON policy.</p><h3>Best Feature: Cloud Awareness</h3><p>It understands your specific AWS environment. It can troubleshoot why your Lambda function failed by analyzing your logs.</p><h3>The Verdict</h3><p>Mandatory for DevOps and Cloud Engineers. It tames the beast that is AWS.</p>",
+        "pros": [
+            "Deep AWS integration",
+            "Troubleshoots live resources",
+            "Enterprise security"
+        ],
+        "cons": [
+            "AWS only",
+            "Can be slow"
+        ]
+    },
+    {
+        "id": "cody-sourcegraph",
+        "name": "Cody",
+        "tagline": "Code with context.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://sourcegraph.com/cody",
+        "shortDescription": "An AI coding assistant that knows your entire codebase, powered by Sourcegraph.",
+        "fullReview": "<h3>First Impressions</h3><p>Cody's superpower is context. Because it uses Sourcegraph's knowledge graph, it knows where every function is defined across 1000 files. I asked it to 'Explain the auth flow', and it traced it perfectly.</p><h3>Best Feature: Codebase Search</h3><p>It doesn't hallucinate context. It finds the actual files and reads them before answering.</p><h3>The Verdict</h3><p>The best enterprise assistant for large, legacy codebases.</p>",
+        "pros": [
+            "Massive context window",
+            "Enterprise grade privacy",
+            "Multi-repo understanding"
+        ],
+        "cons": [
+            "Setup can be complex",
+            "Requires Sourcegraph"
+        ]
+    },
+    {
+        "id": "deepseek-coder",
+        "name": "DeepSeek Coder",
+        "tagline": "Open source coding intelligence.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://deepseek.com",
+        "shortDescription": "A leading open-source model that rivals GPT-4 in coding tasks.",
+        "fullReview": "<h3>First Impressions</h3><p>I ran the 33B model locally. It was surprisingly sharp. It solved a complex Python algorithm question that GPT-3.5 failed at. The fact that it's open source makes it incredibly attractive for privacy.</p><h3>Best Feature: Performance/Cost</h3><p>For an open model, it punches way above its weight class. It allows for offline coding assistants.</p><h3>The Verdict</h3><p>The hacker's choice. If you want to run your own AI, get DeepSeek.</p>",
+        "pros": [
+            "Open source / Free",
+            "Runs locally",
+            "High performance"
+        ],
+        "cons": [
+            "Requires hardware",
+            "No hosted UI by default"
+        ]
+    },
+    {
+        "id": "qodo",
+        "name": "Qodo",
+        "tagline": "Quality-first code generation.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://qodo.ai",
+        "shortDescription": "Formerly Codium, this tool focuses on generating tests and verifying code integrity.",
+        "fullReview": "<h3>First Impressions</h3><p>Most AIs write code. Qodo tests it. I highlighted a function and clicked 'Generate Tests'. It created 10 edge cases I hadn't thought of (null inputs, overflows). It made my code robust.</p><h3>Best Feature: Test Generation</h3><p>It doesn't just write tests; it explains <em>why</em> the test matters. It teaches you to be a better developer.</p><h3>The Verdict</h3><p>If you care about code quality and not just speed, Qodo is essential.</p>",
+        "pros": [
+            "Focuses on testing",
+            "Finds bugs automatically",
+            "Improves code reliability"
+        ],
+        "cons": [
+            "Can be pedantic",
+            "Slower workflow"
+        ]
+    },
+    {
+        "id": "locofy",
+        "name": "Locofy",
+        "tagline": "Figma to Code.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://locofy.ai",
+        "shortDescription": "Turns your Figma designs into production-ready React, Vue, or HTML code.",
+        "fullReview": "<h3>First Impressions</h3><p>I hate slicing designs. Locofy automated it. I tagged my Figma buttons, and it exported clean, responsive React code. It even handled the media queries for mobile.</p><h3>Best Feature: Design to Code</h3><p>The AI attempts to guess the interactive elements. It knows a button is a button, not just a rectangle.</p><h3>The Verdict</h3><p>The bridge between designers and developers. It saves days of frontend grunt work.</p>",
+        "pros": [
+            "Seamless Figma integration",
+            "Responsive code",
+            "Supports multiple frameworks"
+        ],
+        "cons": [
+            "Depends on clean Figma files",
+            "Complex components need manual fix"
+        ]
+    },
+    {
+        "id": "fronty",
+        "name": "Fronty",
+        "tagline": "Image to HTML.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.3,
+        "affiliateLink": "https://fronty.com",
+        "shortDescription": "Upload a screenshot or image of a website, and AI converts it to editable HTML/CSS.",
+        "fullReview": "<h3>First Impressions</h3><p>I took a screenshot of a landing page I liked. Fronty converted it into code. It wasn't perfect—the alignment was off—but it gave me a working skeleton to start from.</p><h3>Best Feature: Screenshot to Code</h3><p>It's magic for cloning designs or learning how a site was built. It gives you the structure instantly.</p><h3>The Verdict</h3><p>Good for quick prototyping, though the code quality isn't production-ready without cleanup.</p>",
+        "pros": [
+            "Works from any image",
+            "Fast bootstrapping",
+            "Visual editor included"
+        ],
+        "cons": [
+            "Messy code output",
+            "Maintenance is hard"
+        ]
+    },
+    {
+        "id": "hugging-face-chat",
+        "name": "HuggingChat",
+        "tagline": "The open source AI chat.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.6,
+        "affiliateLink": "https://huggingface.co/chat",
+        "shortDescription": "Free access to the best open-source models like Llama 3, Mistral, and more.",
+        "fullReview": "<h3>First Impressions</h3><p>It looks like ChatGPT, but I can swap the 'brain'. I switched to Llama 3 and asked it coding questions. It felt liberated to not be locked into one provider.</p><h3>Best Feature: Model Switching</h3><p>You can test different models on the same prompt to see which one performs best. It's a playground for AI enthusiasts.</p><h3>The Verdict</h3><p>The best free way to access top-tier open source models without setting them up yourself.</p>",
+        "pros": [
+            "Access to latest open models",
+            "Privacy focus",
+            "Completely free"
+        ],
+        "cons": [
+            "Less polished UI",
+            "Slower than ChatGPT"
+        ]
+    },
+    {
+        "id": "poe",
+        "name": "Poe",
+        "tagline": "All the bots in one place.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://poe.com",
+        "shortDescription": "An aggregator that lets you chat with GPT-4, Claude, Gemini, and user-created bots.",
+        "fullReview": "<h3>First Impressions</h3><p>I wanted to compare Claude 3 and GPT-4. Poe lets me do that in one tab. I can subscribe to one service and get access to all the top models. It's the 'Netflix' of AI chatbots.</p><h3>Best Feature: Bot Creator</h3><p>I built a bot that only answers in haiku. It was easy. The community bots are also fantastic for specific niche tasks.</p><h3>The Verdict</h3><p>The smartest subscription you can buy. Why pay OpenAI and Anthropic separately when you can have both here?</p>",
+        "pros": [
+            "Access to all major models",
+            "Fast mobile app",
+            "Community bots"
+        ],
+        "cons": [
+            "Subscription limits apply",
+            "Web search is weaker than Bing"
+        ]
+    },
+    {
+        "id": "mistral-ai",
+        "name": "Mistral",
+        "tagline": "Frontier AI in your hands.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.7,
+        "affiliateLink": "https://mistral.ai",
+        "shortDescription": "High-performance open weights models that are highly efficient for coding.",
+        "fullReview": "<h3>First Impressions</h3><p>Mistral Large is shockingly good. I used it to generate a Python script, and it was cleaner and more concise than GPT-4. It feels engineered, not just trained.</p><h3>Best Feature: Efficiency</h3><p>It answers fast. The 'Le Chat' interface is snappy and no-nonsense. It feels like a tool for builders.</p><h3>The Verdict</h3><p>The European champion of AI. If you want a smart, non-US centric model, this is it.</p>",
+        "pros": [
+            "Very smart coding logic",
+            "Fast response",
+            "Open weights available"
+        ],
+        "cons": [
+            "Less creative writing skill",
+            "Fewer multimodal features"
+        ]
+    },
+    {
+        "id": "grok",
+        "name": "Grok",
+        "tagline": "AI with a rebellious streak.",
+        "category": "Fun",
+        "pricing": "Paid",
+        "rating": 4.5,
+        "affiliateLink": "https://x.ai",
+        "shortDescription": "Elon Musk's AI that has real-time access to X (Twitter) and a sense of humor.",
+        "fullReview": "<h3>First Impressions</h3><p>I asked it 'Roast my startup idea'. It didn't hold back. It was funny, rude, and surprisingly insightful. The real-time access to X news is its killer feature.</p><h3>Best Feature: Real-time News</h3><p>It knows what happened 5 minutes ago because it reads X. GPT-4 has a cutoff; Grok lives in the now.</p><h3>The Verdict</h3><p>It's worth it if you are a news junkie or want an AI that isn't afraid to be edgy.</p>",
+        "pros": [
+            "Real-time X integration",
+            "Fun mode",
+            "Less filtered"
+        ],
+        "cons": [
+            "Requires X Premium+",
+            "Can be biased"
+        ]
     }
 ]
