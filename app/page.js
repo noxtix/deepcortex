@@ -1,32 +1,36 @@
 'use client';
-import { useState, useMemo, useEffect, Suspense } from 'react';
+import { useState, useMemo, Suspense } from 'react';
 import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
 import AdUnit from '@/components/AdUnit';
 import toolsData from '@/data/tools.json';
 import { Search } from 'lucide-react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 function ToolDirectory() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [selectedPrice, setSelectedPrice] = useState('All');
+
+  // Get active filters directly from URL
+  const selectedCategory = searchParams.get('category') || 'All';
+  const selectedPrice = searchParams.get('price') || 'All';
 
   const priceOptions = ['All', 'Free', 'Freemium', 'Paid'];
 
   // Extract unique categories
   const categories = ['All', ...new Set(toolsData.map(tool => tool.category))];
 
-  // Sync state with URL params
-  useEffect(() => {
-    const category = searchParams.get('category');
-    if (category) {
-      setSelectedCategory(category);
+  // Helper to update filters while preserving other params
+  const updateFilter = (key, value) => {
+    const params = new URLSearchParams(searchParams);
+    if (value && value !== 'All') {
+      params.set(key, value);
     } else {
-      setSelectedCategory('All');
+      params.delete(key);
     }
-  }, [searchParams]);
+    router.push(`/?${params.toString()}`, { scroll: false });
+  };
 
   // Filter tools logic
   const filteredTools = useMemo(() => {
@@ -86,7 +90,7 @@ function ToolDirectory() {
           {priceOptions.map((price) => (
             <button
               key={price}
-              onClick={() => setSelectedPrice(price)}
+              onClick={() => updateFilter('price', price)}
               className={`px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${(selectedPrice === price)
                 ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/50'
                 : 'bg-slate-900 text-slate-500 border border-slate-800 hover:border-slate-700 hover:text-slate-300'
@@ -102,7 +106,7 @@ function ToolDirectory() {
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setSelectedCategory(cat)}
+              onClick={() => updateFilter('category', cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${(selectedCategory === cat || (cat === 'All' && !selectedCategory))
                 ? 'bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
