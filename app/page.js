@@ -86,7 +86,7 @@ function ToolDirectory() {
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
                 }`}
             >
-              {cat}
+              {cat === 'Fun' ? 'Fun 🎡' : cat}
             </button>
           ))}
         </div>

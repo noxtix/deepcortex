@@ -1000,5 +1000,105 @@
             "Subscription for AI",
             "Privacy concerns with email"
         ]
+    },
+    {
+        "id": "suno",
+        "name": "Suno",
+        "tagline": "Make music with AI.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://suno.com",
+        "shortDescription": "Generates full songs with vocals and lyrics from a simple text prompt.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'a sad rap song about coding errors' and hit generate. 30 seconds later, I was listening to a fully produced track with vocals, beat drops, and surprisingly witty lyrics. It's not just noise; it's actual music.</p><h3>Best Feature: Chirp</h3><p>The ability to control the song structure (verse, chorus) and style is insane. It understands genre mashups like 'operatic dubstep' and executes them flawlessly.</p><h3>The Verdict</h3><p>Suno is the Midjourney of audio. It's terrifyingly good. If you want to create royalty-free music or just have a laugh, this is the best tool out there.</p>",
+        "pros": [
+            "Generates vocals + music",
+            "High quality audio output",
+            "Viral potential"
+        ],
+        "cons": [
+            "Lyrics can be cheesy",
+            "Credits burn fast"
+        ]
+    },
+    {
+        "id": "character-ai",
+        "name": "Character.ai",
+        "tagline": "Chat with anyone.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://character.ai",
+        "shortDescription": "Chat with AI personas of famous characters, historical figures, or anime waifus.",
+        "fullReview": "<h3>First Impressions</h3><p>I started a chat with 'Socrates' and ended up debating the ethics of AI for an hour. Then I chatted with 'Mario' about plumbing. The distinct personalities these bots maintain is impressive. It feels like roleplaying with an improv actor.</p><h3>Best Feature: Community Characters</h3><p>There are millions of user-created characters. You can find anything from 'Text Adventure Game' to 'Psychologist' to 'Elon Musk'. The variety is endless.</p><h3>The Verdict</h3><p>It's the ultimate time sink. Whether you want to practice a language, roleplay, or just vent, Character.ai is oddly therapeutic and incredibly fun.</p>",
+        "pros": [
+            "Distinct personalities",
+            "Infinite content",
+            "Very responsive"
+        ],
+        "cons": [
+            "Filter can be strict",
+            "Memory can drift"
+        ]
+    },
+    {
+        "id": "supermeme-ai",
+        "name": "Supermeme.ai",
+        "tagline": "Turn text into memes.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://supermeme.ai",
+        "shortDescription": "Turn any text into viral memes instantly using AI-generated templates.",
+        "fullReview": "<h3>First Impressions</h3><p>I entered 'When the code works on the first try' and it generated 10 variations of popular meme templates (like the Leonardo DiCaprio toast) with perfect captions. It saved me from scrolling through Imgflip for 20 minutes.</p><h3>Best Feature: GIF Memes</h3><p>It doesn't just do static images; it can generate GIF memes too. This is a game changer for social media managers or just slack channels.</p><h3>The Verdict</h3><p>It's a simple tool that does one thing perfectly. If you run a newsletter or social account, this is a productivity hack for humor.</p>",
+        "pros": [
+            "Huge template library",
+            "Supports GIFs",
+            "Multilingual"
+        ],
+        "cons": [
+            "Watermark on free tier",
+            "Some captions miss the mark"
+        ]
+    },
+    {
+        "id": "scribble-diffusion",
+        "name": "Scribble Diffusion",
+        "tagline": "Turn sketches into art.",
+        "category": "Fun",
+        "pricing": "Free",
+        "rating": 4.6,
+        "affiliateLink": "https://scribblediffusion.com",
+        "shortDescription": "Draw a rough sketch, add a prompt, and watch AI turn it into a refined image.",
+        "fullReview": "<h3>First Impressions</h3><p>I drew a stick figure cat and wrote 'a fluffy cat at sunset'. The result was a beautiful, photorealistic cat sitting on a fence. It feels like magic. It's ControlNet made accessible to everyone.</p><h3>Best Feature: Real-time generation</h3><p>It's fast. You don't need a GPU/computer to run it. It runs in the browser and gives you instant gratification. It's the perfect demo to show friends what AI can do.</p><h3>The Verdict</h3><p>It's more of a toy than a professional tool, but it's an incredibly fun toy. Great for brainstorming composition or just messing around.</p>",
+        "pros": [
+            "Completely free",
+            "No login required",
+            "Insanely easy to use"
+        ],
+        "cons": [
+            "Low resolution output",
+            "Limited control"
+        ]
+    },
+    {
+        "id": "quick-draw",
+        "name": "Quick, Draw!",
+        "tagline": "Can a neural network learn to recognize your doodling?",
+        "category": "Fun",
+        "pricing": "Free",
+        "rating": 4.9,
+        "affiliateLink": "https://quickdraw.withgoogle.com",
+        "shortDescription": "An AI drawing game by Google where a neural net tries to guess what you're drawing.",
+        "fullReview": "<h3>First Impressions</h3><p>This is Pictionary with an AI. I was asked to draw a 'camel', and as I drew the humps, the AI shouted 'Mountain! Cloud! Camel!'. It's addictive. I played for 20 minutes straight trying to beat the timer.</p><h3>Best Feature: The Data Viz</h3><p>After the game, it shows you how other people drew the same object. It's fascinating to see how the world visualizes a 'chair' or 'clock'. It's a crowd-sourced lesson in design.</p><h3>The Verdict</h3><p>It's a classic. Built by Google Creative Lab, it's one of the best examples of gamified AI. Simple, educational, and fun.</p>",
+        "pros": [
+            "Gamified experience",
+            "Educational",
+            "No signup needed"
+        ],
+        "cons": [
+            "It's just a game",
+            "Old UI"
+        ]
     }
 ]
