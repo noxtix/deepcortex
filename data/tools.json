@@ -1640,5 +1640,365 @@
             "Requires X Premium+",
             "Can be biased"
         ]
+    },
+    {
+        "id": "ollama",
+        "name": "Ollama",
+        "tagline": "Get up and running with Llama 3.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.9,
+        "affiliateLink": "https://ollama.com",
+        "shortDescription": "The standard for running local LLMs on your laptop.",
+        "fullReview": "<h3>First Impressions</h3><p>I downloaded it, ran 'ollama run llama3', and I was chatting with an LLM in my terminal in 2 minutes. It is shockingly easy. No Python environment headaches.</p><h3>Best Feature: Modelfile</h3><p>You can create custom characters just by writing a simple 'Modelfile'. It's like Docker for AI models.</p><h3>The Verdict</h3><p>The easiest way to run local AI. If you are a developer, this is a must-have tool.</p>",
+        "pros": [
+            "Runs locally",
+            "Huge model library",
+            "Simple CLI"
+        ],
+        "cons": [
+            "Terminal only (by default)",
+            "Resource hungry"
+        ]
+    },
+    {
+        "id": "lm-studio",
+        "name": "LM Studio",
+        "tagline": "Discover, download, and run local LLMs.",
+        "category": "Coding",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://lmstudio.ai",
+        "shortDescription": "A beautiful GUI for running local models.",
+        "fullReview": "<h3>First Impressions</h3><p>If you are scared of the terminal (Ollama), use this. It has a search bar to find models from HuggingFace and a chat interface that looks like ChatGPT. It makes local AI accessible to everyone.</p><h3>Best Feature: Local Server</h3><p>It can spin up a local server that mimics the OpenAI API. You can point your code to 'localhost' instead of 'api.openai.com' and use local models in your apps.</p><h3>The Verdict</h3><p>The best GUI for local LLMs. It turns your laptop into an AI powerhouse.</p>",
+        "pros": [
+            "Beautiful UI",
+            "OpenAI API compatible",
+            "Cross-platform"
+        ],
+        "cons": [
+            "Closed source",
+            "Advanced config hidden"
+        ]
+    },
+    {
+        "id": "supabase",
+        "name": "Supabase",
+        "tagline": "Build in a weekend. Scale to millions.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://supabase.com",
+        "shortDescription": "Backend-as-a-Service with a powerful AI SQL editor.",
+        "fullReview": "<h3>First Impressions</h3><p>I needed a database. Supabase gave me Postgres, Auth, and Storage in one click. But the AI SQL Editor is the star. I typed 'Create a table for user profiles with avatars', and it wrote the perfect SQL migration.</p><h3>Best Feature: Vector Embeddings</h3><p>They have native support for vector search (pgvector). Building a RAG app on Supabase is trivially easy compared to other providers.</p><h3>The Verdict</h3><p>The open source Firebase alternative. It's the best backend for AI wrappers.</p>",
+        "pros": [
+            "Native Vector Search",
+            "AI SQL Assistant",
+            "Open Source"
+        ],
+        "cons": [
+            "Complex for non-devs",
+            "Relational overlap"
+        ]
+    },
+    {
+        "id": "eraser-io",
+        "name": "Eraser.io",
+        "tagline": "Diagrams for engineering teams.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://eraser.io",
+        "shortDescription": "AI technical diagramming and documentation (DiagramGPT).",
+        "fullReview": "<h3>First Impressions</h3><p>I pasted my messy architecture notes into Eraser. 'DiagramGPT' turned them into a clean, professional cloud architecture diagram. It labeled the databases, load balancers, and arrows correctly.</p><h3>Best Feature: Diagram-as-Code</h3><p>You can edit the diagram by editing the code/text. It keeps the docs and the visuals in sync perfectly.</p><h3>The Verdict</h3><p>Essential for system design interviews and engineering docs. It makes you look like a senior architect.</p>",
+        "pros": [
+            "Text-to-diagram",
+            "Beautiful default aesthetics",
+            "GitHub integration"
+        ],
+        "cons": [
+            "Limited diagram types",
+            "Export options"
+        ]
+    },
+    {
+        "id": "excalidraw",
+        "name": "Excalidraw",
+        "tagline": "Virtual whiteboard for sketching hand-drawn like diagrams.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://excalidraw.com",
+        "shortDescription": "Virtual whiteboard with AI text-to-diagram features.",
+        "fullReview": "<h3>First Impressions</h3><p>It's the infinite canvas we all know and love. But the new AI features let me type 'Draw a sequence diagram of login', and it sketches it out in that signature hand-drawn style. It retains the charm while adding automation.</p><h3>Best Feature: Wireframe to Code</h3><p>You can draw a button and a text input, and it can generate the React code for it. It bridges the gap between doodling and developing.</p><h3>The Verdict</h3><p>The best brainstorming tool on the web. It's simple, fast, and now smart.</p>",
+        "pros": [
+            "Hand-drawn aesthetic",
+            "End-to-end encrypted",
+            "AI generation"
+        ],
+        "cons": [
+            "Not for formal docs",
+            "Canvas management"
+        ]
+    },
+    {
+        "id": "framer",
+        "name": "Framer",
+        "tagline": "The internet is your canvas.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://framer.com",
+        "shortDescription": "The best AI-powered website builder for designers.",
+        "fullReview": "<h3>First Impressions</h3><p>I'm a designer, not a coder. Framer acts like Figma, but it publishes real websites. I used the AI to 'Generate a portfolio page', and it created a responsive layout with animations that worked instantly.</p><h3>Best Feature: Free-form Canvas</h3><p>You can position elements anywhere. You aren't locked into a grid. The AI helps translate that absolute positioning into responsive flex/grid layouts automatically.</p><h3>The Verdict</h3><p>If you want an award-winning site without touching code, Framer is the tool.</p>",
+        "pros": [
+            "Figma-like interface",
+            "Top-tier animations",
+            "AI layout generation"
+        ],
+        "cons": [
+            "CMS is limited",
+            "Learning curve"
+        ]
+    },
+    {
+        "id": "webflow",
+        "name": "Webflow",
+        "tagline": "Build with the power of code.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://webflow.com",
+        "shortDescription": "Professional visual development with AI localization and logic.",
+        "fullReview": "<h3>First Impressions</h3><p>Webflow is complex. But the new AI features are softening the curve. I used the localization AI to translate my site into French, and it handled the layout shifts (longer words) automatically. It saves days of QA.</p><h3>Best Feature: Clean Code</h3><p>Unlike other builders, Webflow exports clean HTML/CSS. The AI respects this and doesn't clutter the backend.</p><h3>The Verdict</h3><p>The professional standard. If you are building a site for a client, you use Webflow.</p>",
+        "pros": [
+            "Total design control",
+            "Production-grade hosting",
+            "AI localization"
+        ],
+        "cons": [
+            "Steep learning curve",
+            "Expensive"
+        ]
+    },
+    {
+        "id": "spline",
+        "name": "Spline",
+        "tagline": "3D design tool in the browser with real-time collaboration.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://spline.design",
+        "shortDescription": "3D design tool with AI texture and object generation.",
+        "fullReview": "<h3>First Impressions</h3><p>3D is usually hard. Spline makes it easy. I selected a sphere and typed 'Make it look like a rusted metal planet'. The AI generated the texture and normal maps instantly. It feels like magic for web 3D.</p><h3>Best Feature: Style Transfer</h3><p>You can change the entire look of a scene from 'Toon' to 'Realistic' with AI prompts. It makes iteration fast.</p><h3>The Verdict</h3><p>The standard for 3D on the web. It's accessible and powerful.</p>",
+        "pros": [
+            "Browser based 3D",
+            "AI textures",
+            "Interactive exports"
+        ],
+        "cons": [
+            "Performance heavy",
+            "Modeling tools limited"
+        ]
+    },
+    {
+        "id": "civitai",
+        "name": "Civitai",
+        "tagline": "The home of open source generative AI.",
+        "category": "Image Gen",
+        "pricing": "Free",
+        "rating": 4.9,
+        "affiliateLink": "https://civitai.com",
+        "shortDescription": "The hub for Stable Diffusion models and generation.",
+        "fullReview": "<h3>First Impressions</h3><p>It's not just a gallery; it's a warehouse of models. I downloaded a 'Pixel Art' LoRA (add-on model) and plugged it into my local generator. The results were specific and high-quality. You can't get this variety on Midjourney.</p><h3>Best Feature: Community LoRAs</h3><p>The community fine-tunes models for everything—from anime styles to specific architectural aesthetics. It's the biggest library of AI art styles.</p><h3>The Verdict</h3><p>If you run Stable Diffusion, this is your homepage. Uncensored, vast, and free.</p>",
+        "pros": [
+            "Thousands of custom models",
+            "Active community",
+            "Free generation on site"
+        ],
+        "cons": [
+            "Content can be NSFW",
+            "Quality varies"
+        ]
+    },
+    {
+        "id": "topaz-photo-ai",
+        "name": "Topaz Photo AI",
+        "tagline": "Maximize image quality on autopilot.",
+        "category": "Image Gen",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://www.topazlabs.com/topaz-photo-ai",
+        "shortDescription": "Professional grade image enhancement and upscaling.",
+        "fullReview": "<h3>First Impressions</h3><p>I had a grainy, out-of-focus photo from a wedding. I dragged it into Topaz. It detected the face, sharpened the eyes, removed the noise, and upscaled it 4x. It saved a photo I thought was ruined.</p><h3>Best Feature: Autopilot</h3><p>It analyzes the image and determines exactly which filters (Denoise, Sharpen, Gigapixel) to apply and at what strength.</p><h3>The Verdict</h3><p>Essential for photographers. It's not about creating fake images; it's about saving real ones.</p>",
+        "pros": [
+            "Incredible recovery of details",
+            "Batch processing",
+            "Runs locally"
+        ],
+        "cons": [
+            "Expensive one-time cost",
+            "Hardware intensive"
+        ]
+    },
+    {
+        "id": "reclaim-ai",
+        "name": "Reclaim.ai",
+        "tagline": "Smart scheduling for teams.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://reclaim.ai",
+        "shortDescription": "Smart AI calendar scheduling for Google Calendar.",
+        "fullReview": "<h3>First Impressions</h3><p>I have tasks and I have a calendar. Reclaim combines them. I tell it 'I need 2 hours for Deep Work this week'. It finds the open slots and books them. If a meeting gets booked over it, it automatically reschedules the work.</p><h3>Best Feature: Buffer Time</h3><p>It automatically adds travel time and breaks between meetings so you don't burn out. It defends your time better than you can.</p><h3>The Verdict</h3><p>If you live by your calendar, Reclaim gives you your sanity back. It's an executive assistant for your schedule.</p>",
+        "pros": [
+            "Defends focus time",
+            "Syncs personal/work cals",
+            "Habit tracking"
+        ],
+        "cons": [
+            "Google Calendar only",
+            "Can feel rigid"
+        ]
+    },
+    {
+        "id": "motion",
+        "name": "Motion",
+        "tagline": "Stop micromanaging. Start building.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://usemotion.com",
+        "shortDescription": "AI project management that auto-schedules your day.",
+        "fullReview": "<h3>First Impressions</h3><p>It's aggressive. I put in my to-do list, and Motion slotted every single task into my calendar physically. It tells me exactly what to do at 2:15 PM. For people with ADHD, this structure is a godsend.</p><h3>Best Feature: Auto-Rescheduling</h3><p>If I miss a deadline or a task takes too long, Motion reshuffles my entire week instantly to make it fit. It constantly optimizes.</p><h3>The Verdict</h3><p>High pressure, high reward. It forces you to be productive.</p>",
+        "pros": [
+            "Eliminates decision fatigue",
+            "Project management integrated",
+            "Team scheduling"
+        ],
+        "cons": [
+            "Expensive subscription",
+            "Can be stressful"
+        ]
+    },
+    {
+        "id": "arc-search",
+        "name": "Arc Search",
+        "tagline": "Browse for me.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://arc.net",
+        "shortDescription": "The browser that browses for you (AI summaries).",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'Best restaurants in Tokyo'. Instead of a list of links, Arc said 'Browse for me'. It read 6 different review sites and built a custom webpage for me with the top consolidated picks, maps, and ratings. It felt like the future.</p><h3>Best Feature: Browse for Me</h3><p>It extracts the signal from the noise. It visits the spammy SEO sites so you don't have to.</p><h3>The Verdict</h3><p>The best mobile browser experience right now. It fundamentally changes how you use the web.</p>",
+        "pros": [
+            "Summarizes multiple tabs",
+            "Ad blocking built-in",
+            "Beautiful UI"
+        ],
+        "cons": [
+            "Mobile first (desktop is different)",
+            "Waitlist for some features"
+        ]
+    },
+    {
+        "id": "soundraw",
+        "name": "Soundraw",
+        "tagline": "Your personal AI music generator.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://soundraw.io",
+        "shortDescription": "Royalty-free AI background music generator.",
+        "fullReview": "<h3>First Impressions</h3><p>I needed background music for a video. Stock sites are painful. Soundraw let me pick 'Chill', 'Lo-fi', and '3 minutes'. It generated a unique track. I didn't like the drums, so I clicked 'Customize' and removed them from the intro.</p><h3>Best Feature: Customization</h3><p>It's not just a generated MP3; you can edit the structure. Make the chorus louder. Extend the intro. It's flexible.</p><h3>The Verdict</h3><p>Perfect for YouTubers and content creators who want safe, royalty-free music that fits their timing perfectly.</p>",
+        "pros": [
+            "Royalty free license",
+            "Deep customization",
+            "Fast generation"
+        ],
+        "cons": [
+            "Sounds can be generic",
+            "Subscription for usage"
+        ]
+    },
+    {
+        "id": "tldraw",
+        "name": "Tldraw",
+        "tagline": "A whiteboard that builds software.",
+        "category": "Design",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://tldraw.com",
+        "shortDescription": "Turn drawings into working code (Makereal).",
+        "fullReview": "<h3>First Impressions</h3><p>I drew a calculator with a blue pen on the canvas. I highlighted it and clicked 'Make Real'. A few seconds later, the drawing <em>became</em> a working calculator. I could click the buttons and it did math. My jaw hit the floor.</p><h3>Best Feature: Make Real</h3><p>It uses GPT-4V to see your drawing and write the code to make it functional. It works for games, UIs, and simple apps.</p><h3>The Verdict</h3><p>The most magical demo of AI vision. It blurs the line between design and engineering.</p>",
+        "pros": [
+            "Insane 'Make Real' feature",
+            "Open source",
+            "Simple interface"
+        ],
+        "cons": [
+            "Code is prototype quality",
+            "Requires API key for AI"
+        ]
+    },
+    {
+        "id": "skybox-ai",
+        "name": "Skybox AI",
+        "tagline": "360° worlds from text.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://skybox.blockadelabs.com",
+        "shortDescription": "Generate 360-degree 3D worlds by Blockade Labs.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'Cyberpunk city in the rain'. It generated a seamless 360-degree panorama. I could look around in VR. For game developers needing skyboxes, this turns a 2-day job into a 10-second prompt.</p><h3>Best Feature: Remix</h3><p>You can sketch a rough layout of where you want mountains or buildings, and it generates the world adhering to your drawing.</p><h3>The Verdict</h3><p>A niche but best-in-class tool. Essential for VR/AR and game dev.</p>",
+        "pros": [
+            "Seamless 360 images",
+            "High resolution export",
+            "Sketch to world"
+        ],
+        "cons": [
+            "Limited to skyboxes",
+            "Distortion at poles sometimes"
+        ]
+    },
+    {
+        "id": "magic-studio",
+        "name": "Magic Studio",
+        "tagline": "AI photo editing for everyone.",
+        "category": "Image Gen",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://magicstudio.com",
+        "shortDescription": "AI photo editing suite (remove objects/backgrounds).",
+        "fullReview": "<h3>First Impressions</h3><p>It's a collection of single-purpose tools. I used the 'Background Remover' for product photos. It was instant and precise, handling hair strands well. The 'Magic Eraser' to remove a photobomber was equally easy.</p><h3>Best Feature: Simplicity</h3><p>No layers, no brushes. Just upload and click. It's designed for e-commerce store owners, not pro designers.</p><h3>The Verdict</h3><p>The quick-fix toolkit. Keep it bookmarked for when you need to clean up a photo fast.</p>",
+        "pros": [
+            "Very easy to use",
+            "Fast processing",
+            "Good free tier"
+        ],
+        "cons": [
+            "Limited advanced control",
+            "Output size limits"
+        ]
+    },
+    {
+        "id": "autodraw",
+        "name": "AutoDraw",
+        "tagline": "Fast drawing for everyone.",
+        "category": "Fun",
+        "pricing": "Free",
+        "rating": 4.4,
+        "affiliateLink": "https://autodraw.com",
+        "shortDescription": "Google's tool that turns doodles into icons.",
+        "fullReview": "<h3>First Impressions</h3><p>I tried to draw a bike. It looked like two potatoes and a stick. AutoDraw recognized it and suggested a library of professionally drawn bikes. I clicked one, and my doodle was replaced by vector art.</p><h3>Best Feature: Prediction</h3><p>The speed at which it guesses what you are trying to draw is impressive. It makes creating icons or simple flyers accessible to non-artists.</p><h3>The Verdict</h3><p>An oldie but a goodie. It's the best way to get quick clip-art that matches your intent.</p>",
+        "pros": [
+            "Completely free",
+            "Turning scribbles to icons",
+            "No login needed"
+        ],
+        "cons": [
+            "Limited icon library",
+            "Basic editor"
+        ]
     }
 ]
