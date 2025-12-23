@@ -24,7 +24,7 @@ const AdUnit = ({ className = "" }) => {
                 {/* Text Content */}
                 <div className="flex flex-col text-center md:text-left">
                     <span className="text-xl md:text-2xl font-bold text-slate-100 tracking-tight">
-                        Don't miss the daily drops.
+                        Don&apos;t miss the daily drops.
                     </span>
                     <span className="text-slate-400 text-sm md:text-base mt-1 font-medium">
                         Follow <span className="text-white hover:underline decoration-emerald-500/50 underline-offset-4">@deepcortex.tech</span> for hidden tools & tips.
