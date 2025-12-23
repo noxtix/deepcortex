@@ -14,8 +14,8 @@ const getHostname = (url) => {
 
 const ToolCard = ({ tool }) => {
     const [imageError, setImageError] = useState(false);
-    const hostname = getHostname(tool.affiliateLink);
-    const logoUrl = `https://logo.clearbit.com/${hostname}`;
+    // Use Google's high-res favicon service which is more reliable for new AI tools than Clearbit
+    const logoUrl = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=128`;
 
     return (
         <div className={`group rounded-2xl p-6 transition-all hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] flex flex-col h-full backdrop-blur-sm ${tool.isFeatured ? 'bg-slate-900/80 border border-amber-500/50 shadow-[0_0_20px_rgba(245,158,11,0.1)] hover:border-amber-400' : 'bg-slate-900/50 border border-slate-800 hover:border-emerald-500/50'}`}>
