@@ -30,6 +30,13 @@ const Navbar = () => {
                   {category}
                 </Link>
               ))}
+              <div className="h-4 w-px bg-slate-800 mx-2"></div>
+              <Link
+                href="/blog"
+                className="text-emerald-400 hover:text-emerald-300 hover:bg-emerald-500/10 px-3 py-2 rounded-md text-sm font-bold transition-all"
+              >
+                Blog
+              </Link>
             </div>
           </div>
           {/* Mobile menu button could go here */}
