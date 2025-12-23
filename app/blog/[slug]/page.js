@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import Navbar from '@/components/Navbar';
 import Newsletter from '@/components/Newsletter';
 import ToolCard from '@/components/ToolCard';
+import ToolIcon from '@/components/ToolIcon';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import toolsData from '@/data/tools.json';
