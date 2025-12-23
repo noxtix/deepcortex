@@ -85,9 +85,7 @@ export default function BlogPost({ params }) {
                                     {sidebarTools.map(tool => (
                                         <Link key={tool.id} href={`/tool/${tool.id}`} className="flex items-center gap-4 group">
                                             {/* We can reproduce a mini logo here if we want, or use the letters */}
-                                            <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center font-bold text-emerald-400 group-hover:bg-emerald-500/10 transition-colors">
-                                                {tool.name.charAt(0)}
-                                            </div>
+                                            <ToolIcon tool={tool} className="w-10 h-10 rounded-lg" fontSize="text-lg" />
                                             <div>
                                                 <div className="font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">{tool.name}</div>
                                                 <div className="text-xs text-slate-500">{tool.category}</div>
