@@ -148,6 +148,7 @@
         "pricing": "Free",
         "rating": 4.9,
         "affiliateLink": "https://codeium.com/",
+        "logoUrl": "https://cdn.worldvectorlogo.com/logos/codeium.svg",
         "shortDescription": "A powerful, free alternative to GitHub Copilot with chat capabilities.",
         "fullReview": "<h3>First Impressions</h3><p>I couldn't believe this was free. I installed the plugin, and the autocomplete speed rivaled Copilot. The chat feature inside the IDE was responsive and helpful.</p><h3>Best Feature: It is Free</h3><p>For individual developers, Codeium gives you 90% of the value of Copilot for $0. That is unbeatable value. It supports a massive range of IDEs, even obscure ones like Vim and Emacs.</p><h3>The Verdict</h3><p>If you are a student or solo dev on a budget, install this immediately. It is the best free coding tool available.</p>",
         "pros": [
