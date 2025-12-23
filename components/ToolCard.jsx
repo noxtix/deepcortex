@@ -1,15 +1,40 @@
 'use client';
 import Link from 'next/link';
 import { Star, ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
+
+const getHostname = (url) => {
+    try {
+        const hostname = new URL(url).hostname;
+        return hostname.replace('www.', '');
+    } catch (e) {
+        return '';
+    }
+};
 
 const ToolCard = ({ tool }) => {
+    const [imageError, setImageError] = useState(false);
+    const hostname = getHostname(tool.affiliateLink);
+    const logoUrl = `https://logo.clearbit.com/${hostname}`;
+
     return (
         <div className={`group rounded-2xl p-6 transition-all hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] flex flex-col h-full backdrop-blur-sm ${tool.isFeatured ? 'bg-slate-900/80 border border-amber-500/50 shadow-[0_0_20px_rgba(245,158,11,0.1)] hover:border-amber-400' : 'bg-slate-900/50 border border-slate-800 hover:border-emerald-500/50'}`}>
             <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold transition-transform group-hover:scale-110 ${tool.isFeatured ? 'bg-amber-500/10 text-amber-500 ring-1 ring-amber-500/50' : 'bg-slate-800 text-emerald-400'}`}>
-                        {tool.name.charAt(0)}
-                    </div>
+                    {/* Logo / Avatar Logic */}
+                    {!imageError ? (
+                        <img
+                            src={logoUrl}
+                            alt={`${tool.name} logo`}
+                            className="w-12 h-12 rounded-xl object-contain bg-slate-800/50 p-1 ring-1 ring-slate-700/50"
+                            onError={() => setImageError(true)}
+                        />
+                    ) : (
+                        <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold transition-transform group-hover:scale-110 ${tool.isFeatured ? 'bg-amber-500/10 text-amber-500 ring-1 ring-amber-500/50' : 'bg-slate-800 text-emerald-400'}`}>
+                            {tool.name.charAt(0)}
+                        </div>
+                    )}
+
                     <div>
                         <div className="flex items-center gap-2">
                             <h3 className="text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition-colors">
