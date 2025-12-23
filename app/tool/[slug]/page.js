@@ -1,27 +1,36 @@
+'use client';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Check, X, ArrowLeft, ExternalLink, Star } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import AdUnit from '@/components/AdUnit';
 import toolsData from '@/data/tools.json';
+import { useState } from 'react';
 
-// Dynamic SEO
-export async function generateMetadata({ params }) {
-    const tool = toolsData.find(t => t.id === params.slug);
+// Helper component for Logo 
+const ToolLogo = ({ tool, className, iconClassName }) => {
+    const [imageError, setImageError] = useState(false);
+    const logoSrc = tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=128`;
 
-    if (!tool) {
-        return {
-            title: 'Tool Not Found - DeepCortex',
-        };
+    if (!imageError) {
+        return (
+            <img
+                src={logoSrc}
+                alt={`${tool.name} logo`}
+                className={`object-contain bg-slate-800/50 p-1 ring-1 ring-slate-700/50 rounded-xl ${className}`}
+                onError={() => setImageError(true)}
+            />
+        );
     }
 
-    return {
-        title: `${tool.name} Review 2025: Features, Pricing & Pros - DeepCortex`,
-        description: tool.shortDescription,
-    }
-}
+    return (
+        <div className={`bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center font-bold text-emerald-400 shadow-[0_0_40px_rgba(16,185,129,0.1)] ${className} ${iconClassName}`}>
+            {tool.name.charAt(0)}
+        </div>
+    );
+};
 
-// Simple function to get similar tools
+// Simple function to get similar tools 
 const getSimilarTools = (currentTool) => {
     return toolsData
         .filter(t => t.category === currentTool.category && t.id !== currentTool.id)
@@ -52,9 +61,7 @@ export default function ToolPage({ params }) {
                     </Link>
 
                     <div className="flex justify-center mb-6">
-                        <div className="w-24 h-24 bg-slate-900 border border-slate-800 rounded-3xl flex items-center justify-center text-5xl font-bold text-emerald-400 shadow-[0_0_40px_rgba(16,185,129,0.1)]">
-                            {tool.name.charAt(0)}
-                        </div>
+                        <ToolLogo tool={tool} className="w-24 h-24 rounded-3xl" iconClassName="text-5xl border-slate-800" />
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-black text-slate-100 mb-4 tracking-tight">
@@ -145,9 +152,7 @@ export default function ToolPage({ params }) {
                                         className="block bg-slate-900 border border-slate-800 p-4 rounded-xl hover:border-emerald-500/50 transition-all group"
                                     >
                                         <div className="flex items-center gap-3 mb-2">
-                                            <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-lg font-bold text-emerald-400">
-                                                {similar.name.charAt(0)}
-                                            </div>
+                                            <ToolLogo tool={similar} className="w-10 h-10 rounded-lg" iconClassName="text-lg bg-slate-800" />
                                             <div>
                                                 <h4 className="font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">{similar.name}</h4>
                                                 <div className="flex items-center gap-1 text-xs text-amber-400">
