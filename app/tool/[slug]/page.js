@@ -134,7 +134,77 @@ export default function ToolPage({ params }) {
                             </article>
                         )}
 
-                        {/* Playbook Section */}
+                        {/* Trust & Real Talk Section */}
+                        {tool.trust && (
+                            <div className="mb-20">
+                                <section className="relative">
+                                    <div className="flex items-center gap-3 mb-8">
+                                        <Shield className="w-8 h-8 text-emerald-400" />
+                                        <h2 className="text-3xl font-black text-slate-100">The Real Talk</h2>
+                                    </div>
+
+                                    {/* Problem Solver Banner */}
+                                    <div className="bg-gradient-to-r from-emerald-900/20 to-cyan-900/20 border border-emerald-500/20 rounded-2xl p-6 mb-8">
+                                        <h3 className="text-sm font-bold text-emerald-400 uppercase tracking-wider mb-2">What it actually solves</h3>
+                                        <p className="text-lg text-slate-200 font-medium leading-relaxed">
+                                            &quot;{tool.trust.problem}&quot;
+                                        </p>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        {/* Who It's NOT For */}
+                                        <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-6">
+                                            <div className="flex items-center gap-2 mb-4">
+                                                <ThumbsDown className="w-5 h-5 text-red-400" />
+                                                <h3 className="font-bold text-slate-200">Who it&apos;s NOT for</h3>
+                                            </div>
+                                            <p className="text-slate-400 text-sm leading-relaxed">
+                                                {tool.trust.notFor}
+                                            </p>
+                                        </div>
+
+                                        {/* Pricing Reality */}
+                                        <div className="bg-emerald-500/5 border border-emerald-500/10 rounded-2xl p-6">
+                                            <div className="flex items-center gap-2 mb-4">
+                                                <span className="text-xl">💸</span>
+                                                <h3 className="font-bold text-slate-200">Pricing Reality</h3>
+                                            </div>
+                                            <p className="text-slate-400 text-sm leading-relaxed">
+                                                {tool.trust.pricingReality}
+                                            </p>
+                                        </div>
+
+                                        {/* Failure Modes */}
+                                        <div className="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-6">
+                                            <div className="flex items-center gap-2 mb-4">
+                                                <AlertTriangle className="w-5 h-5 text-orange-400" />
+                                                <h3 className="font-bold text-slate-200">When it breaks</h3>
+                                            </div>
+                                            <ul className="list-disc list-outside ml-4 space-y-2">
+                                                {tool.trust.failureModes.map((mode, i) => (
+                                                    <li key={i} className="text-slate-400 text-sm">{mode}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    {/* Alternatives */}
+                                    {tool.trust.bestAlternatives && (
+                                        <div className="mt-8 pt-8 border-t border-slate-800">
+                                            <p className="text-slate-500 text-sm mb-4">If this isn&apos;t for you, try:</p>
+                                            <div className="flex flex-wrap gap-4">
+                                                {tool.trust.bestAlternatives.map((altId) => (
+                                                    <Link key={altId} href={`/tool/${altId}`} className="flex items-center gap-2 px-4 py-2 bg-slate-800 rounded-full border border-slate-700 hover:border-slate-500 transition-colors text-sm text-slate-300">
+                                                        <span>{altId.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</span>
+                                                        <ArrowRight className="w-3 h-3" />
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </section>
+                            </div>
+                        )}
                         {tool.playbook && (
                             <div className="mb-20">
                                 <section className="bg-slate-900/50 border border-slate-800 rounded-3xl p-6 md:p-10 backdrop-blur-sm relative overflow-hidden">

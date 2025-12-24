@@ -52,6 +52,19 @@
                 }
             ]
         },
+        "trust": {
+            "problem": "You spend 40% of your time typing boilerplate code and manually refactoring. Cursor automates the 'typing' so you can focus on the 'architecting'.",
+            "notFor": "Junior devs who want to learn syntax by heart (this shortcuts the muscle memory).",
+            "pricingReality": "Free tier is generous but slow. The $20/mo Pro plan is mandatory if you use it daily (you'll hit the fast-request limit quickly).",
+            "failureModes": [
+                "Index Hallucinations: Does not always see files added in the last 5 seconds (needs re-index).",
+                "Context Window Overflow: Can lose the plot on extremely large refactors spanning 50+ files."
+            ],
+            "bestAlternatives": [
+                "github-copilot",
+                "windsurf"
+            ]
+        },
         "tagline": "The AI code editor that builds software for you.",
         "category": "Coding",
         "isFeatured": true,
@@ -299,6 +312,19 @@
                     "keys": "Shift+Enter",
                     "desc": "Queue Prompt"
                 }
+            ]
+        },
+        "trust": {
+            "problem": "Stock photos are generic and expensive. Midjourney creates exact, high-quality visuals for $0.05/image.",
+            "notFor": "Users who need exact text rendering (use Ideogram) or complex vector logos (use Illustrator).",
+            "pricingReality": "No free tier anymore. Basic plan ($10/mo) is essentially a trial. You need the $30/mo plan for 'Stealth Mode' if you want private images.",
+            "failureModes": [
+                "Discord Friction: Creating images in a chat app is clunky (Web alpha is rolling out slowly).",
+                "Inconsistency: Hard to get the exact same character face across multiple different scenes."
+            ],
+            "bestAlternatives": [
+                "dalle-3",
+                "adobe-firefly"
             ]
         },
         "tagline": "The gold standard for AI art.",
@@ -845,6 +871,19 @@
                 }
             ]
         },
+        "trust": {
+            "problem": "Google search results are SEO spam. Perplexity gives you the answer immediately with trusted citations.",
+            "notFor": "People looking for specific website navigation (e.g., 'Facebook login')—it's an answer engine, not a phone book.",
+            "pricingReality": "Free version limits 'Pro' searches (deep research) to 5/4 hours. $20/mo unlocks unlimited Pro + access to GPT-4/Claude 3 Opus models.",
+            "failureModes": [
+                "Source Bias: If the top 5 search results are wrong, Perplexity's answer will be wrong.",
+                "Stale Data: Occasionally cites news from 2023 as 'current' if you don't flag 'Last 24h'."
+            ],
+            "bestAlternatives": [
+                "chatgpt",
+                "gemini"
+            ]
+        },
         "tagline": "Where knowledge begins.",
         "category": "Writing",
         "pricing": "Freemium",
@@ -910,6 +949,19 @@
                     "keys": "Cmd+Shift+C",
                     "desc": "Copy Last Response"
                 }
+            ]
+        },
+        "trust": {
+            "problem": "Writer's block and blank page syndrome. ChatGPT is the universal 'first draft' machine.",
+            "notFor": "Facts that require high precision (it hallucinates). Privacy-sensitive corporate data (unless on Enterprise).",
+            "pricingReality": "Free model (GPT-3.5/4o-mini) is dumb. The real magic is in GPT-4o, which costs $20/mo. New features (Voice, Sora) roll out to Plus users first.",
+            "failureModes": [
+                "Confidence Trick: It sounds extremely confident even when it is completely wrong.",
+                "Laziness: Sometimes gives short, lazy answers unless you explicitly tell it to 'be comprehensive'."
+            ],
+            "bestAlternatives": [
+                "claude-3",
+                "perplexity-ai"
             ]
         },
         "tagline": "Your AI assistant for everything.",
@@ -2257,6 +2309,19 @@
                     "keys": "/",
                     "desc": "Command Menu"
                 }
+            ]
+        },
+        "trust": {
+            "problem": "Your work is scattered across Google Docs, Trello, and Excel. Notion unifies it into one OS.",
+            "notFor": "People who want a simple, rigid to-do list (it requires setup). Teams that need heavy Excel-style calculation.",
+            "pricingReality": "Free for individuals. The 'AI' add-on is a separate $10/mo cost per user, even on paid plans.",
+            "failureModes": [
+                "Analysis Paralysis: Spending more time building the dashboard than doing the work.",
+                "Mobile Lag: The mobile app can be slower than native to-do apps."
+            ],
+            "bestAlternatives": [
+                "obsidian",
+                "coda"
             ]
         },
         "tagline": "The all-in-one workspace.",
