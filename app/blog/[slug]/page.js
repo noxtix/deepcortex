@@ -37,7 +37,7 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPost({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'date', 'content']);
+    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image']);
 
     // Get random tools for sidebar
     const sidebarTools = toolsData.sort(() => 0.5 - Math.random()).slice(0, 3);
@@ -57,6 +57,16 @@ export default function BlogPost({ params }) {
                         </Link>
 
                         <header className="mb-10">
+                            {post.image && (
+                                <div className="relative w-full h-[400px] mb-8 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                                </div>
+                            )}
                             <div className="text-emerald-400 font-mono text-sm mb-4">{post.date}</div>
                             <h1 className="text-3xl md:text-5xl font-black text-slate-100 tracking-tight leading-tight">
                                 {post.title}

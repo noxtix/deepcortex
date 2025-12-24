@@ -7,7 +7,7 @@ import { Menu, X } from 'lucide-react';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const categories = ['Coding', 'Image Gen', 'Video', 'Audio', 'Design', 'Writing', 'Productivity', 'Fun'];
+  const categories = [];
 
   return (
     <nav className="border-b border-slate-800 bg-slate-950/50 backdrop-blur-md sticky top-0 z-50">
@@ -30,15 +30,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-1">
-              {categories.map((category) => (
-                <Link
-                  key={category}
-                  href={`/?category=${category}`}
-                  className="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-all"
-                >
-                  {category}
-                </Link>
-              ))}
+              {/* Categories removed as per request */}
               <div className="h-4 w-px bg-slate-800 mx-2"></div>
               <Link
                 href="/blog"

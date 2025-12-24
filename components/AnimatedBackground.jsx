@@ -2,7 +2,7 @@
 
 const AnimatedBackground = () => {
     return (
-        <div className="fixed inset-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div className="fixed inset-0 w-full h-full overflow-hidden z-0 pointer-events-none">
             {/* Dark Base */}
             <div className="absolute inset-0 bg-slate-950"></div>
 

@@ -66,7 +66,7 @@ function ToolDirectory() {
           Augment Your <span className="text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)]">Intelligence.</span>
         </h1>
         <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
-          The curated directory of AI tools for developers and creators.
+          The curated directory of AI tools for all.
         </p>
         <div className="max-w-lg mx-auto relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
@@ -85,13 +85,8 @@ function ToolDirectory() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 
-        {/* Ad Unit Above Grid */}
-        <div className="mb-12">
-          <AdUnit />
-        </div>
-
         {/* Price Filter Pills */}
-        <div className="flex flex-wrap justify-center gap-2 mb-6">
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
           {priceOptions.map((price) => (
             <button
               key={price}
@@ -102,22 +97,6 @@ function ToolDirectory() {
                 }`}
             >
               {price}
-            </button>
-          ))}
-        </div>
-
-        {/* Category Pills */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => updateFilter('category', cat)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${(selectedCategory === cat || (cat === 'All' && !selectedCategory))
-                ? 'bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
-                : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
-                }`}
-            >
-              {cat === 'Fun' ? 'Fun 🎡' : cat}
             </button>
           ))}
         </div>

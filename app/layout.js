@@ -31,8 +31,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
         <AnimatedBackground />
-        {children}
-        <Footer />
+        <div className="relative z-10">
+          {children}
+          <Footer />
+        </div>
         <GoogleAnalytics gaId="G-GYW5Y6HMJJ" />
       </body>
     </html>
