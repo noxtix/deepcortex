@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { Check, X, ArrowLeft, ExternalLink, Star } from 'lucide-react';
+import { Star, ExternalLink, ArrowRight, Share2, Info, Check, X, ThumbsUp, ThumbsDown, Zap, Shield, BookOpen, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import AdUnit from '@/components/AdUnit';
 import toolsData from '@/data/tools.json';
@@ -133,6 +132,76 @@ export default function ToolPage({ params }) {
                             <article className="prose prose-invert prose-emerald max-w-none bg-slate-900/20 border border-slate-800 p-8 rounded-3xl">
                                 <div dangerouslySetInnerHTML={{ __html: tool.fullReview }} />
                             </article>
+                        )}
+
+                        {/* Playbook Section */}
+                        {tool.playbook && (
+                            <div className="mb-20">
+                                <section className="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 p-4 opacity-10">
+                                        <BookOpen className="w-64 h-64 text-emerald-500" />
+                                    </div>
+
+                                    <h2 className="text-3xl font-bold text-slate-100 mb-8 flex items-center gap-3">
+                                        <BookOpen className="w-8 h-8 text-emerald-400" />
+                                        First-Hour Playbook
+                                    </h2>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                                        {/* First 10 Minutes */}
+                                        <div>
+                                            <h3 className="text-xl font-bold text-emerald-400 mb-6 flex items-center gap-2">
+                                                <Clock className="w-5 h-5" />
+                                                First 10 Minutes
+                                            </h3>
+                                            <div className="space-y-6 relative pl-4 border-l-2 border-slate-800">
+                                                {tool.playbook.first10Min.map((step, i) => (
+                                                    <div key={i} className="relative">
+                                                        <div className="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-emerald-500 ring-4 ring-slate-900" />
+                                                        <p className="text-slate-300 ml-4">{step}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-8">
+                                            {/* First Prompt */}
+                                            <div>
+                                                <h3 className="text-xl font-bold text-cyan-400 mb-4 flex items-center gap-2">
+                                                    <Zap className="w-5 h-5" />
+                                                    First Prompt
+                                                </h3>
+                                                <div className="bg-slate-950 rounded-xl p-4 border border-slate-800 font-mono text-sm text-slate-300 relative group">
+                                                    {tool.playbook.firstPrompt}
+                                                    {/*  Note: Copy button could be added here */}
+                                                </div>
+                                            </div>
+
+                                            {/* Common Mistakes & Shortcut */}
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
+                                                    <h4 className="font-bold text-red-400 mb-2 flex items-center gap-2">
+                                                        <AlertTriangle className="w-4 h-4" />
+                                                        Avoid This
+                                                    </h4>
+                                                    <ul className="list-disc list-inside text-xs text-red-200/70 space-y-1">
+                                                        {tool.playbook.commonMistakes.map((m, i) => (
+                                                            <li key={i}>{m}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+
+                                                <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-4 flex flex-col justify-center items-center text-center">
+                                                    <h4 className="font-bold text-slate-400 mb-2 text-sm uppercase tracking-wider">Power Shortcut</h4>
+                                                    <div className="bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800 font-mono text-emerald-400 font-bold text-sm">
+                                                        {tool.playbook.powerShortcut}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         )}
 
                     </div>

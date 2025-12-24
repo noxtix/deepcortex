@@ -2,6 +2,20 @@
     {
         "id": "cursor-ai",
         "name": "Cursor",
+        "playbook": {
+            "first10Min": [
+                "Install the VS Code extension or standalone app.",
+                "Import your VS Code settings/extensions (one-click).",
+                "Open a repo and hit Cmd+K to edit a file with AI.",
+                "Hit Cmd+L to open the chat and ask 'Explain this codebase'."
+            ],
+            "firstPrompt": "Refactor this function to be more readable and add error handling.",
+            "commonMistakes": [
+                "Ignoring the 'Index Codebase' step (AI won't know your files).",
+                "Treating it exactly like Copilot (Cursor is stronger at edits)."
+            ],
+            "powerShortcut": "Cmd+K (Edit inside file)"
+        },
         "tagline": "The AI code editor that builds software for you.",
         "category": "Coding",
         "isFeatured": true,
@@ -204,6 +218,20 @@
     {
         "id": "midjourney",
         "name": "Midjourney",
+        "playbook": {
+            "first10Min": [
+                "Join the Discord server.",
+                "Go to a 'newbies' channel.",
+                "Type '/imagine' followed by your prompt.",
+                "Upscale the best result (U1, U2, etc.)."
+            ],
+            "firstPrompt": "/imagine prompt: A futuristic city with flying cars, cyberpunk style, neon lights --ar 16:9 --v 6",
+            "commonMistakes": [
+                "Giving up after the first bad result (reroll!).",
+                "Ignoring aspect ratios (--ar)."
+            ],
+            "powerShortcut": "Cmd+Option+Z (Discord: Mark as read)"
+        },
         "tagline": "The gold standard for AI art.",
         "category": "Image Gen",
         "pricing": "Paid",
@@ -705,6 +733,19 @@
     {
         "id": "perplexity-ai",
         "name": "Perplexity",
+        "playbook": {
+            "first10Min": [
+                "Set it as your default browser search engine.",
+                "Turn on 'Pro' mode (if trial available) for deeper research.",
+                "Create a 'Collection' for a recurring topic (e.g., 'Tech News')."
+            ],
+            "firstPrompt": "Summarize the latest developments in [Topic] this week with citations.",
+            "commonMistakes": [
+                "Using it for creative writing (it's a search engine, not a poet).",
+                "Ignoring the sources (always verify the footnotes)."
+            ],
+            "powerShortcut": "Cmd+Shift+P (Focus Search)"
+        },
         "tagline": "Where knowledge begins.",
         "category": "Writing",
         "pricing": "Freemium",
@@ -720,6 +761,39 @@
         "cons": [
             "Can still hallucinate rarely",
             "Not for creative writing"
+        ]
+    },
+    {
+        "id": "chatgpt",
+        "name": "ChatGPT",
+        "playbook": {
+            "first10Min": [
+                "Login and pin the tab.",
+                "Set 'Custom Instructions' in settings (tell it who you are).",
+                "Try Voice Mode on the mobile app."
+            ],
+            "firstPrompt": "Act as a senior debate coach. Critique my argument: [Insert Argument]",
+            "commonMistakes": [
+                "Using the default model for complex tasks (use GPT-4).",
+                "Providing zero context in your prompt."
+            ],
+            "powerShortcut": "Cmd+Shift+O (Open new chat)"
+        },
+        "tagline": "Your AI assistant for everything.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://chat.openai.com/",
+        "shortDescription": "The most popular AI chatbot for generating text, code, and creative content.",
+        "fullReview": "<h3>First Impressions</h3><p>It's the tool that started it all. I use it daily for brainstorming, drafting emails, summarizing articles, and even debugging code. It's a generalist, but incredibly powerful when prompted correctly.</p><h3>Best Feature: Custom Instructions</h3><p>Setting up custom instructions means I don't have to repeat myself. I tell it my role, my preferred tone, and my goals, and it remembers them across conversations, making every interaction more efficient.</p><h3>The Verdict</h3><p>The foundational AI tool. If you only use one AI, this is it. It's a Swiss Army knife for productivity and creativity.</p>",
+        "pros": [
+            "Extremely versatile",
+            "Constantly improving",
+            "Large community support"
+        ],
+        "cons": [
+            "Can hallucinate facts",
+            "Free version can be slow"
         ]
     },
     {
@@ -2005,6 +2079,19 @@
     {
         "id": "notion",
         "name": "Notion",
+        "playbook": {
+            "first10Min": [
+                "Create a new 'Page' and type '/'.",
+                "Try the 'Ask AI' feature to summarize a document.",
+                "Build a simple database (e.g., Task List)."
+            ],
+            "firstPrompt": "Draft a project proposal for a new mobile app.",
+            "commonMistakes": [
+                "Over-engineering your dashboard before you have content.",
+                "Forgetting to use '/ai' to speed up writing."
+            ],
+            "powerShortcut": "Cmd+J (Ask AI)"
+        },
         "tagline": "The all-in-one workspace.",
         "category": "Productivity",
         "pricing": "Freemium",
