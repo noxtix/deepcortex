@@ -47,7 +47,7 @@ export default function ToolPage({ params }) {
     const similarTools = getSimilarTools(tool);
 
     return (
-        <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
+        <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30">
             <Navbar />
 
             {/* Hero Section */}
