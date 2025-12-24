@@ -33,6 +33,12 @@ const Navbar = () => {
               {/* Categories removed as per request */}
               <div className="h-4 w-px bg-slate-800 mx-2"></div>
               <Link
+                href="/stacks"
+                className="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >
+                Stacks
+              </Link>
+              <Link
                 href="/blog"
                 className="text-emerald-400 hover:text-emerald-300 hover:bg-emerald-500/10 px-3 py-2 rounded-md text-sm font-bold transition-all"
               >
@@ -73,6 +79,13 @@ const Navbar = () => {
               className="text-emerald-400 hover:text-emerald-300 hover:bg-emerald-500/10 block px-3 py-2 rounded-md text-base font-bold transition-all"
             >
               Blog
+            </Link>
+            <Link
+              href="/stacks"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium transition-all"
+            >
+              Stacks
             </Link>
             <div className="pt-4 pb-2">
               <a
