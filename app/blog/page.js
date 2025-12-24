@@ -9,10 +9,10 @@ export const metadata = {
 };
 
 export default function BlogIndex() {
-    const posts = getAllPosts(['title', 'date', 'slug', 'excerpt', 'coverImage']);
+    const posts = getAllPosts(['title', 'date', 'slug', 'excerpt', 'image']);
 
     return (
-        <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
+        <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30">
             <Navbar />
 
             <section className="pt-32 pb-12 px-4 text-center">
@@ -30,15 +30,24 @@ export default function BlogIndex() {
                         <Link
                             key={post.slug}
                             href={`/blog/${post.slug}`}
-                            className="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all flex flex-col"
+                            className="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all flex flex-col backdrop-blur-md"
                         >
-                            {/* Cover Image Placeholder - could be real image later */}
-                            <div className="h-48 bg-slate-800/50 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
-                                {/* If we had images: <img src={post.coverImage} ... /> */}
-                                <div className="absolute bottom-4 left-4 right-4">
+                            <div className="h-48 bg-slate-800/50 relative overflow-hidden group">
+                                {post.image ? (
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                ) : (
+                                    <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+                                        <div className="text-slate-600 font-bold text-4xl">DC</div>
+                                    </div>
+                                )}
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-60"></div>
+                                <div className="absolute bottom-4 left-4 right-4 z-10">
                                     <div className="flex items-center gap-4 text-xs text-slate-300 font-mono mb-2">
-                                        <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
+                                        <span className="flex items-center gap-1"><Calendar className="w-3 h-3 text-emerald-400" /> {post.date}</span>
                                     </div>
                                 </div>
                             </div>
