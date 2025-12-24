@@ -56,7 +56,6 @@ const ToolCard = ({ tool }) => {
                 </div>
             </div>
         </div>
-        </div >
     );
 };
 
