@@ -2001,5 +2001,305 @@
             "Limited icon library",
             "Basic editor"
         ]
+    },
+    {
+        "id": "notion",
+        "name": "Notion",
+        "tagline": "The all-in-one workspace.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://notion.so",
+        "shortDescription": "A connected workspace where better, faster work happens.",
+        "fullReview": "<h3>First Impressions</h3><p>Notion is the lego set of productivity. It replaces Google Docs, Trello, and Asana. The AI integration is just the cherry on top.</p><h3>Best Feature: Flexibility</h3><p>You can build anything from a simple to-do list to a complex CRM.</p><h3>The Verdict</h3><p>The operating system for modern startups.</p>",
+        "pros": [
+            "Infinite flexibility",
+            "Strong community",
+            "Free for personal use"
+        ],
+        "cons": [
+            "Can be slow",
+            "Overwhelming for some"
+        ]
+    },
+    {
+        "id": "stripe",
+        "name": "Stripe",
+        "tagline": "Financial infrastructure for the internet.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.9,
+        "affiliateLink": "https://stripe.com",
+        "shortDescription": "Payment processing platform for the internet.",
+        "fullReview": "<h3>First Impressions</h3><p>Integrating Stripe feels like cheating. The documentation is the gold standard.</p><h3>Best Feature: DX</h3><p>The Developer Experience is unmatched. API keys, test mode, and webhooks just work.</p><h3>The Verdict</h3><p>The only choice for accepting payments online.</p>",
+        "pros": [
+            "Developer friendly",
+            "Global support",
+            "Reliable"
+        ],
+        "cons": [
+            "Fees can add up",
+            "Strict compliance"
+        ]
+    },
+    {
+        "id": "capcut",
+        "name": "CapCut",
+        "tagline": "All-in-one video editor.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://capcut.com",
+        "shortDescription": "Free all-in-one video editor for everyone to create anything anywhere.",
+        "fullReview": "<h3>First Impressions</h3><p>It's surprisingly powerful for a free app. The auto-captions and effects are trend-aware.</p><h3>Best Feature: Speed</h3><p>You can edit a viral short in 5 minutes on your phone.</p><h3>The Verdict</h3><p>The best mobile editor, period.</p>",
+        "pros": [
+            "Easy to use",
+            "Trendy effects",
+            "Cross-platform"
+        ],
+        "cons": [
+            "Watermarks on some features",
+            "Privacy concerns"
+        ]
+    },
+    {
+        "id": "zotero",
+        "name": "Zotero",
+        "tagline": "Your personal research assistant.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://zotero.org",
+        "shortDescription": "A free, easy-to-use tool to help you collect, organize, cite, and share research.",
+        "fullReview": "<h3>First Impressions</h3><p>It's barely changed in 10 years because it doesn't need to. It captures metadata from any browser instantly.</p><h3>Best Feature: Citation</h3><p>One-click bibliography generation in Word/Google Docs.</p><h3>The Verdict</h3><p>Essential for anyone writing a thesis.</p>",
+        "pros": [
+            "Open source",
+            "Browser plugin",
+            "Word integration"
+        ],
+        "cons": [
+            "Dated UI",
+            "Cloud storage limits"
+        ]
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "tagline": "The collaborative interface design tool.",
+        "category": "Design",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://figma.com",
+        "shortDescription": "Figma connects everyone in the design process so teams can deliver better products, faster.",
+        "fullReview": "<h3>First Impressions</h3><p>It's Google Docs for design. Multiplayer editing changed the industry.</p><h3>Best Feature: Auto Layout</h3><p>Once you master Auto Layout, you can't go back to other tools.</p><h3>The Verdict</h3><p>The industry standard for UI/UX.</p>",
+        "pros": [
+            "Browser based",
+            "Community plugins",
+            "Dev mode"
+        ],
+        "cons": [
+            "Expensive for teams",
+            "Memory heavy"
+        ]
+    },
+    {
+        "id": "galileo-ai",
+        "name": "Galileo AI",
+        "tagline": "Interface design at the speed of thought.",
+        "category": "Design",
+        "pricing": "Paid",
+        "rating": 4.5,
+        "affiliateLink": "https://www.usegalileo.ai",
+        "shortDescription": "Generates editable UI designs in Figma from a simple text description.",
+        "fullReview": "<h3>First Impressions</h3><p>It actually makes layers. It's not a PNG; it's a fully editable vector design.</p><h3>Best Feature: Figma Export</h3><p>Copy and paste directly into Figma. It fits the workflow.</p><h3>The Verdict</h3><p>A great starting point for inspiration.</p>",
+        "pros": [
+            "Editable output",
+            "Modern aesthetic",
+            "Figma compatible"
+        ],
+        "cons": [
+            "Paid credits",
+            "Still early stage"
+        ]
+    },
+    {
+        "id": "teal",
+        "name": "Teal",
+        "tagline": "Your personal career growth platform.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://www.tealhq.com",
+        "shortDescription": "Track and manage your job search in one place.",
+        "fullReview": "<h3>First Impressions</h3><p>The chrome extension is a lifesaver. It scrapes job posts from LinkedIn and saves them to a dashboard.</p><h3>Best Feature: Resume Builder</h3><p>It scans keywords from the JD and tells you what to add to your resume.</p><h3>The Verdict</h3><p>If you are job hunting, you need this.</p>",
+        "pros": [
+            "Job tracker",
+            "Keyword scanner",
+            "Resume builder"
+        ],
+        "cons": [
+            "Premium features locked",
+            "US centric"
+        ]
+    },
+    {
+        "id": "resume-io",
+        "name": "Resume.io",
+        "tagline": "Create a professional resume.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://resume.io",
+        "shortDescription": "Resume builder that helps you create a professional resume in minutes.",
+        "fullReview": "<h3>First Impressions</h3><p>The templates are clean and ATS friendly. It takes the stress out of formatting.</p><h3>Best Feature: Templates</h3><p>Tested designs that recruiters actually read.</p><h3>The Verdict</h3><p>Worth the small fee to look professional.</p>",
+        "pros": [
+            "Beautiful templates",
+            "Easy editor",
+            "Cover letter helper"
+        ],
+        "cons": [
+            "Subscription model",
+            " Hard to cancel"
+        ]
+    },
+    {
+        "id": "interview-warmup",
+        "name": "Google Interview Warmup",
+        "tagline": "Practice key questions.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.6,
+        "affiliateLink": "https://grow.google/certificates/interview-warmup/",
+        "shortDescription": "A quick way to prepare for your next interview in key fields.",
+        "fullReview": "<h3>First Impressions</h3><p>It listens to your voice and transcribes your answer. It detects if you use 'filler words' or if you talk too fast.</p><h3>Best Feature: Analysis</h3><p>It highlights terms you use and suggests improvements.</p><h3>The Verdict</h3><p>A fantastic free tool from Google.</p>",
+        "pros": [
+            "Completely free",
+            "Speech analysis",
+            "Industry specific questions"
+        ],
+        "cons": [
+            "Limited roles",
+            "Basic feedback"
+        ]
+    },
+    {
+        "id": "softr",
+        "name": "Softr",
+        "tagline": "Build apps from Airtable/Google Sheets.",
+        "category": "Coding",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://softr.io",
+        "shortDescription": "The easiest no-code tool to build client portals and internal tools.",
+        "fullReview": "<h3>First Impressions</h3><p>If you can use a spreadsheet, you can build an app. I built a directory in 10 minutes.</p><h3>Best Feature: Data Sync</h3><p>Updates in Airtable reflect instantly in the app.</p><h3>The Verdict</h3><p>Best for non-technical founders.</p>",
+        "pros": [
+            "Insanely fast",
+            "Great templates",
+            "Scalable"
+        ],
+        "cons": [
+            "Limited design customization",
+            "Database dependent"
+        ]
+    },
+    {
+        "id": "beehiiv",
+        "name": "beehiiv",
+        "tagline": "The newsletter platform built for growth.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://beehiiv.com",
+        "shortDescription": "The best platform to launch, scale, and monetize your newsletter.",
+        "fullReview": "<h3>First Impressions</h3><p>It feels like it was built by writers. The referral program features are built-in.</p><h3>Best Feature: Growth Tools</h3><p>Recommendations from other newsletters drive real subs.</p><h3>The Verdict</h3><p>The successor to Substack.</p>",
+        "pros": [
+            "Growth focused",
+            "Clean UI",
+            "Good analytics"
+        ],
+        "cons": [
+            "Paid for custom domain",
+            "Newer platform"
+        ]
+    },
+    {
+        "id": "typefully",
+        "name": "Typefully",
+        "tagline": "Write better tweets.",
+        "category": "writing",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://typefully.com",
+        "shortDescription": "A distraction-free editor for Twitter/X and LinkedIn.",
+        "fullReview": "<h3>First Impressions</h3><p>Writing tweets in a text editor feels so much better than the chaotic X interface.</p><h3>Best Feature: Scheduling</h3><p>The best scheduling and auto-retweet features in the game.</p><h3>The Verdict</h3><p>Essential for personal branding.</p>",
+        "pros": [
+            "Beautiful editor",
+            "Analytics",
+            "Cross-posting"
+        ],
+        "cons": [
+            "Subscription",
+            "X API limits"
+        ]
+    },
+    {
+        "id": "brain-fm",
+        "name": "Brain.fm",
+        "tagline": "Music to focus better.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://brain.fm",
+        "shortDescription": "Functional music to improve focus in 15 minutes.",
+        "fullReview": "<h3>First Impressions</h3><p>I was skeptical, but the science works. It drowns out distraction without demanding attention.</p><h3>Best Feature: Neural Phase Locking</h3><p>The music pulses to synchronize your brainwaves.</p><h3>The Verdict</h3><p>Better than a Spotify playlist.</p>",
+        "pros": [
+            "Science backed",
+            "Offline mode",
+            "Timer"
+        ],
+        "cons": [
+            "Paid only",
+            "Repetitive styles"
+        ]
+    },
+    {
+        "id": "endel",
+        "name": "Endel",
+        "tagline": "Personalized soundscapes.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://endel.io",
+        "shortDescription": "Personalized soundscapes to help you focus, relax, and sleep.",
+        "fullReview": "<h3>First Impressions</h3><p>The app looks trippy and cool. It adapts to the weather and my heart rate.</p><h3>Best Feature: Dynamic Generation</h3><p>It's never the same track twice.</p><h3>The Verdict</h3><p>Great for sleep and relaxation.</p>",
+        "pros": [
+            "Beautiful UI",
+            "Dynamic audio",
+            "Cross-platform"
+        ],
+        "cons": [
+            "Subscription",
+            "Battery usage"
+        ]
+    },
+    {
+        "id": "todoist",
+        "name": "Todoist",
+        "tagline": "Organize your work and life.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://todoist.com",
+        "shortDescription": "The world's most popular task manager and to-do list app.",
+        "fullReview": "<h3>First Impressions</h3><p>Natural language input is king. 'Buy milk every friday at 5pm' just works.</p><h3>Best Feature: Quick Add</h3><p>The keyboard shortcut to add tasks is muscle memory now.</p><h3>The Verdict</h3><p>The gold standard for to-do lists.</p>",
+        "pros": [
+            "Natural language",
+            "Every platform",
+            "Reliable"
+        ],
+        "cons": [
+            "Pro features locked",
+            "Simple for some"
+        ]
     }
 ]

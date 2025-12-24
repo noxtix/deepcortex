@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Newsletter from '@/components/Newsletter';
 import ToolCard from '@/components/ToolCard';
 import ToolIcon from '@/components/ToolIcon';
+import AdUnit from '@/components/AdUnit';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import toolsData from '@/data/tools.json';
@@ -85,6 +86,9 @@ export default function BlogPost({ params }) {
                     {/* Sidebar Column */}
                     <div className="hidden lg:block lg:col-span-4 relative">
                         <div className="sticky top-32 space-y-8">
+
+                            {/* Instagram Ad */}
+                            <AdUnit />
 
                             {/* Related Tools Widget */}
                             <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 backdrop-blur-sm">

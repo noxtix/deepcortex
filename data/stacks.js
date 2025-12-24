@@ -4,14 +4,14 @@ export const stacks = [
         title: "The Ultimate Student Success Stack",
         description: "For acing exams and organizing life.",
         icon: "🎓",
-        toolIds: ["notion", "quillbot", "perplexity"]
+        toolIds: ["notion", "quillbot", "perplexity-ai"]
     },
     {
         id: "solo-founder",
         title: "The Solo SaaS Founder",
         description: "For building apps alone.",
         icon: "🚀",
-        toolIds: ["cursor", "supabase", "stripe"]
+        toolIds: ["cursor-ai", "supabase", "stripe"]
     },
     {
         id: "viral-creator",
@@ -46,7 +46,7 @@ export const stacks = [
         title: "The Faceless YouTube Channel",
         description: "For automated content creation.",
         icon: "📺",
-        toolIds: ["elevenlabs", "heygen", "invideo"]
+        toolIds: ["elevenlabs", "heygen", "invideo-ai"]
     },
     {
         id: "startup-mvp",
