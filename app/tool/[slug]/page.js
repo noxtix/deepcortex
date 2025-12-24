@@ -137,65 +137,115 @@ export default function ToolPage({ params }) {
                         {/* Playbook Section */}
                         {tool.playbook && (
                             <div className="mb-20">
-                                <section className="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm relative overflow-hidden">
+                                <section className="bg-slate-900/50 border border-slate-800 rounded-3xl p-6 md:p-10 backdrop-blur-sm relative overflow-hidden">
                                     <div className="absolute top-0 right-0 p-4 opacity-10">
                                         <BookOpen className="w-64 h-64 text-emerald-500" />
                                     </div>
 
-                                    <h2 className="text-3xl font-bold text-slate-100 mb-8 flex items-center gap-3">
+                                    <h2 className="text-3xl font-black text-slate-100 mb-8 flex items-center gap-3">
                                         <BookOpen className="w-8 h-8 text-emerald-400" />
-                                        First-Hour Playbook
+                                        The First 60 Minutes
                                     </h2>
 
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                                        {/* First 10 Minutes */}
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                                        {/* Timeline */}
                                         <div>
-                                            <h3 className="text-xl font-bold text-emerald-400 mb-6 flex items-center gap-2">
-                                                <Clock className="w-5 h-5" />
-                                                First 10 Minutes
+                                            <h3 className="text-xl font-bold text-emerald-400 mb-6 flex items-center gap-2 uppercase tracking-wide text-sm">
+                                                <Clock className="w-4 h-4" />
+                                                Action Plan
                                             </h3>
-                                            <div className="space-y-6 relative pl-4 border-l-2 border-slate-800">
-                                                {tool.playbook.first10Min.map((step, i) => (
-                                                    <div key={i} className="relative">
-                                                        <div className="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-emerald-500 ring-4 ring-slate-900" />
-                                                        <p className="text-slate-300 ml-4">{step}</p>
-                                                    </div>
-                                                ))}
+                                            <div className="space-y-0 relative pl-4 border-l-2 border-slate-800 ml-3">
+                                                {tool.playbook.timeBreakdown ? (
+                                                    tool.playbook.timeBreakdown.map((item, i) => (
+                                                        <div key={i} className="relative pb-10 last:pb-0">
+                                                            <div className="absolute -left-[23px] top-1 w-5 h-5 rounded-full bg-slate-900 border-4 border-emerald-500/50" />
+                                                            <div className="flex items-baseline gap-3 mb-1">
+                                                                <span className="text-emerald-400 font-mono text-xs font-bold bg-emerald-500/10 px-2 py-0.5 rounded">{item.time}</span>
+                                                                <h4 className="text-slate-200 font-bold">{item.title}</h4>
+                                                            </div>
+                                                            <p className="text-slate-400 text-sm leading-relaxed">{item.step}</p>
+                                                        </div>
+                                                    ))
+                                                ) : (
+                                                    // Fallback for tools with old schema (if any)
+                                                    tool.playbook.first10Min && tool.playbook.first10Min.map((step, i) => (
+                                                        <div key={i} className="relative pb-6">
+                                                            <div className="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-emerald-500" />
+                                                            <p className="text-slate-300 ml-4">{step}</p>
+                                                        </div>
+                                                    ))
+                                                )}
                                             </div>
                                         </div>
 
-                                        <div className="space-y-8">
-                                            {/* First Prompt */}
-                                            <div>
-                                                <h3 className="text-xl font-bold text-cyan-400 mb-4 flex items-center gap-2">
-                                                    <Zap className="w-5 h-5" />
-                                                    First Prompt
-                                                </h3>
-                                                <div className="bg-slate-950 rounded-xl p-4 border border-slate-800 font-mono text-sm text-slate-300 relative group">
-                                                    {tool.playbook.firstPrompt}
-                                                    {/*  Note: Copy button could be added here */}
+                                        <div className="space-y-10">
+                                            {/* Hero Prompt */}
+                                            {tool.playbook.heroPrompt && (
+                                                <div>
+                                                    <h3 className="text-xl font-bold text-cyan-400 mb-4 flex items-center gap-2 uppercase tracking-wide text-sm">
+                                                        <Zap className="w-4 h-4" />
+                                                        The Hero Prompt
+                                                    </h3>
+                                                    <div className="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden group">
+                                                        <div className="bg-slate-900/50 px-4 py-2 border-b border-slate-800 flex justify-between items-center">
+                                                            <span className="text-xs font-mono text-slate-500">{tool.playbook.heroPrompt.title}</span>
+                                                            <button className="text-xs text-emerald-500 hover:text-emerald-400 font-bold">Copy</button>
+                                                        </div>
+                                                        <div className="p-4 font-mono text-sm text-slate-300 relative">
+                                                            {tool.playbook.heroPrompt.prompt}
+                                                        </div>
+                                                        {tool.playbook.heroPrompt.explanation && (
+                                                            <div className="px-4 py-3 bg-cyan-500/5 border-t border-slate-800">
+                                                                <p className="text-xs text-cyan-200/70 italic flex gap-2">
+                                                                    <Info className="w-4 h-4 flex-shrink-0" />
+                                                                    {tool.playbook.heroPrompt.explanation}
+                                                                </p>
+                                                            </div>
+                                                        )}
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            )}
+                                            {/* Fallback for old prompt */}
+                                            {!tool.playbook.heroPrompt && tool.playbook.firstPrompt && (
+                                                <div className="bg-slate-950 p-4 rounded-xl border border-slate-800 font-mono text-sm text-slate-300">{tool.playbook.firstPrompt}</div>
+                                            )}
 
-                                            {/* Common Mistakes & Shortcut */}
+
+                                            {/* Common Mistakes & Shortcuts Grid */}
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                                                    <h4 className="font-bold text-red-400 mb-2 flex items-center gap-2">
+                                                <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-5">
+                                                    <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2 text-sm uppercase tracking-wider">
                                                         <AlertTriangle className="w-4 h-4" />
                                                         Avoid This
                                                     </h4>
-                                                    <ul className="list-disc list-inside text-xs text-red-200/70 space-y-1">
+                                                    <ul className="list-disc list-outside ml-4 text-xs text-red-200/70 space-y-2">
                                                         {tool.playbook.commonMistakes.map((m, i) => (
                                                             <li key={i}>{m}</li>
                                                         ))}
                                                     </ul>
                                                 </div>
 
-                                                <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-4 flex flex-col justify-center items-center text-center">
-                                                    <h4 className="font-bold text-slate-400 mb-2 text-sm uppercase tracking-wider">Power Shortcut</h4>
-                                                    <div className="bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800 font-mono text-emerald-400 font-bold text-sm">
-                                                        {tool.playbook.powerShortcut}
-                                                    </div>
+                                                <div className="space-y-3">
+                                                    <h4 className="font-bold text-slate-400 flex items-center gap-2 text-sm uppercase tracking-wider">
+                                                        <span className="text-emerald-500">⌘</span> Power Shortcuts
+                                                    </h4>
+
+                                                    {/* New Shortcuts Schema */}
+                                                    {tool.playbook.shortcuts ? (
+                                                        <div className="space-y-2">
+                                                            {tool.playbook.shortcuts.map((s, i) => (
+                                                                <div key={i} className="flex items-center justify-between bg-slate-800/40 p-2 rounded-lg border border-slate-700/50">
+                                                                    <span className="text-xs text-slate-400">{s.desc}</span>
+                                                                    <kbd className="bg-slate-950 px-2 py-1 rounded border border-slate-800 font-mono text-emerald-400 font-bold text-xs">{s.keys}</kbd>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    ) : (
+                                                        // Fallback
+                                                        <div className="bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800 font-mono text-emerald-400 font-bold text-sm text-center">
+                                                            {tool.playbook.powerShortcut}
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </div>
                                         </div>

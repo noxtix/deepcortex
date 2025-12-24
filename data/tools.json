@@ -2,19 +2,55 @@
     {
         "id": "cursor-ai",
         "name": "Cursor",
+        "id": "cursor-ai",
+        "name": "Cursor",
         "playbook": {
-            "first10Min": [
-                "Install the VS Code extension or standalone app.",
-                "Import your VS Code settings/extensions (one-click).",
-                "Open a repo and hit Cmd+K to edit a file with AI.",
-                "Hit Cmd+L to open the chat and ask 'Explain this codebase'."
+            "timeBreakdown": [
+                {
+                    "time": "0-5m",
+                    "title": "The Import",
+                    "step": "Install Cursor and click 'Import Extensions' from VS Code. It keeps your theme, keybindings, and plugins instantly."
+                },
+                {
+                    "time": "5-10m",
+                    "title": "Indexing",
+                    "step": "Go to Settings > General and enable 'Codebase Indexing'. This is critical—without it, the AI is blind to your whole project."
+                },
+                {
+                    "time": "10-20m",
+                    "title": "Composer Mode",
+                    "step": "Hit Cmd+I (Composer). This isn't just a chat; it's a multi-file editor. Ask it to 'Create a new component X and update the parent page Y'."
+                },
+                {
+                    "time": "20-60m",
+                    "title": "Flow State",
+                    "step": "Stop copying code. Use Cmd+K inside a file to edit locally, and Cmd+L to chat about the wider context."
+                }
             ],
-            "firstPrompt": "Refactor this function to be more readable and add error handling.",
+            "heroPrompt": {
+                "title": "The Architecture Refactor",
+                "prompt": "I want to refactor [Filename] to use the Repository pattern. \n1. Create a new service file for the logic.\n2. Update the controller to inject this service.\n3. Ensure all types are strictly defined.\n@Codebase",
+                "explanation": "Tagging @Codebase allows Cursor to scan your entire project structure to suggest the correct file paths and imports."
+            },
             "commonMistakes": [
-                "Ignoring the 'Index Codebase' step (AI won't know your files).",
-                "Treating it exactly like Copilot (Cursor is stronger at edits)."
+                "Treating it like Copilot (Completion only). Cursor's power is in *Editing*.",
+                "Forgetting to index the codebase.",
+                "ignoring '@' symbols to reference files."
             ],
-            "powerShortcut": "Cmd+K (Edit inside file)"
+            "shortcuts": [
+                {
+                    "keys": "Cmd+K",
+                    "desc": "Edit Selection"
+                },
+                {
+                    "keys": "Cmd+L",
+                    "desc": "Chat Sidebar"
+                },
+                {
+                    "keys": "Cmd+I",
+                    "desc": "Composer (Multi-file)"
+                }
+            ]
         },
         "tagline": "The AI code editor that builds software for you.",
         "category": "Coding",
@@ -219,18 +255,51 @@
         "id": "midjourney",
         "name": "Midjourney",
         "playbook": {
-            "first10Min": [
-                "Join the Discord server.",
-                "Go to a 'newbies' channel.",
-                "Type '/imagine' followed by your prompt.",
-                "Upscale the best result (U1, U2, etc.)."
+            "timeBreakdown": [
+                {
+                    "time": "0-10m",
+                    "title": "Settings",
+                    "step": "Type '/settings' and enable 'Stylize Med' and 'Remix Mode'. This gives you control buttons under every image."
+                },
+                {
+                    "time": "10-30m",
+                    "title": "Prompt Crafting",
+                    "step": "Format: [Subject] + [Art Style] + [Lighting] + [Parameters]. E.g. 'Cat, Cyberpunk, Neon Light --ar 16:9'."
+                },
+                {
+                    "time": "30-50m",
+                    "title": "Refining",
+                    "step": "Don't settle. Hit 'V1' (Variation) on a result you like to explore directions. Use 'Zoom Out' to expand the canvas."
+                },
+                {
+                    "time": "50-60m",
+                    "title": "Style Ref",
+                    "step": "Find an image you love. Use '--sref [url]' to copy its artistic style onto your new prompt."
+                }
             ],
-            "firstPrompt": "/imagine prompt: A futuristic city with flying cars, cyberpunk style, neon lights --ar 16:9 --v 6",
+            "heroPrompt": {
+                "title": "The Photorealistic Shot",
+                "prompt": "Editorial photography of a coffee shop in rainfall, shot on 35mm lens, f/1.8, bokeh, cinematic lighting, hyper-realistic --ar 4:5 --v 6.0 --style raw",
+                "explanation": "Using camera terms (35mm, f/1.8) triggers Midjourney's photorealism model. '--style raw' reduces the 'AI look'."
+            },
             "commonMistakes": [
-                "Giving up after the first bad result (reroll!).",
-                "Ignoring aspect ratios (--ar)."
+                "Writing sentences like 'Please draw me a...'. Just list keywords.",
+                "Ignoring Aspect Ratios (--ar 16:9 is vital for desktop wallpapers)."
             ],
-            "powerShortcut": "Cmd+Option+Z (Discord: Mark as read)"
+            "shortcuts": [
+                {
+                    "keys": "--ar 16:9",
+                    "desc": "Widescreen"
+                },
+                {
+                    "keys": "--no text",
+                    "desc": "Remove Text"
+                },
+                {
+                    "keys": "Shift+Enter",
+                    "desc": "Queue Prompt"
+                }
+            ]
         },
         "tagline": "The gold standard for AI art.",
         "category": "Image Gen",
@@ -734,17 +803,47 @@
         "id": "perplexity-ai",
         "name": "Perplexity",
         "playbook": {
-            "first10Min": [
-                "Set it as your default browser search engine.",
-                "Turn on 'Pro' mode (if trial available) for deeper research.",
-                "Create a 'Collection' for a recurring topic (e.g., 'Tech News')."
+            "timeBreakdown": [
+                {
+                    "time": "0-5m",
+                    "title": "Setup",
+                    "step": "Make it your default search engine in Chrome/Arc settings. The friction of 'opening a new tab' kills the habit."
+                },
+                {
+                    "time": "5-15m",
+                    "title": "Focus Mode",
+                    "step": "Click 'All' in the search bar. Select 'Academic' or 'Reddit'. Try searching for 'Best office chair' restricted to Reddit to avoid SEO spam."
+                },
+                {
+                    "time": "15-30m",
+                    "title": "Collections",
+                    "step": "Create a Collection named 'Tech News'. Add a prompt instruction: 'Summarize as bullet points'. Now every search in this bucket follows that rule."
+                },
+                {
+                    "time": "30-60m",
+                    "title": "Deep Dive",
+                    "step": "Turn on 'Pro Search' and ask a multi-step question like 'Compare the pricing models of Stripe vs Adyen for a marketplace'."
+                }
             ],
-            "firstPrompt": "Summarize the latest developments in [Topic] this week with citations.",
+            "heroPrompt": {
+                "title": "The Market Researcher",
+                "prompt": "Find 5 competitors to [Product Idea]. For each, list their:\n1. Core Value Prop\n2. Pricing Tier\n3. G2 Rating\nFormat as a markdown table.",
+                "explanation": "Perplexity excels at structured data gathering. Asking for a table forces it to be concise and comparable."
+            },
             "commonMistakes": [
-                "Using it for creative writing (it's a search engine, not a poet).",
-                "Ignoring the sources (always verify the footnotes)."
+                "Asking it to write creative fiction (It's a research engine).",
+                "Ignoring the footnotes (Hallucinations happen; verify the source)."
             ],
-            "powerShortcut": "Cmd+Shift+P (Focus Search)"
+            "shortcuts": [
+                {
+                    "keys": "Cmd+/",
+                    "desc": "Focus Search Bar"
+                },
+                {
+                    "keys": "Cmd+Shift+P",
+                    "desc": "Toggle Pro"
+                }
+            ]
         },
         "tagline": "Where knowledge begins.",
         "category": "Writing",
@@ -767,17 +866,51 @@
         "id": "chatgpt",
         "name": "ChatGPT",
         "playbook": {
-            "first10Min": [
-                "Login and pin the tab.",
-                "Set 'Custom Instructions' in settings (tell it who you are).",
-                "Try Voice Mode on the mobile app."
+            "timeBreakdown": [
+                {
+                    "time": "0-10m",
+                    "title": "Custom Instructions",
+                    "step": "Go to Settings > Personalization > Custom Instructions. Tell it your profession and 'Be concise, no fluff'. It saves hours of re-prompting."
+                },
+                {
+                    "time": "10-25m",
+                    "title": "Voice Mode",
+                    "step": "Download the Mobile App. Tap the headphones. Have a walking meeting with it. It's significantly better than typing for brainstorming."
+                },
+                {
+                    "time": "25-45m",
+                    "title": "Data Analysis",
+                    "step": "Upload a CSV/Excel file. Ask: 'Visualize the trends in this data'. It writes and runs Python code to make charts."
+                },
+                {
+                    "time": "45-60m",
+                    "title": "Memory",
+                    "step": "Tell it: 'Remember that I prefer React code snippets'. It will confirm it saved this to memory for all future chats."
+                }
             ],
-            "firstPrompt": "Act as a senior debate coach. Critique my argument: [Insert Argument]",
+            "heroPrompt": {
+                "title": "The Devil's Advocate",
+                "prompt": "I am considering [Decision]. Act as a critical opponent. \n1. List 3 reasons why this will fail.\n2. Steelman the counter-argument.\n3. Identify my blind spots.",
+                "explanation": "Asking AI to agree is easy. Asking it to critique breaks echo chambers and finds logic gaps."
+            },
             "commonMistakes": [
-                "Using the default model for complex tasks (use GPT-4).",
-                "Providing zero context in your prompt."
+                "Starting a new chat for every question (you lose context).",
+                "Politely asking 'User please' (it's a machine, be direct)."
             ],
-            "powerShortcut": "Cmd+Shift+O (Open new chat)"
+            "shortcuts": [
+                {
+                    "keys": "Cmd+Shift+O",
+                    "desc": "New Chat"
+                },
+                {
+                    "keys": "Esc",
+                    "desc": "Stop Generating"
+                },
+                {
+                    "keys": "Cmd+Shift+C",
+                    "desc": "Copy Last Response"
+                }
+            ]
         },
         "tagline": "Your AI assistant for everything.",
         "category": "Writing",
@@ -2080,17 +2213,51 @@
         "id": "notion",
         "name": "Notion",
         "playbook": {
-            "first10Min": [
-                "Create a new 'Page' and type '/'.",
-                "Try the 'Ask AI' feature to summarize a document.",
-                "Build a simple database (e.g., Task List)."
+            "timeBreakdown": [
+                {
+                    "time": "0-10m",
+                    "title": "Slash Commands",
+                    "step": "Forget the mouse. Type '/' to create headings, tables, and lists. Type '/turn' to convert a block into a page."
+                },
+                {
+                    "time": "10-20m",
+                    "title": "Database 101",
+                    "step": "Create a 'Table' database. Add a 'Status' property. This is your new Task manager. Don't over-engineer it yet."
+                },
+                {
+                    "time": "20-40m",
+                    "title": "The Daily Page",
+                    "step": "Create a template button for 'New Day'. Have it auto-generate your to-do list and journal headers."
+                },
+                {
+                    "time": "40-60m",
+                    "title": "Q&A AI",
+                    "step": "Import a PDF or long note. Press Space to activate AI and ask: 'What are the action items in this doc?'"
+                }
             ],
-            "firstPrompt": "Draft a project proposal for a new mobile app.",
+            "heroPrompt": {
+                "title": "The Meeting Summarizer",
+                "prompt": "Extract all action items from this transcript, assign them to a person if mentioned, and format as a checkbox list.",
+                "explanation": "Notion AI has context of the current page, making it perfect for extraction tasks."
+            },
             "commonMistakes": [
-                "Over-engineering your dashboard before you have content.",
-                "Forgetting to use '/ai' to speed up writing."
+                "Spending 7 days building a 'Second Brain' before writing a single note.",
+                "Using it for heavy spreadsheet math (Use Excel/Sheets for that)."
             ],
-            "powerShortcut": "Cmd+J (Ask AI)"
+            "shortcuts": [
+                {
+                    "keys": "Cmd+P",
+                    "desc": "Quick Find / Search"
+                },
+                {
+                    "keys": "[[",
+                    "desc": "Link to Page"
+                },
+                {
+                    "keys": "/",
+                    "desc": "Command Menu"
+                }
+            ]
         },
         "tagline": "The all-in-one workspace.",
         "category": "Productivity",
