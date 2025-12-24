@@ -101,6 +101,22 @@ function ToolDirectory() {
           ))}
         </div>
 
+        {/* Category Pills */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => updateFilter('category', cat)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${(selectedCategory === cat || (cat === 'All' && !selectedCategory))
+                ? 'bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
+                : 'bg-slate-900 text-slate-400 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400'
+                }`}
+            >
+              {cat === 'Fun' ? 'Fun 🎡' : cat}
+            </button>
+          ))}
+        </div>
+
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-2">
             <span className="w-2 h-8 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span>
