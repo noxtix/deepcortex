@@ -8,9 +8,13 @@
   --background-end-rgb: 2, 6, 23;
 }
 
+html,
 body {
+  background-color: rgb(2, 6, 23);
+  /* bg-slate-950 */
   color: rgb(var(--foreground-rgb));
-  background: transparent;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll from blobs */
 }
 
 @layer utilities {
