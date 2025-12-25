@@ -31,18 +31,36 @@ export async function subscribeUser(prevState, formData) {
         }
 
         // 2. Add to Resend Audience
-        const { data, error } = await resend.contacts.create({
+        const { data: contactData, error: contactError } = await resend.contacts.create({
             email: email,
             audienceId: audienceId,
         });
 
-        if (error) {
-            console.error('Resend API Error:', error);
+        if (contactError) {
+            console.error('Resend API Error (Contact):', contactError);
             // Handle "Already Subscribed"
-            if (error.message && error.message.toLowerCase().includes('already')) {
+            if (contactError.message && contactError.message.toLowerCase().includes('already')) {
                 return { success: true, message: "You're already on the list! 🚀" };
             }
             return { success: false, message: 'Something went wrong. Please try again.' };
+        }
+
+        // 3. Send Welcome Email
+        try {
+            const { data: emailData, error: emailError } = await resend.emails.send({
+                from: 'DeepCortex <hello@deepcortex.tech>',
+                to: email,
+                subject: 'Welcome to the Hive Mind 🧠',
+                react: <WelcomeEmail />,
+            });
+
+            if (emailError) {
+                console.error('Welcome Email Error:', emailError);
+            } else {
+                console.log('Welcome Email Sent:', emailData);
+            }
+        } catch (emailErr) {
+            console.error('Welcome Email Exception:', emailErr);
         }
 
         return { success: true, message: 'You are in! 🚀' };
