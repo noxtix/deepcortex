@@ -2,11 +2,19 @@
 
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
-
 export async function subscribeUser(formData) {
     const email = formData.get('email');
+    const apiKey = process.env.RESEND_API_KEY;
+    const audienceId = process.env.RESEND_AUDIENCE_ID;
+
+    // 0. Server-Side Configuration Check
+    if (!apiKey || !audienceId) {
+        console.error('Server Configuration Error: Missing RESEND_API_KEY or RESEND_AUDIENCE_ID');
+        // Return a generic error to the user, but log specific missing keys to server console
+        return { success: false, message: 'System configuration error. Please try again later.' };
+    }
+
+    const resend = new Resend(apiKey);
 
     // 1. Validate Email
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -17,14 +25,13 @@ export async function subscribeUser(formData) {
         // 2. Add to Resend Audience
         const { data, error } = await resend.contacts.create({
             email: email,
-            audienceId: AUDIENCE_ID,
+            audienceId: audienceId,
         });
 
         if (error) {
             console.error('Resend Error:', error);
 
-            // Handle "Already Subscribed" (400 or 422 usually, but strict check is safer)
-            // Resend specific error codes or messages might vary slightly, but generally:
+            // Handle "Already Subscribed"
             if (error.message && error.message.toLowerCase().includes('already')) {
                 return { success: true, message: "You're already on the list! 🚀" };
             }
