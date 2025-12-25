@@ -3,7 +3,7 @@
 // actions/subscribe.js - v2 (Safe Mode)
 import { Resend } from 'resend';
 
-export async function subscribeUser(formData) {
+export async function subscribeUser(prevState, formData) {
     try {
         const email = formData.get('email');
         const apiKey = process.env.RESEND_API_KEY;
