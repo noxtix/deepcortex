@@ -2,6 +2,8 @@
 
 // actions/subscribe.js - v2 (Safe Mode)
 import { Resend } from 'resend';
+import WelcomeEmail from '@/components/emails/WelcomeEmail';
+import * as React from 'react';
 
 export async function subscribeUser(prevState, formData) {
     try {
