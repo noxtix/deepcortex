@@ -1,5 +1,6 @@
 'use server';
 
+// actions/subscribe.js - v2 (Safe Mode)
 import { Resend } from 'resend';
 
 export async function subscribeUser(formData) {
