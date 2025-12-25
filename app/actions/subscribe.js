@@ -47,6 +47,6 @@ export async function subscribeUser(formData) {
 
     } catch (error) {
         console.error('CRITICAL SERVER ACTION ERROR:', error);
-        return { success: false, message: 'Internal server exception. Checking logs.' };
+        return { success: false, message: `Server Error: ${error.message}` };
     }
 }
