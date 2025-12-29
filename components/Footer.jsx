@@ -35,12 +35,13 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div className="flex flex-col gap-4">
                         <h3 className="text-slate-100 font-bold text-sm uppercase tracking-wider">Explore</h3>
-                        <div className="flex flex-col gap-3 text-sm text-slate-400">
-                            <Link href="/" className="hover:text-emerald-400 transition-colors w-fit">Home</Link>
-                            <Link href="/stacks" className="hover:text-emerald-400 transition-colors w-fit">Stacks</Link>
-                            <Link href="/blog" className="hover:text-emerald-400 transition-colors w-fit">Blog</Link>
-                            <Link href="/privacy" className="hover:text-emerald-400 transition-colors w-fit">Privacy Policy</Link>
-                            <Link href="/terms" className="hover:text-emerald-400 transition-colors w-fit">Terms of Service</Link>
+                        {/* Links */}
+                        <div className="flex gap-6 text-xs font-medium text-slate-400">
+                            <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
+                            <Link href="/stacks" className="hover:text-emerald-400 transition-colors">Stacks</Link>
+                            <Link href="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link>
+                            <Link href="/privacy" className="hover:text-emerald-400 transition-colors">Privacy</Link>
+                            <Link href="/terms" className="hover:text-emerald-400 transition-colors">Terms</Link>
                         </div>
                     </div>
 
