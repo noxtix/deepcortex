@@ -7,10 +7,10 @@ export default function Footer() {
     return (
         <footer className="bg-black border-t border-slate-900 pt-10 pb-6 mt-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
 
                     {/* Brand Section */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 items-center md:items-start">
                         <div className="flex items-center gap-2">
                             <div className="relative w-6 h-6">
                                 <Image
@@ -33,10 +33,10 @@ export default function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 items-center md:items-start">
                         <h3 className="text-slate-100 font-bold text-xs uppercase tracking-wider">Explore</h3>
                         {/* Links */}
-                        <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-medium text-slate-400">
+                        <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs font-medium text-slate-400">
                             <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
                             <Link href="/stacks" className="hover:text-emerald-400 transition-colors">Stacks</Link>
                             <Link href="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link>
@@ -46,13 +46,13 @@ export default function Footer() {
                     </div>
 
                     {/* Newsletter Section */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 items-center md:items-start">
                         <h3 className="text-slate-100 font-bold text-xs uppercase tracking-wider flex items-center gap-2">
                             <Mail className="w-3.5 h-3.5 text-emerald-500" />
                             Weekly Wisdom
                         </h3>
                         {/* Compact Form Container */}
-                        <div className="max-w-xs">
+                        <div className="max-w-xs w-full">
                             <NewsletterForm variant="footer" />
                         </div>
                     </div>

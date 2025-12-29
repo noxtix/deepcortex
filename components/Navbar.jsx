@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
+import NewsletterForm from './NewsletterForm';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -101,15 +102,10 @@ const Navbar = () => {
               Stacks
             </Link>
             <div className="pt-4 pb-2">
-              <a
-                href="https://forms.gle/9MHi5zb8qQen7Ai17"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block w-full text-center bg-slate-800 text-slate-200 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium"
-              >
-                Submit a Tool
-              </a>
+              <div className="px-1">
+                <p className="text-xs text-slate-500 mb-2 font-medium uppercase tracking-wider">Weekly Wisdom</p>
+                <NewsletterForm variant="footer" />
+              </div>
             </div>
           </div>
         </div>
