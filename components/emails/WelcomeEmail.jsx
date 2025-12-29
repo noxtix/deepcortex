@@ -15,8 +15,6 @@ import * as React from "react";
 export default function WelcomeEmail() {
     return (
         <Html>
-            <Head />
-            <Preview>Welcome to the Intelligence Brief</Preview>
             <Tailwind
                 config={{
                     theme: {
@@ -29,6 +27,8 @@ export default function WelcomeEmail() {
                     },
                 }}
             >
+                <Head />
+                <Preview>Welcome to the Intelligence Brief</Preview>
                 <Body className="bg-black my-auto mx-auto font-sans">
                     <Container className="border border-solid border-[#333] rounded my-[40px] mx-auto p-[20px] max-w-[465px]">
                         <Section className="mt-[32px]">

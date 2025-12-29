@@ -1,8 +1,9 @@
 'use server';
 
-// actions/subscribe.js - v2 (Safe Mode)
+// actions/subscribe.js - Fixed Race Condition & Force Send
 import { Resend } from 'resend';
 import WelcomeEmail from '@/components/emails/WelcomeEmail';
+import { render } from '@react-email/components';
 import * as React from 'react';
 
 export async function subscribeUser(prevState, formData) {
@@ -11,16 +12,10 @@ export async function subscribeUser(prevState, formData) {
         const apiKey = process.env.RESEND_API_KEY;
         const audienceId = process.env.RESEND_AUDIENCE_ID;
 
-        console.log('Subscribe Action Triggered', {
-            hasKey: !!apiKey,
-            hasAudience: !!audienceId,
-            keyLength: apiKey ? apiKey.length : 0
-        });
-
-        // 0. Server-Side Configuration Check
+        // 0. Configuration Check
         if (!apiKey || !audienceId) {
             console.error('Server Configuration Error: Missing Credentials');
-            return { success: false, message: 'System configuration error. Please try again later.' };
+            return { success: false, message: 'System configuration error.' };
         }
 
         const resend = new Resend(apiKey);
@@ -30,38 +25,49 @@ export async function subscribeUser(prevState, formData) {
             return { success: false, message: 'Please enter a valid email address.' };
         }
 
-        // 2. Add to Resend Audience
+        // 2. Add to Resend Audience (Await strictly)
         const { data: contactData, error: contactError } = await resend.contacts.create({
             email: email,
             audienceId: audienceId,
         });
 
+        let shouldSendEmail = false;
+
         if (contactError) {
-            console.error('Resend API Error (Contact):', contactError);
-            // Handle "Already Subscribed"
+            console.error('Resend Contact Error:', contactError);
+            // If already subscribed, we still want to force send the email for debugging/user request
             if (contactError.message && contactError.message.toLowerCase().includes('already')) {
-                return { success: true, message: "You're already on the list! 🚀" };
+                console.log('User already in audience. Proceeding to send email (Force Send).');
+                shouldSendEmail = true;
+            } else {
+                return { success: false, message: 'Could not subscribe. Please try again.' };
             }
-            return { success: false, message: 'Something went wrong. Please try again.' };
+        } else {
+            console.log('User successfully added to audience.');
+            shouldSendEmail = true;
         }
 
-        // 3. Send Welcome Email
-        try {
+        // 3. Send Welcome Email (Strictly await this too)
+        if (shouldSendEmail) {
+            console.log('Attempting to send email...');
+
+            const emailHtml = await render(<WelcomeEmail />);
+
             const { data: emailData, error: emailError } = await resend.emails.send({
                 from: 'DeepCortex <hello@deepcortex.tech>',
                 to: email,
                 subject: 'Welcome to the Hive Mind 🧠',
-                react: <WelcomeEmail />,
+                html: emailHtml,
             });
 
             if (emailError) {
-                console.error('Welcome Email Error:', emailError);
-                return { success: true, message: `Joined! But email failed: ${emailError.name} - ${emailError.message}` };
+                console.error('Welcome Email FAILED:', emailError);
+                // We return true because the subscription part might have worked (or they were already there)
+                // But we warn the user/logs.
+                return { success: true, message: 'Subscribed, but welcome email failed to send.' };
             } else {
-                console.log('Welcome Email Sent Details:', JSON.stringify(emailData, null, 2));
+                console.log('Email sent:', emailData);
             }
-        } catch (emailErr) {
-            console.error('Welcome Email Exception:', emailErr);
         }
 
         return { success: true, message: 'You are in! 🚀' };
