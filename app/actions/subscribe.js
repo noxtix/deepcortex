@@ -56,9 +56,9 @@ export async function subscribeUser(prevState, formData) {
 
             if (emailError) {
                 console.error('Welcome Email Error:', emailError);
-                return { success: true, message: `Joined! But email failed: ${emailError.message}` };
+                return { success: true, message: `Joined! But email failed: ${emailError.name} - ${emailError.message}` };
             } else {
-                console.log('Welcome Email Sent:', emailData);
+                console.log('Welcome Email Sent Details:', JSON.stringify(emailData, null, 2));
             }
         } catch (emailErr) {
             console.error('Welcome Email Exception:', emailErr);
