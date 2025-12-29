@@ -55,16 +55,12 @@ export default function Footer() {
                         <div className="max-w-xs">
                             <NewsletterForm variant="footer" />
                         </div>
-                        <div className="text-slate-600 text-[10px] mt-2">
-                            <a href="mailto:hello@deepcortex.tech" className="hover:text-emerald-400 transition-colors">hello@deepcortex.tech</a>
-                        </div>
                     </div>
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-slate-900 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-[10px]">
+                <div className="border-t border-slate-900 mt-8 pt-6 flex justify-center text-slate-600 text-[10px]">
                     <span>&copy; {new Date().getFullYear()} DeepCortex. All rights reserved.</span>
-                    <span>Built with Next.js 14 & Resend</span>
                 </div>
             </div>
         </footer>
