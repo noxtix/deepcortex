@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
-        <AnimatedBackground />
+        {/* AnimatedBackground removed for pitch black theme */}
         <div className="relative z-10">
           {children}
           <Footer />

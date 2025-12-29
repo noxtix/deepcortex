@@ -10,8 +10,8 @@
 
 html,
 body {
-  background-color: rgb(2, 6, 23);
-  /* bg-slate-950 */
+  background-color: #000000;
+  /* pure black */
   color: rgb(var(--foreground-rgb));
   overflow-x: hidden;
   /* Prevent horizontal scroll from blobs */
