@@ -179,6 +179,10 @@ export default function AboutPage() {
                     <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 shadow-2xl">
                         <NewsletterForm variant="default" />
                     </div>
+
+                    <p className="text-slate-500 text-sm mt-8">
+                        Questions? <a href="mailto:hello@deepcortex.tech" className="text-[#00FF94] hover:underline decoration-[#00FF94]/50 underline-offset-4 transition-all">hello@deepcortex.tech</a>
+                    </p>
                 </div>
             </Section>
 
