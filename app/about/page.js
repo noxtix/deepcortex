@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FlaskConical, ShieldAlert, Zap, User } from 'lucide-react';
 import NewsletterForm from '@/components/NewsletterForm';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+// Footer is handled by layout.js
 
 // Animation Variations
 const fadeInUp = {
@@ -182,7 +182,6 @@ export default function AboutPage() {
                 </div>
             </Section>
 
-            <Footer />
         </main>
     );
 }

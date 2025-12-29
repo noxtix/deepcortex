@@ -10,9 +10,18 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-      },
-      animation: {
-        blob: "blob 10s infinite",
+        // Theme Override: Black & Neon
+        slate: {
+          950: '#000000', // Pure Black Background
+          900: '#0a0a0a', // Slightly lighter for cards
+          800: '#1f1f1f', // Borders
+          ...require('tailwindcss/colors').slate,
+        },
+        emerald: {
+          ...require('tailwindcss/colors').emerald,
+          400: '#00FF94', // Neon Green Primary
+          500: '#00DC82', // Darker Neon
+        },
       },
       keyframes: {
         blob: {
