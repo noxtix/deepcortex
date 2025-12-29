@@ -11,13 +11,7 @@ const Hero = ({ searchQuery, setSearchQuery }) => {
                 The curated directory of AI tools for all.
             </p>
 
-            {/* Newsletter Integration */}
-            <div className="max-w-md mx-auto mb-16">
-                <NewsletterForm variant="hero" />
-                <p className="text-xs text-slate-500 mt-3">
-                    Join 12,000+ developers building the future.
-                </p>
-            </div>
+            {/* Newsletter Integration Removed */}
 
             {/* Search Bar */}
             <div className="max-w-lg mx-auto relative group">
