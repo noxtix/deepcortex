@@ -28,7 +28,7 @@ const Section = ({ children, className = "" }) => (
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className={`min-h-screen flex flex-col justify-center items-center px-6 md:px-12 max-w-5xl mx-auto py-20 ${className}`}
+        className={`flex flex-col justify-center items-center px-6 md:px-12 max-w-5xl mx-auto py-24 ${className}`}
     >
         {children}
     </motion.section>
