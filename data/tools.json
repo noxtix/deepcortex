@@ -2,8 +2,6 @@
     {
         "id": "cursor-ai",
         "name": "Cursor",
-        "id": "cursor-ai",
-        "name": "Cursor",
         "playbook": {
             "timeBreakdown": [
                 {
@@ -2619,6 +2617,1006 @@
         "cons": [
             "Pro features locked",
             "Simple for some"
+        ]
+    },
+    {
+        "id": "uizard",
+        "name": "Uizard",
+        "tagline": "Design apps and websites with AI.",
+        "category": "Design",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://uizard.io",
+        "shortDescription": "Turn hand-drawn sketches into professional UI designs automatically.",
+        "fullReview": "<h3>First Impressions</h3><p>I drew a terrible rectangle on paper, uploaded it, and Uizard turned it into a perfect login screen. It feels like magic for non-designers.</p><h3>Best Feature: Autodesigner</h3><p>You prompt 'A food delivery app', and it generates the entire UX flow, not just one screen.</p><h3>The Verdict</h3><p>Perfect for founders who need an MVP fast but can't hire a designer.</p>",
+        "pros": [
+            "Scan sketches to UI",
+            "Text-to-design",
+            "Easy for non-designers"
+        ],
+        "cons": [
+            "Limited customization",
+            "Not for complex production apps"
+        ]
+    },
+    {
+        "id": "galileo-ai",
+        "name": "Galileo AI",
+        "tagline": "Interface design at lightning speed.",
+        "category": "Design",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://www.usegalileo.ai",
+        "shortDescription": "Generates high-fidelity UI designs from simple text descriptions in Figma.",
+        "fullReview": "<h3>First Impressions</h3><p>It's like Midjourney for UI. I asked for a 'Dark mode fintech dashboard', and it gave me layers, components, and auto-layout ready for Figma.</p><h3>Best Feature: Figma Export</h3><p>It exports editable vectors, not flat images. This is huge for actual product workflows.</p><h3>The Verdict</h3><p>A massive time-saver for UI/UX designers starting a new project.</p>",
+        "pros": [
+            "Editable Figma export",
+            "High fidelity",
+            "Good component usage"
+        ],
+        "cons": [
+            "Paid only",
+            "Waitlist sometimes"
+        ]
+    },
+    {
+        "id": "spline-ai",
+        "name": "Spline AI",
+        "tagline": "3D design with text prompts.",
+        "category": "Design",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://spline.design/ai",
+        "shortDescription": "Generate 3D objects, animations, and textures using AI prompts.",
+        "fullReview": "<h3>First Impressions</h3><p>3D is usually hard. Spline AI makes it accessible. I asked for a \"Cyberpunk chair\" and got a 3D model I could rotate and edit immediately.</p><h3>Best Feature: Texture Gen</h3><p>Generating seamless textures for 3D models with AI saves hours of hunting on stock sites.</p><h3>The Verdict</h3><p>The easiest entry point into 3D web design.</p>",
+        "pros": [
+            "Easy 3D generation",
+            "Web-based",
+            "Interactive exports"
+        ],
+        "cons": [
+            "Poly count limits",
+            "Animation controls can be tricky"
+        ]
+    },
+    {
+        "id": "khroma",
+        "name": "Khroma",
+        "tagline": "The AI color tool for designers.",
+        "category": "Design",
+        "pricing": "Free",
+        "rating": 4.5,
+        "affiliateLink": "https://www.khroma.co",
+        "shortDescription": "Learns which colors you like and creates limitless palettes for you.",
+        "fullReview": "<h3>First Impressions</h3><p>It asks you to pick 50 colors you like (which takes a minute). Then it never shows you a bad palette again. It's personalized color theory.</p><h3>Best Feature: Bias Learning</h3><p>It actually understands my taste. I don't get generic palettes; I get ones that fit my style.</p><h3>The Verdict</h3><p>The best free color tool for designers tired of Coolors.co.</p>",
+        "pros": [
+            "Personalized results",
+            "Infinite scroll",
+            "Completely free"
+        ],
+        "cons": [
+            "Setup takes time",
+            "Browser only"
+        ]
+    },
+    {
+        "id": "looka",
+        "name": "Looka",
+        "tagline": "Design your own beautiful brand.",
+        "category": "Design",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://looka.com",
+        "shortDescription": "Uses AI to generate logos and brand kits instantly.",
+        "fullReview": "<h3>First Impressions</h3><p>Most logo generators are trash. Looka actually understands spacing and font pairing. I got a usable logo for a side project in 5 minutes.</p><h3>Best Feature: Brand Kit</h3><p>It doesn't just give you a logo; it puts it on business cards, social covers, and letterheads automatically.</p><h3>The Verdict</h3><p>Best for solopreneurs who need a logo today.</p>",
+        "pros": [
+            "Full brand kit",
+            "Better than Fiverr",
+            "Instant previews"
+        ],
+        "cons": [
+            "Generic icons sometimes",
+            "Pay to download vector"
+        ]
+    },
+    {
+        "id": "fontjoy",
+        "name": "Fontjoy",
+        "tagline": "Font pairing made simple.",
+        "category": "Design",
+        "pricing": "Free",
+        "rating": 4.4,
+        "affiliateLink": "https://fontjoy.com",
+        "shortDescription": "Uses deep learning to generate font combinations that work well together.",
+        "fullReview": "<h3>First Impressions</h3><p>One button: Generate. It pairs a header, subheader, and body font that perfectly balance contrast and similarity.</p><h3>Best Feature: Lock</h3><p>You can lock a font you like and generate pairings around it. Simple, effective, free.</p><h3>The Verdict</h3><p>A staple bookmark for every web designer.</p>",
+        "pros": [
+            "Simple UI",
+            "Deep learning engine",
+            "Google Fonts integration"
+        ],
+        "cons": [
+            "Limited to Google Fonts",
+            "No custom uploads"
+        ]
+    },
+    {
+        "id": "autodraw",
+        "name": "AutoDraw",
+        "tagline": "Fast drawing for everyone.",
+        "category": "Design",
+        "pricing": "Free",
+        "rating": 4.3,
+        "affiliateLink": "https://www.autodraw.com",
+        "shortDescription": "Google's AI turns your rough doodles into professional icons.",
+        "fullReview": "<h3>First Impressions</h3><p>I drew a squiggly line that looked like a pizza. AutoDraw guessed it and offered me 10 professional pizza icons to replace it.</p><h3>Best Feature: Guessing Engine</h3><p>It's incredibly forgiving. You can draw like a toddler and still get clean vector art.</p><h3>The Verdict</h3><p>Great for quick mockups and presentation slides.</p>",
+        "pros": [
+            "Totally free",
+            "Google magic",
+            "Vector export"
+        ],
+        "cons": [
+            "Limited icon library",
+            "Basic editor"
+        ]
+    },
+    {
+        "id": "huemint",
+        "name": "Huemint",
+        "tagline": "AI color palette generator.",
+        "category": "Design",
+        "pricing": "Free",
+        "rating": 4.5,
+        "affiliateLink": "https://huemint.com",
+        "shortDescription": "Uses ML to generate color palettes and visualize them on real brand mockups.",
+        "fullReview": "<h3>First Impressions</h3><p>Seeing the colors applied to a magazine cover or a website mockup instantly helps decide if a palette works.</p><h3>Best Feature: Context View</h3><p>It doesn't just show abstract boxes; it renders the colors on varied design assets.</p><h3>The Verdict</h3><p>The best visualization tool for color selection.</p>",
+        "pros": [
+            "Real-world mockups",
+            "Bootstrap export",
+            "Free"
+        ],
+        "cons": [
+            "UI is dated",
+            "Limited export formats"
+        ]
+    },
+    {
+        "id": "visual-electric",
+        "name": "Visual Electric",
+        "tagline": "Image generation for designers.",
+        "category": "Design",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://visualelectric.com",
+        "shortDescription": "A canvas-based generative AI tool built specifically for creative workflows.",
+        "fullReview": "<h3>First Impressions</h3><p>It feels like Figma met Midjourney. The infinite canvas lets you iterate on ideas side-by-side rather than in a chat timeline.</p><h3>Best Feature: Mood Match</h3><p>You can upload a moodboard, and it aligns the generation style to match the overall vibe perfectly.</p><h3>The Verdict</h3><p>The best interface for professional creatives using AI.</p>",
+        "pros": [
+            "Infinite canvas",
+            "Designer-first UI",
+            "Great style control"
+        ],
+        "cons": [
+            "Credit usage is fast",
+            "Learning curve"
+        ]
+    },
+    {
+        "id": "illustroke",
+        "name": "Illustroke",
+        "tagline": "Vector illustrations from text prompts.",
+        "category": "Design",
+        "pricing": "Paid",
+        "rating": 4.4,
+        "affiliateLink": "https://illustroke.com",
+        "shortDescription": "Generates SVG vector illustrations suitable for websites and logos.",
+        "fullReview": "<h3>First Impressions</h3><p>Finally, AI that outputs SVGs. The 'Flat Design' style is perfect for modern tech websites.</p><h3>Best Feature: SVG Output</h3><p>No more tracing pixels in Illustrator. The output is ready for web use immediately.</p><h3>The Verdict</h3><p>Niche, but essential if you need vector assets.</p>",
+        "pros": [
+            "Download as SVG",
+            "Clean flat styles",
+            "Simple"
+        ],
+        "cons": [
+            "Paid credits",
+            "Limited styles"
+        ]
+    },
+    {
+        "id": "suno",
+        "name": "Suno",
+        "tagline": "Make a song about anything.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://suno.com",
+        "shortDescription": "Generates full songs with lyrics and vocals that sound radio-ready.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'A sad country song about an iPhone battery'. 30 seconds later, I was listening to a hit. The vocals are terrifyingly good.</p><h3>Best Feature: v3.5 Model</h3><p>The structure—verse, chorus, bridge—is musically coherent. It knows how to write a hook.</p><h3>The Verdict</h3><p>The Midjourney of Music. It's leading the pack.</p>",
+        "pros": [
+            "Radio quality vocals",
+            "Full composition",
+            "Viral potential"
+        ],
+        "cons": [
+            "Copyright is gray area",
+            "Lyrics can be cheesy"
+        ]
+    },
+    {
+        "id": "udio",
+        "name": "Udio",
+        "tagline": "Create music with AI.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://udio.com",
+        "shortDescription": "High-fidelity music generation known for complex musicality and clear vocals.",
+        "fullReview": "<h3>First Impressions</h3><p>Udio feels more 'musician-focused' than Suno. The ability to extend tracks and control the intro/outro allows for actual song construction.</p><h3>Best Feature: Extensions</h3><p>You can generate 30 seconds, then 'Extend' specifically to add a guitar solo or a breakdown.</p><h3>The Verdict</h3><p>The top competitor to Suno, often winning on audio fidelity.</p>",
+        "pros": [
+            "High fidelity audio",
+            "Extensions control",
+            "Wide genre support"
+        ],
+        "cons": [
+            "Complex interface",
+            "Generation time"
+        ]
+    },
+    {
+        "id": "murf-ai",
+        "name": "Murf AI",
+        "tagline": "Go from text to speech with a versatile AI voice generator.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://murf.ai",
+        "shortDescription": "A studio-quality AI voice generator for videos, podcasts, and presentations.",
+        "fullReview": "<h3>First Impressions</h3><p>The studio interface lets you time voiceovers to video clips perfectly. The voices sound professional, not robotic.</p><h3>Best Feature: Sync to Video</h3><p>You can upload your video and adjust the speech timing blocks to match the visuals precisely.</p><h3>The Verdict</h3><p>Great for corporate videos and explainer content.</p>",
+        "pros": [
+            "Video sync",
+            "Professional voices",
+            "Team collaboration"
+        ],
+        "cons": [
+            "Expensive for downloads",
+            "Some voices sound similar"
+        ]
+    },
+    {
+        "id": "speechify",
+        "name": "Speechify",
+        "tagline": "#1 Text to Speech Reader.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://speechify.com",
+        "shortDescription": "Turns any text, PDF, or book into an audiobook using high-quality AI voices.",
+        "fullReview": "<h3>First Impressions</h3><p>I listened to a 50-page PDF on my commute. The 'Snoop Dogg' voice is a gimmick, but the 'Gwyneth' voice is genuinely pleasant for long listening.</p><h3>Best Feature: Speed Listening</h3><p>It remains intelligible even at 2x or 3x speed, which is a productivity hack.</p><h3>The Verdict</h3><p>Essential for students and heavy readers.</p>",
+        "pros": [
+            "Read any document",
+            "Celebrity voices",
+            "Mobile app is great"
+        ],
+        "cons": [
+            "Premium is pricey",
+            "Web scraping can be buggy"
+        ]
+    },
+    {
+        "id": "krisp",
+        "name": "Krisp",
+        "tagline": "AI Noise Cancellation.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://krisp.ai",
+        "shortDescription": "Removes background noise, echoes, and voices from your calls in real-time.",
+        "fullReview": "<h3>First Impressions</h3><p>I clapped my hands while talking. The person on Zoom heard nothing but my voice. It's instant silence for everything else.</p><h3>Best Feature: Bi-directional</h3><p>It scrubs noise from *your* mic and also scrubs the noise coming from *their* mic. A lifesaver.</p><h3>The Verdict</h3><p>If you take calls in coffee shops, this is mandatory.</p>",
+        "pros": [
+            "Magic noise removal",
+            "Works with all apps",
+            "Echo cancellation"
+        ],
+        "cons": [
+            "Free plan limit",
+            "CPU usage"
+        ]
+    },
+    {
+        "id": "adobe-podcast",
+        "name": "Adobe Podcast",
+        "tagline": "AI audio recording and editing.",
+        "category": "Audio",
+        "pricing": "Free",
+        "rating": 4.7,
+        "affiliateLink": "https://podcast.adobe.com",
+        "shortDescription": "Enhance Speech makes terrible built-in mic audio sound like a studio setup.",
+        "fullReview": "<h3>First Impressions</h3><p>I recorded voice notes on my iPhone in a windy park. Ran it through Enhance Speech, and it sounded like NPR. Black magic.</p><h3>Best Feature: Enhance Speech</h3><p>One toggle to fix bad audio. It's aggressive but effective.</p><h3>The Verdict</h3><p>The best free audio tool on the web right now.</p>",
+        "pros": [
+            "Incredible enhancement",
+            "Browser based",
+            "Free"
+        ],
+        "cons": [
+            "Can sound robotic",
+            "No fine tuning"
+        ]
+    },
+    {
+        "id": "soundraw",
+        "name": "Soundraw",
+        "tagline": "Royalty-free AI music generator.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://soundraw.io",
+        "shortDescription": "Generate custom background music for your videos that you actually own.",
+        "fullReview": "<h3>First Impressions</h3><p>Unlike Suno (songs), this makes *background tracks*. You pick the mood and length, and it gives you perfect B-roll music.</p><h3>Best Feature: Custom Length</h3><p>Need a 4:32 track? It generates exactly that. No more fading out awkwardly.</p><h3>The Verdict</h3><p>Essential for YouTubers avoiding copyright strikes.</p>",
+        "pros": [
+            "Royalty free",
+            "Custom timing",
+            "Mood selection"
+        ],
+        "cons": [
+            "Melodies can be repetitive",
+            "Not for listening pleasure"
+        ]
+    },
+    {
+        "id": "lalal-ai",
+        "name": "Lalal.ai",
+        "tagline": "Extract vocal, accompaniment and various instruments.",
+        "category": "Audio",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://lalal.ai",
+        "shortDescription": "High-quality stem splitter that separates vocals, drums, bass, and piano.",
+        "fullReview": "<h3>First Impressions</h3><p>I uploaded a pop song. It gave me the acapella perfectly clean. The drum isolation was also shockingly tight.</p><h3>Best Feature: Instrument Separation</h3><p>Separating specific instruments like guitars or synths is rare, and Lalal does it well.</p><h3>The Verdict</h3><p>A must-have for DJs, remixers, and producers.</p>",
+        "pros": [
+            "Clean stems",
+            "Fast processing",
+            "Multiple instrument support"
+        ],
+        "cons": [
+            "Pay per minute",
+            "No realtime preview"
+        ]
+    },
+    {
+        "id": "riverside",
+        "name": "Riverside",
+        "tagline": "Record studio quality podcasts.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://riverside.fm",
+        "shortDescription": "Records locally on each device for 4K video and WAV audio, then uses AI to edit.",
+        "fullReview": "<h3>First Impressions</h3><p>The 'Magic Clips' feature automatically finds the viral moments in a long recording and turns them into vertical shorts.</p><h3>Best Feature: Local Recording</h3><p>Bad internet doesn't ruin the quality because it records to the disk first, then uploads.</p><h3>The Verdict</h3><p>The industry standard for remote podcasting.</p>",
+        "pros": [
+            "Local 4K recording",
+            "Magic Clips AI",
+            "Separate tracks"
+        ],
+        "cons": [
+            "Guest onboarding friction",
+            "Export times"
+        ]
+    },
+    {
+        "id": "podcastle",
+        "name": "Podcastle",
+        "tagline": "One-stop shop for broadcast storytelling.",
+        "category": "Audio",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://podcastle.ai",
+        "shortDescription": "Record, edit, and enhance podcasts directly in the browser.",
+        "fullReview": "<h3>First Impressions</h3><p>It's like Canva for audio. The 'Revoice' feature lets you type to correct spoken mistakes in your own voice.</p><h3>Best Feature: Magic Dust</h3><p>Their version of noise cleaning is subtle and effective, keeping the voice natural.</p><h3>The Verdict</h3><p>User-friendly and powerful for indie podcasters.</p>",
+        "pros": [
+            "Easy UI",
+            "Text-to-speech editing",
+            "Web based"
+        ],
+        "cons": [
+            "Tries to do too much",
+            "Mobile app limited"
+        ]
+    },
+    {
+        "id": "character-ai",
+        "name": "Character.ai",
+        "tagline": "Chat with anyone.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://character.ai",
+        "shortDescription": "Chat with AI personas of famous characters, historical figures, or anime waifus.",
+        "fullReview": "<h3>First Impressions</h3><p>I argued with Socrates, then got life advice from Mario. The personalities are shockingly distinct and sticky.</p><h3>Best Feature: Community Characters</h3><p>Millions of user-created characters means there is an AI for literally everything.</p><h3>The Verdict</h3><p> The most addictive consumer AI app. Period.</p>",
+        "pros": [
+            "Infinite entertainment",
+            "Distinct personalities",
+            "Free"
+        ],
+        "cons": [
+            "Can get repetitive",
+            "Filter strictness varies"
+        ]
+    },
+    {
+        "id": "pi-ai",
+        "name": "Pi",
+        "tagline": "A personalized AI companion.",
+        "category": "Fun",
+        "pricing": "Free",
+        "rating": 4.9,
+        "affiliateLink": "https://pi.ai",
+        "shortDescription": "An emotionally intelligent AI designed for supportive and empathetic conversation.",
+        "fullReview": "<h3>First Impressions</h3><p>Pi asks *you* questions. It feels like a friend checking in. The voice mode on mobile is the most natural conversation I've ever had with a machine.</p><h3>Best Feature: Empathy</h3><p>It remembers small details and brings them up later. It's genuinely comforting.</p><h3>The Verdict</h3><p>The best AI for venting or just talking through your day.</p>",
+        "pros": [
+            "Emotional intelligence",
+            "Beautiful interface",
+            "Great voice mode"
+        ],
+        "cons": [
+            "Not for coding/work",
+            "Can be too chatty"
+        ]
+    },
+    {
+        "id": "replika",
+        "name": "Replika",
+        "tagline": "The AI companion who cares.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.4,
+        "affiliateLink": "https://replika.com",
+        "shortDescription": "Create a virtual friend that learns and grows with you over time.",
+        "fullReview": "<h3>First Impressions</h3><p>It helped people during the pandemic for a reason. You build a relationship with your avatar, dressing them and chatting daily.</p><h3>Best Feature: AR Mode</h3><p>You can see your Replika in your room via your phone camera. It's a bit Black Mirror, but impressive.</p><h3>The Verdict</h3><p>Deeply engaging for those seeking connection.</p>",
+        "pros": [
+            "Customizable avatar",
+            "Relationship building",
+            "AR features"
+        ],
+        "cons": [
+            "Aggressive upsell",
+            "Privacy concerns"
+        ]
+    },
+    {
+        "id": "supermeme",
+        "name": "Supermeme.ai",
+        "tagline": "Turn text into memes.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.3,
+        "affiliateLink": "https://www.supermeme.ai",
+        "shortDescription": "Type a sentence, get a relevant meme template with the text applied.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'When the deploy fails on Friday'. It gave me the blinking guy meme and the burning house meme perfectly captioned.</p><h3>Best Feature: GIF Memes</h3><p>It handles animated GIF memes as well, which is rare.</p><h3>The Verdict</h3><p>A marketing manager's secret weapon for social.</p>",
+        "pros": [
+            "Instant humor",
+            "Large template database",
+            "Multi-language"
+        ],
+        "cons": [
+            "Some captions miss",
+            "Silly utility"
+        ]
+    },
+    {
+        "id": "voicemod",
+        "name": "Voicemod",
+        "tagline": "Real time voice changer.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://www.voicemod.net",
+        "shortDescription": "Change your voice in Discord/Zoom to sound like a demon, a baby, or T-Pain.",
+        "fullReview": "<h3>First Impressions</h3><p>The 'Clean Voice' filter actually makes my mic sound better, but the 'Titan' voice scared my friends in Discord. Instant fun.</p><h3>Best Feature: Soundboard</h3><p>Playing meme sounds directly into the voice chat is a staple of gaming culture now.</p><h3>The Verdict</h3><p>Essential for streamers and gamers.</p>",
+        "pros": [
+            "Real-time DSP",
+            "Huge soundboard",
+            "Integrates everywhere"
+        ],
+        "cons": [
+            "Ads in free version",
+            "Windows first"
+        ]
+    },
+    {
+        "id": "buzz",
+        "name": "Buzz",
+        "tagline": "Offline transcription and translation.",
+        "category": "Fun",
+        "pricing": "Free",
+        "rating": 4.6,
+        "affiliateLink": "https://github.com/chidiwilliams/buzz",
+        "shortDescription": "An open-source tool that lets you caption anything or transcribe your own mic offline.",
+        "fullReview": "<h3>First Impressions</h3><p>It's just a wrapper around OpenAI's Whisper, but it runs comfortably on my Mac. I use it to dictate notes without sending audio to the cloud.</p><h3>Best Feature: Privacy</h3><p>No data leaves your laptop. For sensitive diaries or work, this is key.</p><h3>The Verdict</h3><p>A great utility for the privacy-conscious.</p>",
+        "pros": [
+            "Open source",
+            "Private",
+            "Unlimited use"
+        ],
+        "cons": [
+            "Requires hardware power",
+            "Basic UI"
+        ]
+    },
+    {
+        "id": "talkie",
+        "name": "Talkie",
+        "tagline": "Soulful AI characters.",
+        "category": "Fun",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://talkie-ai.com",
+        "shortDescription": "A mobile-first character chat app with collectible cards and visual storytelling.",
+        "fullReview": "<h3>First Impressions</h3><p>It gamifies the chat experience. You pull 'cards' for characters to unlock new storylines. It's very Gen-Z focused.</p><h3>Best Feature: Card System</h3><p>The visual element of collecting character art adds a layer of addiction.</p><h3>The Verdict</h3><p>Fun visual novel style AI interaction.</p>",
+        "pros": [
+            "Visual polish",
+            "Collectible mechanic",
+            "Mobile native"
+        ],
+        "cons": [
+            "Gacha elements",
+            "Battery drain"
+        ]
+    },
+    {
+        "id": "meme-cam",
+        "name": "Meme Cam",
+        "tagline": "Make memes from your camera.",
+        "category": "Fun",
+        "pricing": "Free",
+        "rating": 4.2,
+        "affiliateLink": "https://www.memecam.dk",
+        "shortDescription": "Take a photo, and the AI analyzes the scene to add a funny caption.",
+        "fullReview": "<h3>First Impressions</h3><p>I took a photo of my empty wallet. It captioned it 'POV: Waiting for payday'. Accurate and roasting.</p><h3>Best Feature: Object Recognition</h3><p>It actually understands what's in the photo to make the joke relevant.</p><h3>The Verdict</h3><p>A fun party trick app.</p>",
+        "pros": [
+            "Simple",
+            "Funny results",
+            "Shareable"
+        ],
+        "cons": [
+            "One trick pony",
+            "Hit or miss"
+        ]
+    },
+    {
+        "id": "sudowrite",
+        "name": "Sudowrite",
+        "tagline": "Bust writer's block.",
+        "category": "Writing",
+        "pricing": "Paid",
+        "rating": 4.8,
+        "affiliateLink": "https://www.sudowrite.com",
+        "shortDescription": "The best AI for fiction writers. It describes scenes, twists, and characters vividly.",
+        "fullReview": "<h3>First Impressions</h3><p>I typed 'The door creaked open'. Sudowrite gave me five sensory descriptions of the smell, sound, and lighting. It understands narrative arc.</p><h3>Best Feature: Story Engine</h3><p>You can plan a beat sheet, and it helps write the chapters. It respects the 'Show, Don't Tell' rule.</p><h3>The Verdict</h3><p>If you write novels, this is your co-author.</p>",
+        "pros": [
+            "Sensory details",
+            "Story structure tools",
+            "Creative focus"
+        ],
+        "cons": [
+            "Expensive",
+            "Not for business writing"
+        ]
+    },
+    {
+        "id": "wordtune",
+        "name": "Wordtune",
+        "tagline": "Your thoughts, in words.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://www.wordtune.com",
+        "shortDescription": "Rewrite sentences to be more casual, formal, or concise instantly.",
+        "fullReview": "<h3>First Impressions</h3><p>Highlight a sentence, click rewrite. It gives 10 variations. It's the best tool for finding the 'right way' to say something.</p><h3>Best Feature: Spices</h3><p>It can add a statistic, a joke, or an counter-argument to your text automatically.</p><h3>The Verdict</h3><p>The best daily driver for email polish.</p>",
+        "pros": [
+            "Browser extension",
+            "Smart rewrites",
+            "Spices feature"
+        ],
+        "cons": [
+            "Daily limits on free",
+            "server lag sometimes"
+        ]
+    },
+    {
+        "id": "rytr",
+        "name": "Rytr",
+        "tagline": "Best AI writer, content generator & writing assistant.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://rytr.me",
+        "shortDescription": "A budget-friendly simplified AI writer for blogs and emails.",
+        "fullReview": "<h3>First Impressions</h3><p>It's not as powerful as Jasper, but it's 1/3 the price. For generating quick SEO meta descriptions or emails, it works perfectly.</p><h3>Best Feature: Landing Page Gen</h3><p>It has great templates for landing page copy sections.</p><h3>The Verdict</h3><p>The best value-for-money text generator.</p>",
+        "pros": [
+            "Cheap",
+            "Simple interface",
+            "Fast"
+        ],
+        "cons": [
+            "Output can be generic",
+            "Short form focus"
+        ]
+    },
+    {
+        "id": "writesonic",
+        "name": "Writesonic",
+        "tagline": "Best AI writer for SEO.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://writesonic.com",
+        "shortDescription": "Writes SEO-optimized articles based on real-time Google data.",
+        "fullReview": "<h3>First Impressions</h3><p>I gave it a keyword. It researched the top ranking articles on Google and wrote a piece to compete with them. The Fact-checking is a nice touch.</p><h3>Best Feature: Article Writer 5.0</h3><p>It uses live internet data, so it doesn't write outdated facts like ChatGPT sometimes does.</p><h3>The Verdict</h3><p>Essential for SEO bloggers.</p>",
+        "pros": [
+            "Live web access",
+            "SEO scoring",
+            "Long form"
+        ],
+        "cons": [
+            "Credit hungry",
+            "UI clutter"
+        ]
+    },
+    {
+        "id": "jenni-ai",
+        "name": "Jenni AI",
+        "tagline": "Supercharge your research and writing.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://jenni.ai",
+        "shortDescription": "An AI writing assistant specifically for academic papers and essays.",
+        "fullReview": "<h3>First Impressions</h3><p>It autocompletes your sentences based on your research. It even handles citations (APA, MLA) automatically.</p><h3>Best Feature: Autocitation</h3><p>It searches for real academic papers to back up the claims it generates. A godsend for students.</p><h3>The Verdict</h3><p>If you are in university, get this.</p>",
+        "pros": [
+            "Academic focus",
+            "Citations included",
+            "Plagiarism check"
+        ],
+        "cons": [
+            "Niche use case",
+            "Paid for unlimited"
+        ]
+    },
+    {
+        "id": "moonbeam",
+        "name": "Moonbeam",
+        "tagline": "The long-form writing assistant.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://gomoonbeam.com",
+        "shortDescription": "Designed to write newsletters and blogs without losing the thread.",
+        "fullReview": "<h3>First Impressions</h3><p>The 'Wizard' feature generates an outline, then expands it point by point. It keeps the flow consistent over 2000 words.</p><h3>Best Feature: Luna</h3><p>The chat assistant is context-aware of the whole document, not just the current paragraph.</p><h3>The Verdict</h3><p>Great for newsletter writers.</p>",
+        "pros": [
+            "Great simple UI",
+            "Long form logic",
+            "Wizard mode"
+        ],
+        "cons": [
+            "Newer tool",
+            "Limited export"
+        ]
+    },
+    {
+        "id": "textblaze",
+        "name": "TextBlaze",
+        "tagline": "Eliminate repetitive typing.",
+        "category": "Writing",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://blaze.today",
+        "shortDescription": "Smart snippets and templates that insert dynamic text anywhere in Chrome.",
+        "fullReview": "<h3>First Impressions</h3><p>I type '/thx' and it expands into a full email with the current date and the recipient's name processed from the page. It saves me 30 minutes a day.</p><h3>Best Feature: Dynamic Forms</h3><p>You can create snippets that pop up a form to fill in details before pasting.</p><h3>The Verdict</h3><p>The ultimate productivity hack for support and sales.</p>",
+        "pros": [
+            "Saves massive time",
+            "Dynamic logic",
+            "Free tier is good"
+        ],
+        "cons": [
+            "Chrome only",
+            "Setup time"
+        ]
+    },
+    {
+        "id": "captions-ai",
+        "name": "Captions",
+        "tagline": "The all-in-one AI camera.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.9,
+        "affiliateLink": "https://www.captions.ai",
+        "shortDescription": "Adds dynamic, stylish captions to your videos automatically. Plus eye-contact correction.",
+        "fullReview": "<h3>First Impressions</h3><p>The 'Eye Contact' feature fixed my shifty eyes staring at the script. The captions are reliable and look like Alex Hormozi's style.</p><h3>Best Feature: Eye Contact</h3><p>It re-renders your pupils to look at the camera. Subtle but powerful for trust.</p><h3>The Verdict</h3><p>The gold standard for Talking Head shorts.</p>",
+        "pros": [
+            "Stylish captions",
+            "Eye correction",
+            "Great mobile app"
+        ],
+        "cons": [
+            "Paid only",
+            "Desktop app is beta"
+        ]
+    },
+    {
+        "id": "submagic",
+        "name": "Submagic",
+        "tagline": "Make your videos go viral.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://submagic.co",
+        "shortDescription": "Adding B-roll, zooms, and captions to shorts automatically.",
+        "fullReview": "<h3>First Impressions</h3><p>It analyzes the script and inserts relevant stock GIFs and zooms to keep retention high.</p><h3>Best Feature: B-Roll Auto-insert</h3><p>It saves time finding reaction clips. It just puts them in.</p><h3>The Verdict</h3><p>Great for rapid-fire content creation.</p>",
+        "pros": [
+            "Retention focused",
+            "Auto B-Roll",
+            "Trendy styles"
+        ],
+        "cons": [
+            "Can look generic",
+            "Expensive"
+        ]
+    },
+    {
+        "id": "veed-io",
+        "name": "VEED.IO",
+        "tagline": "Anyone can make a great video.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://www.veed.io",
+        "shortDescription": "Web-based video editor with heavy AI integration for subtitles and cleaning.",
+        "fullReview": "<h3>First Impressions</h3><p>It's like a simplified Premiere Pro in the browser. The 'Clean Audio' and 'Auto Subtitle' features work flawlessly.</p><h3>Best Feature: Magic Cut</h3><p>It removes silences and bad takes automatically.</p><h3>The Verdict</h3><p>The best general-purpose online video editor.</p>",
+        "pros": [
+            "Full suite editor",
+            "Cloud based",
+            "Easy to learn"
+        ],
+        "cons": [
+            "Watermark on free",
+            "Render times"
+        ]
+    },
+    {
+        "id": "munch",
+        "name": "Munch",
+        "tagline": "#1 AI Video Repurposing Platform.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://www.getmunch.com",
+        "shortDescription": "Extracts the most engaging clips from long videos using trend intelligence.",
+        "fullReview": "<h3>First Impressions</h3><p>It tells you *why* a clip was chosen (e.g. 'High keyword volume'). It feels data-driven.</p><h3>Best Feature: Trend Data</h3><p>It matches your content against what is currently trending on TikTok.</p><h3>The Verdict</h3><p>Smartest repurposing tool for marketers.</p>",
+        "pros": [
+            "Data driven",
+            "Good cropping",
+            "Marketing focus"
+        ],
+        "cons": [
+            "Expensive",
+            "Processing time"
+        ]
+    },
+    {
+        "id": "gling",
+        "name": "Gling",
+        "tagline": "AI built for YouTubers.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://gling.ai",
+        "shortDescription": "Automatically cuts out silences and bad takes from raw footage.",
+        "fullReview": "<h3>First Impressions</h3><p>I uploaded raw footage where I messed up a line 4 times. Gling kept only the good take. It cut my editing time in half.</p><h3>Best Feature: Bad Take Removal</h3><p>It understands context, not just silence.</p><h3>The Verdict</h3><p>Essential for YouTubers who script their videos.</p>",
+        "pros": [
+            "Saves editing hours",
+            "Desktop app",
+            "Export to XML"
+        ],
+        "cons": [
+            "Subscription model",
+            "Niche use"
+        ]
+    },
+    {
+        "id": "fliki",
+        "name": "Fliki",
+        "tagline": "Turn text into videos with AI voices.",
+        "category": "Video",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://fliki.ai",
+        "shortDescription": "Combines stock footage and AI voiceovers to create videos from blog posts.",
+        "fullReview": "<h3>First Impressions</h3><p>Good for creating 'Top 10' style list videos without recording anything.</p><h3>Best Feature: Blog to Video</h3><p>Paste a URL and get a video summary.</p><h3>The Verdict</h3><p>Good for faceless channels.</p>",
+        "pros": [
+            "Massive voice library",
+            "Easy workflow",
+            "Fast"
+        ],
+        "cons": [
+            "Stock footage limits",
+            "Robotic feel"
+        ]
+    },
+    {
+        "id": "pictory",
+        "name": "Pictory",
+        "tagline": "Video marketing made easy.",
+        "category": "Video",
+        "pricing": "Paid",
+        "rating": 4.4,
+        "affiliateLink": "https://pictory.ai",
+        "shortDescription": "Automatically create short, highly-sharable branded videos from your long form content.",
+        "fullReview": "<h3>First Impressions</h3><p>Similar to Opus but better for webinars and Zoom calls.</p><h3>Best Feature: Edit by Text</h3><p>Delete the text, delete the video frames.</p><h3>The Verdict</h3><p>Solid B2B video choice.</p>",
+        "pros": [
+            "B2B focus",
+            "Clean UI",
+            "Good transcription"
+        ],
+        "cons": [
+            "Average AI voices",
+            "Generic stock"
+        ]
+    },
+    {
+        "id": "otter-ai",
+        "name": "Otter.ai",
+        "tagline": "AI Meeting Assistant.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.6,
+        "affiliateLink": "https://otter.ai",
+        "shortDescription": "Get real-time automated meeting notes, summaries, and action items.",
+        "fullReview": "<h3>First Impressions</h3><p>It joins my Zoom automatically. The summary email is often better than my own memory of the meeting.</p><h3>Best Feature: Slide Capture</h3><p>It grabs screenshots of slides presented during the meeting to add context.</p><h3>The Verdict</h3><p>The OG meeting recorder. Still solid.</p>",
+        "pros": [
+            "Free tier is good",
+            "Slide capture",
+            "Searchable audio"
+        ],
+        "cons": [
+            "English only mostly",
+            "Can be annoying to guests"
+        ]
+    },
+    {
+        "id": "fireflies-ai",
+        "name": "Fireflies.ai",
+        "tagline": "Automate your meeting notes.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.7,
+        "affiliateLink": "https://fireflies.ai",
+        "shortDescription": "Transcribe, summarize, and analyze voice conversations.",
+        "fullReview": "<h3>First Impressions</h3><p>Wait, it integrates with my CRM? That's the killer feature. It logs the call directly to HubSpot.</p><h3>Best Feature: AskFred</h3><p>You can chat with the meeting transcript to find info.</p><h3>The Verdict</h3><p>Best for sales teams.</p>",
+        "pros": [
+            "CRM integrations",
+            "Sentiment analysis",
+            "Team focused"
+        ],
+        "cons": [
+            "Setup complexity",
+            "Privacy permissions"
+        ]
+    },
+    {
+        "id": "gamma-app",
+        "name": "Gamma",
+        "tagline": "A new medium for presenting ideas.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.8,
+        "affiliateLink": "https://gamma.app",
+        "shortDescription": "Generate beautiful presentations, documents, and webpages with none of the formatting work.",
+        "fullReview": "<h3>First Impressions</h3><p>PowerPoint is dead. Gamma generated a gorgeous slide deck from a topic title in 30 seconds. It handles layout automatically.</p><h3>Best Feature: Smart Layouts</h3><p>You can drag images around and the text reflows perfectly. You can't 'break' the slide.</p><h3>The Verdict</h3><p>The future of slide decks.</p>",
+        "pros": [
+            "Beautiful design",
+            "Fast generation",
+            "Interactive embeds"
+        ],
+        "cons": [
+            "Export limits",
+            "Not PPT compatible fully"
+        ]
+    },
+    {
+        "id": "beautiful-ai",
+        "name": "Beautiful.ai",
+        "tagline": "Presentation software that designs for you.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.6,
+        "affiliateLink": "https://www.beautiful.ai",
+        "shortDescription": "Smart slide software that adjusts the design as you add content.",
+        "fullReview": "<h3>First Impressions</h3><p>It forces you to make good slides. It won't let you clutter the page. The result is always professional.</p><h3>Best Feature: Smart Templates</h3><p>Charts and graphs animate beautifully.</p><h3>The Verdict</h3><p>For corporate polish, this is it.</p>",
+        "pros": [
+            "Corporate ready",
+            "Strict design rules",
+            "Great charts"
+        ],
+        "cons": [
+            "Paid only",
+            "Restrictive"
+        ]
+    },
+    {
+        "id": "raycast",
+        "name": "Raycast",
+        "tagline": "The command bar for Mac.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.9,
+        "affiliateLink": "https://www.raycast.com",
+        "shortDescription": "A blazingly fast launcher with built-in AI chat and commands.",
+        "fullReview": "<h3>First Impressions</h3><p>It replaced Spotlight, Calculator, and ChatGPT for me. Hitting Cmd+Space and typing to AI instantly is muscle memory now.</p><h3>Best Feature: Quick AI</h3><p>Select text anywhere, hit a hotkey, and have AI fix grammar or summarize it.</p><h3>The Verdict</h3><p>The best Mac utility app. Period.</p>",
+        "pros": [
+            "Native speed",
+            "Extensions",
+            "Beautiful UI"
+        ],
+        "cons": [
+            "Mac only",
+            "AI is paid add-on"
+        ]
+    },
+    {
+        "id": "cron",
+        "name": "Cron",
+        "tagline": "The next-generation calendar.",
+        "category": "Productivity",
+        "pricing": "Free",
+        "rating": 4.8,
+        "affiliateLink": "https://cron.com",
+        "shortDescription": "A calendar designed for speed, with timezones and scheduling links built in.",
+        "fullReview": "<h3>First Impressions</h3><p>It's gorgeous. The timezone viz is critical for remote work. Merging personal and work calendars works better than GCal.</p><h3>Best Feature: Scheduling Links</h3><p>Share availability slots with one keyboard shortcut.</p><h3>The Verdict</h3><p>The cleanest calendar experience.</p>",
+        "pros": [
+            "Design",
+            "Speed",
+            "Scheduling links"
+        ],
+        "cons": [
+            "Google accounts only",
+            "Bought by Notion (future uncertain?)"
+        ]
+    },
+    {
+        "id": "superhuman",
+        "name": "Superhuman",
+        "tagline": "The fastest email experience ever made.",
+        "category": "Productivity",
+        "pricing": "Paid",
+        "rating": 4.7,
+        "affiliateLink": "https://superhuman.com",
+        "shortDescription": "AI-powered email client designed to get you to Inbox Zero.",
+        "fullReview": "<h3>First Impressions</h3><p>It's expensive ($30/mo), but the 'Split Inbox' and keyboard shortcuts save me ~2 hours a week. The AI 'Autocorrect' writes entire emails for me.</p><h3>Best Feature: AI Compose</h3><p>Jot down three bullets, and it writes a polite, full email.</p><h3>The Verdict</h3><p>For C-suite and heavy emailers, it's worth the cost.</p>",
+        "pros": [
+            "Speed",
+            "Keyboard shortcuts",
+            "Read receipts"
+        ],
+        "cons": [
+            "Very expensive",
+            "Learning curve"
+        ]
+    },
+    {
+        "id": "mem",
+        "name": "Mem",
+        "tagline": "The self-organizing workspace.",
+        "category": "Productivity",
+        "pricing": "Freemium",
+        "rating": 4.5,
+        "affiliateLink": "https://get.mem.ai",
+        "shortDescription": "An AI note-taking app that automatically links and organizes your thoughts.",
+        "fullReview": "<h3>First Impressions</h3><p>I stopped organizing folders. I just dump notes in Mem, and the AI surfaces them when I type related topics.</p><h3>Best Feature: Mem X</h3><p>Chat with your own notes. 'What was that book recommendation from Steve?'</p><h3>The Verdict</h3><p>Great for chaotic thinkers.</p>",
+        "pros": [
+            "No folders",
+            "Chat with notes",
+            "Fast"
+        ],
+        "cons": [
+            "Requires trust in AI",
+            "Search can vary"
         ]
     }
 ]
