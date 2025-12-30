@@ -47,22 +47,15 @@ export default function AboutPage() {
                 variants={staggerContainer}
             >
                 {/* Abstract Background Animation */}
+                {/* Abstract Background - Static & Subtle */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
-                    <motion.div
-                        animate={{
-                            scale: [1, 1.2, 1],
-                            opacity: [0.1, 0.2, 0.1],
-                            rotate: [0, 45, -45, 0]
-                        }}
-                        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#00FF94]/5 rounded-full blur-[120px]"
-                    />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00FF94]/5 rounded-full blur-[100px]" />
                 </div>
 
                 <div className="z-10 px-4">
                     <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter mb-6">
                         The Signal <br />
-                        <span className="text-[#00FF94] drop-shadow-[0_0_20px_rgba(0,255,148,0.4)]">Amidst The Noise.</span>
+                        <span className="text-[#00FF94]">Amidst The Noise.</span>
                     </motion.h1>
                     <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
                         Why the world doesn&apos;t need another AI tool. <br />
@@ -86,7 +79,7 @@ export default function AboutPage() {
             <Section>
                 <div className="max-w-3xl text-center md:text-left">
                     <h2 className="text-4xl md:text-6xl font-bold mb-8 text-white">
-                        The Gold Rush is <span className="glitch-text text-[#00FF94]" style={{ textShadow: "2px 0 #fff, -2px 0 #00FF94" }}>Messy.</span>
+                        The Gold Rush is <span className="text-[#00FF94]">Messy.</span>
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-400 leading-loose">
                         Every day, 100 new &apos;game-changing&apos; AI tools launch.
