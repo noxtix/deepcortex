@@ -34,9 +34,12 @@ export default function RootLayout({ children }) {
         {/* AnimatedBackground removed for pitch black theme */}
         <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}>
           <LaserFlow
-            color="#00FF94" // Neon Green from tailwind config
-            wispDensity={1.2} // Slightly increased for visibility
+            color="#00FF94" // Neon Green
+            wispDensity={1.2}
             flowSpeed={0.3}
+            verticalSizing={20} // Extends beam much further down
+            horizontalBeamOffset={0} // Centers the beam
+            falloffStart={1.5} // Delays vertical fading
           />
         </div>
         <SmoothScrolling>
