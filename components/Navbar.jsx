@@ -9,7 +9,7 @@ const Navbar = () => {
       textColor: "#fff",
       links: [
         { label: "Home", href: "/", ariaLabel: "Home Page" },
-        { label: "All Tools", href: "/#all-tools", ariaLabel: "Browse all AI tools" }
+        { label: "All Tools", href: "/tools", ariaLabel: "Browse all AI tools" }
       ]
     },
     {
