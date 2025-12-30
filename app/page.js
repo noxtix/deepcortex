@@ -8,24 +8,12 @@ import AdUnit from '@/components/AdUnit';
 import toolsData from '@/data/tools.json';
 import { useSearchParams, useRouter } from 'next/navigation';
 
-function ToolDirectory() {
-  const router = useRouter();
-  const [searchQuery, setSearchQuery] = useState('');
-
-  // When searching, redirect to /tools page with query
-  const handleSearch = (query) => {
-    setSearchQuery(query);
-    if (query.trim()) {
-      router.push(`/tools?search=${encodeURIComponent(query)}`);
-    }
-  };
-
-  return (
-    <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30">
-      <Navbar />
-
-      <Hero searchQuery={searchQuery} setSearchQuery={handleSearch} />
-    </main>
+return (
+  <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30">
+    <Navbar />
+    <Hero />
+  </main>
+    </main >
   );
 }
 
