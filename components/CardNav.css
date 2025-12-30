@@ -1,0 +1,230 @@
+.card-nav-container {
+    position: fixed;
+    /* Changed from absolute to fixed for sticky behavior */
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1000px;
+    z-index: 999;
+    /* high z-index */
+    box-sizing: border-box;
+}
+
+.card-nav {
+    display: block;
+    height: 60px;
+    padding: 0;
+    background-color: rgba(3, 7, 18, 0.8);
+    /* Dark background matching theme */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    will-change: height;
+}
+
+/* Ensure text colors are white/light for dark theme */
+.card-nav-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+.hamburger-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px;
+    color: white;
+    /* Force white */
+}
+
+.hamburger-menu:hover .hamburger-line {
+    opacity: 0.75;
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background-color: currentColor;
+    transition:
+        transform 0.25s ease,
+        opacity 0.2s ease,
+        margin 0.3s ease;
+    transform-origin: 50% 50%;
+}
+
+.hamburger-menu.open .hamburger-line:first-child {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-line:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 32px;
+    object-fit: contain;
+}
+
+.card-nav-cta-button {
+    background-color: #00FF94;
+    /* Neon Green */
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0 1.25rem;
+    height: 36px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.card-nav-cta-button:hover {
+    background-color: #00DC82;
+    transform: translateY(-1px);
+}
+
+.card-nav-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.card-nav.open .card-nav-content {
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.nav-card {
+    height: 100%;
+    flex: 1 1 0;
+    min-width: 0;
+    border-radius: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+    user-select: none;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-card-label {
+    font-weight: 600;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.nav-card-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-card-link {
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    opacity: 0.7;
+    padding: 4px 0;
+}
+
+.nav-card-link:hover {
+    opacity: 1;
+    transform: translateX(2px);
+}
+
+.nav-card-link-icon {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .card-nav-container {
+        width: 94%;
+        top: 1em;
+    }
+
+    .card-nav-top {
+        padding: 0.5rem 1rem;
+        justify-content: space-between;
+    }
+
+    .hamburger-menu {
+        order: 1;
+        /* Keep hamburger on left or right? User CSS had it mixed. Standard is left or right. */
+    }
+
+    .logo-container {
+        position: static;
+        transform: none;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-nav-cta-button {
+        display: none;
+        /* Hide CTA on mobile as per original CSS, or keep it? */
+        order: 3;
+    }
+
+    .card-nav-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 0.5rem;
+        bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .nav-card {
+        height: auto;
+        min-height: 80px;
+        flex: 1 1 auto;
+        max-height: none;
+    }
+
+    .nav-card-label {
+        font-size: 1.1rem;
+    }
+}
