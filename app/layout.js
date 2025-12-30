@@ -22,7 +22,7 @@ export const metadata = {
   },
 };
 
-import AnimatedBackground from '@/components/AnimatedBackground';
+import SmoothScrolling from '@/components/SmoothScrolling';
 
 export default function RootLayout({ children }) {
   return (
@@ -31,10 +31,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
         {/* AnimatedBackground removed for pitch black theme */}
-        <div className="relative z-10">
-          {children}
-          <Footer />
-        </div>
+        <SmoothScrolling>
+          <div className="relative z-10">
+            {children}
+            <Footer />
+          </div>
+        </SmoothScrolling>
         <GoogleAnalytics gaId="G-GYW5Y6HMJJ" />
       </body>
     </html>

@@ -1,5 +1,6 @@
 'use client';
 import { useState, useMemo, Suspense } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
 import Hero from '@/components/Hero';
@@ -105,11 +106,32 @@ function ToolDirectory() {
         </div>
 
         {filteredTools.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1
+                }
+              }
+            }}
+            initial="hidden"
+            animate="show"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
             {filteredTools.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} />
+              <motion.div
+                key={tool.id}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  show: { opacity: 1, y: 0 }
+                }}
+              >
+                <ToolCard tool={tool} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         ) : (
           <div className="text-center py-20 bg-slate-900/30 rounded-3xl border border-slate-800 border-dashed">
             <h3 className="text-xl font-bold text-slate-300 mb-2">No tools found</h3>
