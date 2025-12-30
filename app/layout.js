@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import LaserFlow from '@/components/LaserFlow';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from '@/components/Footer';
 
@@ -31,6 +32,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
         {/* AnimatedBackground removed for pitch black theme */}
+        <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, pointerEvents: 'none' }}>
+          <LaserFlow
+            color="#00FF94" // Neon Green from tailwind config
+            wispDensity={1.2} // Slightly increased for visibility
+            flowSpeed={0.3}
+          />
+        </div>
         <SmoothScrolling>
           <div className="relative z-10">
             {children}
