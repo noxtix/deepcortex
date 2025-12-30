@@ -25,19 +25,6 @@ function ToolDirectory() {
       <Navbar />
 
       <Hero searchQuery={searchQuery} setSearchQuery={handleSearch} />
-
-      {/* Simple CTA Section since tool list is moved */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 text-center">
-        <div className="mt-10">
-          <p className="text-slate-400 mb-6">Looking for something specific?</p>
-          <button
-            onClick={() => router.push('/tools')}
-            className="bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-emerald-500/50 hover:bg-slate-800/80 px-8 py-4 rounded-full font-bold transition-all"
-          >
-            Browse All Tools &rarr;
-          </button>
-        </div>
-      </section>
     </main>
   );
 }

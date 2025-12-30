@@ -157,13 +157,6 @@ const CardNav = ({
                         {/* Optional: Add text next to logo if needed, but styling is absolute center */}
                     </div>
 
-                    <button
-                        type="button"
-                        className="card-nav-cta-button"
-                        style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
-                    >
-                        Get Started
-                    </button>
                 </div>
 
                 <div className="card-nav-content" aria-hidden={!isExpanded}>
