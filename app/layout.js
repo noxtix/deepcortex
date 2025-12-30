@@ -32,12 +32,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
         {/* AnimatedBackground removed for pitch black theme */}
-        <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, pointerEvents: 'none' }}>
+        <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}>
           <LaserFlow
             color="#00FF94" // Neon Green from tailwind config
             wispDensity={1.2} // Slightly increased for visibility
             flowSpeed={0.3}
-            dpr={1} // Optimization: Limit to 1x resolution for performance
           />
         </div>
         <SmoothScrolling>

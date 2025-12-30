@@ -8,15 +8,17 @@
   --background-end-rgb: 2, 6, 23;
 }
 
-html {
+html,
+body {
   background-color: #000000;
+  /* Always black to avoid white flash */
+  color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
 }
 
 body {
-  background-color: transparent;
-  color: rgb(var(--foreground-rgb));
-  overflow-x: hidden;
-  /* Prevent horizontal scroll from blobs */
+  background: transparent;
+  /* Body transparent to show fixed background if needed, but html handles the base black */
 }
 
 @layer utilities {
