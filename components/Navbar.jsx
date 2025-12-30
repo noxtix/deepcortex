@@ -8,9 +8,8 @@ const Navbar = () => {
       bgColor: "#0f172a", // Slate 900
       textColor: "#fff",
       links: [
-        { label: "All Tools", href: "/#all-tools", ariaLabel: "Browse all AI tools" },
-        { label: "Categories", href: "/#categories", ariaLabel: "Browse categories" },
-        { label: "Featured", href: "/#featured", ariaLabel: "Featured tools" }
+        { label: "Home", href: "/", ariaLabel: "Home Page" },
+        { label: "All Tools", href: "/#all-tools", ariaLabel: "Browse all AI tools" }
       ]
     },
     {
@@ -19,8 +18,7 @@ const Navbar = () => {
       textColor: "#fff",
       links: [
         { label: "Stacks", href: "/stacks", ariaLabel: "Tech Stacks" },
-        { label: "Blog", href: "/blog", ariaLabel: "Read our blog" },
-        { label: "Newsletter", href: "/newsletter", ariaLabel: "Subscribe" }
+        { label: "Blog", href: "/blog", ariaLabel: "Read our blog" }
       ]
     },
     {
@@ -29,8 +27,7 @@ const Navbar = () => {
       textColor: "#000",
       links: [
         { label: "About", href: "/about", ariaLabel: "About DeepCortex" },
-        { label: "Contact", href: "mailto:hello@deepcortex.tech", ariaLabel: "Contact us" },
-        { label: "Twitter", href: "https://twitter.com/deepcortex", ariaLabel: "Follow on Twitter" }
+        { label: "Instagram", href: "https://instagram.com/deepcortex.tech", ariaLabel: "Follow on Instagram" }
       ]
     }
   ];
