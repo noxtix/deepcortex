@@ -11,14 +11,10 @@
 html,
 body {
   background-color: #000000;
-  /* Always black to avoid white flash */
+  /* pure black */
   color: rgb(var(--foreground-rgb));
   overflow-x: hidden;
-}
-
-body {
-  background: transparent;
-  /* Body transparent to show fixed background if needed, but html handles the base black */
+  /* Prevent horizontal scroll from blobs */
 }
 
 @layer utilities {

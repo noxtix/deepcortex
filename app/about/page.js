@@ -36,7 +36,7 @@ const Section = ({ children, className = "" }) => (
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-transparent text-slate-200 font-sans selection:bg-[#00FF94]/30 overflow-x-hidden">
+        <main className="min-h-screen bg-black text-slate-200 font-sans selection:bg-[#00FF94]/30 overflow-x-hidden">
             <Navbar />
 
             {/* --- SECTION 1: HERO --- */}
