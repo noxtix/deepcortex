@@ -35,11 +35,18 @@ export default function RootLayout({ children }) {
         <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}>
           <LaserFlow
             color="#00FF94" // Neon Green
-            wispDensity={1.2}
-            flowSpeed={0.3}
-            verticalSizing={20} // Extends beam much further down
-            horizontalBeamOffset={0} // Centers the beam
-            falloffStart={1.5} // Delays vertical fading
+            wispDensity={1}
+            flowSpeed={0.35}
+            verticalSizing={2}
+            horizontalSizing={0.5}
+            fogIntensity={0.45}
+            fogScale={0.3}
+            wispSpeed={15}
+            wispIntensity={5}
+            flowStrength={0.25}
+            decay={1.1}
+            horizontalBeamOffset={0}
+            verticalBeamOffset={-0.5} // Positions beam at the bottom
           />
         </div>
         <SmoothScrolling>
