@@ -8,10 +8,12 @@
   --background-end-rgb: 2, 6, 23;
 }
 
-html,
-body {
+html {
   background-color: #000000;
-  /* pure black */
+}
+
+body {
+  background-color: transparent;
   color: rgb(var(--foreground-rgb));
   overflow-x: hidden;
   /* Prevent horizontal scroll from blobs */

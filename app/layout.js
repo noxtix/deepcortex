@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
             color="#00FF94" // Neon Green from tailwind config
             wispDensity={1.2} // Slightly increased for visibility
             flowSpeed={0.3}
+            dpr={1} // Optimization: Limit to 1x resolution for performance
           />
         </div>
         <SmoothScrolling>
