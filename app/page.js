@@ -8,7 +8,7 @@ function ToolDirectory() {
     <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <LightPillar
-          pillarRotation={-20}
+          pillarRotation={20} // Flipped tilt to match new reference
           topColor="#09ec60"
           bottomColor="#f8f7f7"
           pillarWidth={3.0}
