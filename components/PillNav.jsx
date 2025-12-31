@@ -19,12 +19,12 @@ const PillNav = () => {
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} // Smooth Apple-like ease
-                className="bg-slate-950/40 backdrop-blur-2xl border border-white/5 rounded-full pl-3 pr-2 py-2 flex items-center gap-6 shadow-2xl ring-1 ring-white/10"
+                className="bg-slate-950/40 backdrop-blur-2xl border border-white/5 rounded-full px-3 py-2 flex items-center gap-4 sm:gap-6 shadow-2xl ring-1 ring-white/10"
             >
                 {/* Logo Section */}
-                <Link href="/" className="flex items-center gap-2 pl-2 group">
+                <Link href="/" className="flex items-center gap-2 group">
                     <Brain className="w-5 h-5 text-white group-hover:text-emerald-400 transition-colors" />
-                    <span className="text-sm font-semibold text-slate-200 group-hover:text-white transition-colors tracking-tight">DeepCortex</span>
+                    <span className="hidden sm:block text-sm font-semibold text-slate-200 group-hover:text-white transition-colors tracking-tight">DeepCortex</span>
                 </Link>
 
                 {/* Divider */}
@@ -38,9 +38,9 @@ const PillNav = () => {
                             <li key={link.name}>
                                 <Link
                                     href={link.href}
-                                    className={`relative px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${isActive
-                                            ? 'text-white'
-                                            : 'text-slate-400 hover:text-white'
+                                    className={`relative px-3 sm:px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${isActive
+                                        ? 'text-white'
+                                        : 'text-slate-400 hover:text-white'
                                         }`}
                                 >
                                     {isActive && (
