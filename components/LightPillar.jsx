@@ -66,7 +66,7 @@ const LightPillar = ({
         }
 
         renderer.setSize(width, height);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.0)); // Cap at 1.0 for performance
         container.appendChild(renderer.domElement);
         rendererRef.current = renderer;
 
@@ -151,7 +151,7 @@ const LightPillar = ({
         vec3 origin = vec3(0.0, 0.0, -10.0);
         vec3 direction = normalize(vec3(uv, 1.0));
 
-        float maxDepth = 50.0;
+        float maxDepth = 30.0;
         float depth = 0.1;
 
         mat2 rotX = rot(uTime * 0.3);
@@ -161,7 +161,7 @@ const LightPillar = ({
 
         vec3 color = vec3(0.0);
         
-        for(float i = 0.0; i < 100.0; i++) {
+        for(float i = 0.0; i < 50.0; i++) {
           vec3 pos = origin + direction * depth;
           pos.xz *= rotX;
 

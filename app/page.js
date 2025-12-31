@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import Navbar from '@/components/Navbar';
+import PillNav from '@/components/PillNav';
 import Hero from '@/components/Hero';
 import LightPillar from '@/components/LightPillar';
 
@@ -16,7 +16,7 @@ function ToolDirectory() {
         />
       </div>
       <div className="relative z-10">
-        <Navbar />
+        <PillNav />
         <Hero />
       </div>
     </main>
