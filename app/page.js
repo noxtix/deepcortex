@@ -8,11 +8,11 @@ function ToolDirectory() {
     <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <LightPillar
-          pillarRotation={-15}
-          topColor="#020617" // Fade to slate-950 (background)
-          bottomColor="#00FF94" // Neon Green
-          pillarWidth={5}
-          glowAmount={0.01}
+          pillarRotation={-20}
+          topColor="#000000"
+          bottomColor="#00FF94"
+          pillarWidth={3.0} // Revert to suggested default/reference size
+          glowAmount={0.005} // Standard glow
         />
       </div>
       <div className="relative z-10">

@@ -4,15 +4,15 @@ import * as THREE from 'three';
 import './LightPillar.css';
 
 const LightPillar = ({
-    topColor = '#00FF94', // Adjusted to DeepCortex Neon Green
-    bottomColor = '#000000', // Fade to black
+    topColor = '#5227FF',
+    bottomColor = '#FF9FFC',
     intensity = 1.0,
     rotationSpeed = 0.3,
-    interactive = true,
+    interactive = false,
     className = '',
     glowAmount = 0.005,
-    pillarWidth = 4.0, // Widened for homepage bg effect
-    pillarHeight = 0.6,
+    pillarWidth = 3.0,
+    pillarHeight = 0.4,
     noiseIntensity = 0.5,
     mixBlendMode = 'screen',
     pillarRotation = 0
@@ -28,7 +28,6 @@ const LightPillar = ({
     const timeRef = useRef(0);
     const [webGLSupported, setWebGLSupported] = useState(true);
 
-    // Check WebGL support
     useEffect(() => {
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -45,7 +44,6 @@ const LightPillar = ({
         const width = container.clientWidth;
         const height = container.clientHeight;
 
-        // Scene setup
         const scene = new THREE.Scene();
         sceneRef.current = scene;
         const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
@@ -72,13 +70,11 @@ const LightPillar = ({
         container.appendChild(renderer.domElement);
         rendererRef.current = renderer;
 
-        // Convert hex colors to RGB
         const parseColor = hex => {
             const color = new THREE.Color(hex);
             return new THREE.Vector3(color.r, color.g, color.b);
         };
 
-        // Shader material
         const vertexShader = `
       varying vec2 vUv;
       void main() {
@@ -113,14 +109,12 @@ const LightPillar = ({
         return mat2(c, -s, s, c);
       }
 
-      // Procedural noise function
       float noise(vec2 coord) {
         float G = E;
         vec2 r = (G * sin(G * coord));
         return fract(r.x * r.y * (1.0 + coord.x));
       }
 
-      // Apply layered wave deformation to position
       vec3 applyWaveDeformation(vec3 pos, float timeOffset) {
         float frequency = 1.0;
         float amplitude = 1.0;
@@ -137,7 +131,6 @@ const LightPillar = ({
         return deformed;
       }
 
-      // Polynomial smooth blending between two values
       float blendMin(float a, float b, float k) {
         float scaledK = k * 4.0;
         float h = max(scaledK - abs(a - b), 0.0);
@@ -152,7 +145,6 @@ const LightPillar = ({
         vec2 fragCoord = vUv * uResolution;
         vec2 uv = (fragCoord * 2.0 - uResolution) / uResolution.y;
         
-        // Apply 2D rotation to UV coordinates
         float rotAngle = uPillarRotation * PI / 180.0;
         uv *= rot(rotAngle);
 
@@ -173,21 +165,15 @@ const LightPillar = ({
           vec3 pos = origin + direction * depth;
           pos.xz *= rotX;
 
-          // Apply vertical scaling and wave deformation
           vec3 deformed = pos;
           deformed.y *= uPillarHeight;
           deformed = applyWaveDeformation(deformed + vec3(0.0, uTime, 0.0), uTime);
           
-          // Calculate distance field using cosine pattern
           vec2 cosinePair = cos(deformed.xz);
           float fieldDistance = length(cosinePair) - 0.2;
           
-          // Radial boundary constraint
           float radialBound = length(pos.xz) - uPillarWidth;
-          // Simple blend max equivalent
-          float h = max(1.0 - abs(radialBound - fieldDistance), 0.0);
-          fieldDistance = max(radialBound, fieldDistance) + h * h * 0.25;
-
+          fieldDistance = blendMax(radialBound, fieldDistance, 1.0);
           fieldDistance = abs(fieldDistance) * 0.15 + 0.01;
 
           vec3 gradient = mix(uBottomColor, uTopColor, smoothstep(15.0, -15.0, pos.y));
@@ -197,11 +183,9 @@ const LightPillar = ({
           depth += fieldDistance;
         }
 
-        // Normalize by pillar width to maintain consistent glow regardless of size
         float widthNormalization = uPillarWidth / 3.0;
         color = tanh(color * uGlowAmount / widthNormalization);
         
-        // Add noise postprocessing
         float rnd = noise(gl_FragCoord.xy);
         color -= rnd / 15.0 * uNoiseIntensity;
         
@@ -237,7 +221,6 @@ const LightPillar = ({
         const mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
-        // Mouse interaction - throttled for performance
         let mouseMoveTimeout = null;
         const handleMouseMove = event => {
             if (!interactive) return;
@@ -246,7 +229,7 @@ const LightPillar = ({
 
             mouseMoveTimeout = window.setTimeout(() => {
                 mouseMoveTimeout = null;
-            }, 16); // ~60fps throttle
+            }, 16);
 
             const rect = container.getBoundingClientRect();
             const x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -258,7 +241,6 @@ const LightPillar = ({
             container.addEventListener('mousemove', handleMouseMove, { passive: true });
         }
 
-        // Animation loop with fixed timestep
         let lastTime = performance.now();
         const targetFPS = 60;
         const frameTime = 1000 / targetFPS;
@@ -279,7 +261,6 @@ const LightPillar = ({
         };
         rafRef.current = requestAnimationFrame(animate);
 
-        // Handle resize with debouncing
         let resizeTimeout = null;
         const handleResize = () => {
             if (resizeTimeout) {
@@ -297,7 +278,6 @@ const LightPillar = ({
 
         window.addEventListener('resize', handleResize, { passive: true });
 
-        // Cleanup
         return () => {
             window.removeEventListener('resize', handleResize);
             if (interactive) {
@@ -308,10 +288,6 @@ const LightPillar = ({
             }
             if (rendererRef.current) {
                 rendererRef.current.dispose();
-                rendererRef.current.forceContextLoss();
-                if (container.contains(rendererRef.current.domElement)) {
-                    container.removeChild(rendererRef.current.domElement);
-                }
             }
             if (materialRef.current) {
                 materialRef.current.dispose();
