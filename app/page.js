@@ -9,10 +9,10 @@ function ToolDirectory() {
       <div className="absolute inset-0 z-0">
         <LightPillar
           pillarRotation={-20}
-          topColor="#000000"
-          bottomColor="#00FF94"
-          pillarWidth={3.0} // Revert to suggested default/reference size
-          glowAmount={0.005} // Standard glow
+          topColor="#09ec60"
+          bottomColor="#f8f7f7"
+          pillarWidth={3.0}
+          glowAmount={0.005}
         />
       </div>
       <div className="relative z-10">
