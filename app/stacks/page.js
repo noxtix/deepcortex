@@ -1,6 +1,7 @@
 import { stacks } from '@/data/stacks';
 import StackCard from '@/components/StackCard';
 import Navbar from '@/components/Navbar';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Curated Stacks - DeepCortex',
@@ -24,7 +25,7 @@ export default function StacksIndex() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {/* Custom Stack Builder CTA */}
-                    <a href="/stacks/build" className="group relative bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-3xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+                    <Link href="/stacks/build" className="group relative bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-3xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
                         <div className="absolute inset-0 bg-emerald-500/5 blur-xl group-hover:bg-emerald-500/10 transition-colors rounded-3xl" />
                         <div className="relative z-10 h-full flex flex-col justify-between">
                             <div>
@@ -38,7 +39,7 @@ export default function StacksIndex() {
                                 Start Widget <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                             </div>
                         </div>
-                    </a>
+                    </Link>
 
                     {stacks.map((stack) => (
                         <StackCard key={stack.id} stack={stack} />

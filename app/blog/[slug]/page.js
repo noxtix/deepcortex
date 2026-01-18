@@ -23,7 +23,8 @@ const components = {
 };
 
 export async function generateMetadata({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'excerpt']);
+    const { slug } = await params;
+    const post = getPostBySlug(slug, ['title', 'excerpt']);
     return {
         title: `${post.title} - DeepCortex`,
         description: post.excerpt,
@@ -37,8 +38,9 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function BlogPost({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image']);
+export default async function BlogPost({ params }) {
+    const { slug } = await params;
+    const post = getPostBySlug(slug, ['title', 'date', 'content', 'image']);
 
     // Get random tools for sidebar
     const sidebarTools = toolsData.sort(() => 0.5 - Math.random()).slice(0, 3);
