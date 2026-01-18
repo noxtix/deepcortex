@@ -6,10 +6,11 @@ import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, use } from 'react';
 
 export default function StackDetail({ params }) {
-    const stack = stacks.find(s => s.id === params.slug);
+    const { slug } = use(params);
+    const stack = stacks.find(s => s.id === slug);
     const [copied, setCopied] = useState(false);
 
     if (!stack) {

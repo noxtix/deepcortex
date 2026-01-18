@@ -4,7 +4,7 @@ import { Star, ExternalLink, ArrowRight, Share2, Info, Check, X, ThumbsUp, Thumb
 import Navbar from '@/components/Navbar';
 import AdUnit from '@/components/AdUnit';
 import toolsData from '@/data/tools.json';
-import { useState } from 'react';
+import { useState, use } from 'react';
 
 // Helper component for Logo 
 const ToolLogo = ({ tool, className, iconClassName }) => {
@@ -37,7 +37,8 @@ const getSimilarTools = (currentTool) => {
 };
 
 export default function ToolPage({ params }) {
-    const tool = toolsData.find(t => t.id === params.slug);
+    const { slug } = use(params);
+    const tool = toolsData.find(t => t.id === slug);
 
     if (!tool) {
         notFound();

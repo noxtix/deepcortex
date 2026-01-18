@@ -1,7 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Slate Overrides */
+  --color-slate-800: #1f1f1f;
+  --color-slate-900: #0a0a0a;
+  --color-slate-950: #000000;
+
+  /* Emerald Overrides */
+  --color-emerald-400: #00FF94;
+  --color-emerald-500: #00DC82;
+
+  /* Keyframes */
+  --animate-blob: blob 7s infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+}
+
+/* Custom Utilities */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* Base Styles */
 :root {
   --foreground-rgb: 226, 232, 240;
   --background-start-rgb: 2, 6, 23;
@@ -15,10 +54,4 @@ body {
   color: rgb(var(--foreground-rgb));
   overflow-x: hidden;
   /* Prevent horizontal scroll from blobs */
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
