@@ -1,13 +1,14 @@
-import toolsData from '@/data/tools.json';
 import { getAllPosts } from '@/lib/mdx';
 import { Resend } from 'resend';
 import { PenTool, FileText, Users, ArrowUpRight } from 'lucide-react';
+import { getTools } from '@/lib/adminUtils';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AdminDashboard() {
     // Fetch stats
-    const toolCount = toolsData.length;
+    const tools = await getTools();
+    const toolCount = tools.length;
     const postCount = getAllPosts(['slug']).length;
 
     // Fetch subscribers count securely
