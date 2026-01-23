@@ -3,6 +3,8 @@ import { getAllPosts } from '@/lib/mdx';
 import { Resend } from 'resend';
 import { PenTool, FileText, Users, ArrowUpRight } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminDashboard() {
     // Fetch stats
     const toolCount = toolsData.length;

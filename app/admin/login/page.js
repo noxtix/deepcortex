@@ -6,6 +6,9 @@ import { Lock, Loader2, ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
+// Force dynamic rendering to ensure cookies/auth headers are handled correctly on every request
+export const dynamic = 'force-dynamic';
+
 const initialState = {
     success: false,
     message: '',

@@ -2,6 +2,8 @@ import { requireAuth, logout } from '@/app/actions/auth';
 import Link from 'next/link';
 import { LayoutDashboard, PenTool, FileText, Users, LogOut, Settings } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminLayout({ children }) {
     await requireAuth();
 
