@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, ArrowRight, BookOpen } from 'lucide-react';
 
 const LatestPosts = ({ posts }) => {
@@ -37,17 +38,19 @@ const LatestPosts = ({ posts }) => {
                         {/* Image Placeholder or Actual Image */}
                         <div className="h-48 bg-slate-800 relative overflow-hidden">
                             {post.image ? (
-                                <img
+                                <Image
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                                 />
                             ) : (
                                 <div className="w-full h-full flex items-center justify-center bg-slate-800 text-slate-700 font-bold text-4xl">
                                     LOG
                                 </div>
                             )}
-                            <div className="absolute top-4 right-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-full text-xs font-mono text-slate-300 border border-white/10">
+                            <div className="absolute top-4 right-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-full text-xs font-mono text-slate-300 border border-white/10 z-10">
                                 {post.date}
                             </div>
                         </div>
