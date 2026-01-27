@@ -8,6 +8,8 @@ import AdUnit from '@/components/AdUnit';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import toolsData from '@/data/tools.json';
+import JsonLd from '@/components/JsonLd';
+import Image from 'next/image';
 
 // Fetch tool data to pass to the embedded ToolCard
 // We create a wrapper that fetches the full tool data by ID
@@ -25,8 +27,13 @@ const components = {
 export async function generateMetadata({ params }) {
     const post = getPostBySlug(params.slug, ['title', 'excerpt']);
     return {
-        title: `${post.title} - DeepCortex`,
+        title: `${post.title} | DeepCortex Blog`,
         description: post.excerpt,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            type: 'article',
+        },
     };
 }
 
@@ -38,13 +45,27 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPost({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image']);
+    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image', 'excerpt']);
 
     // Get random tools for sidebar
     const sidebarTools = toolsData.sort(() => 0.5 - Math.random()).slice(0, 3);
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt,
+        image: post.image ? [`https://deepcortex.tech${post.image}`] : [],
+        datePublished: post.date, // Assuming date is in a parseable format
+        author: {
+            '@type': 'Organization', // Or Person
+            name: 'DeepCortex'
+        }
+    };
+
     return (
         <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
+            <JsonLd data={jsonLd} />
             <Navbar />
 
             <article className="pt-32 pb-12 px-4">
@@ -60,10 +81,14 @@ export default function BlogPost({ params }) {
                         <header className="mb-10">
                             {post.image && (
                                 <div className="relative w-full h-[400px] mb-8 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
-                                    <img
+                                    <Image
                                         src={post.image}
                                         alt={post.title}
-                                        className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        quality={95}
+                                        priority
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
+                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
                                 </div>
