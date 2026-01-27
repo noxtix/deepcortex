@@ -32,8 +32,10 @@ export default function RootLayout({ children }) {
       >
         {/* AnimatedBackground removed for pitch black theme */}
         <SmoothScrolling>
-          <div className="relative z-10">
-            {children}
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <main className="flex-grow">
+              {children}
+            </main>
             <Footer />
           </div>
         </SmoothScrolling>

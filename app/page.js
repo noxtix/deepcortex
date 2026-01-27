@@ -29,11 +29,6 @@ function HomeContent() {
         <FeaturedTools />
         <StacksPreview />
         <LatestPosts posts={posts} />
-
-        {/* Simple Footer */}
-        <footer className="py-12 text-center text-slate-600 text-sm border-t border-white/5 bg-slate-950/50 backdrop-blur-xl">
-          <p>© {new Date().getFullYear()} DeepCortex. Augment your intelligence.</p>
-        </footer>
       </div>
     </main>
   );

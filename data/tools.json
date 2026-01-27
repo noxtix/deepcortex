@@ -265,6 +265,7 @@
     {
         "id": "midjourney",
         "name": "Midjourney",
+        "isFeatured": true,
         "playbook": {
             "timeBreakdown": [
                 {
@@ -625,6 +626,7 @@
     {
         "id": "sora",
         "name": "Sora",
+        "isFeatured": true,
         "tagline": "Creating video from text.",
         "category": "Video",
         "pricing": "Waitlist",
@@ -826,6 +828,7 @@
     {
         "id": "perplexity-ai",
         "name": "Perplexity",
+        "isFeatured": true,
         "playbook": {
             "timeBreakdown": [
                 {
@@ -1262,6 +1265,7 @@
     {
         "id": "suno",
         "name": "Suno",
+        "isFeatured": true,
         "tagline": "Make music with AI.",
         "category": "Fun",
         "pricing": "Freemium",
