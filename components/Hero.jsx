@@ -37,7 +37,7 @@ const Hero = () => {
                     <span>The Curated AI Directory</span>
                 </div>
 
-                <h1 className="text-5xl md:text-7xl font-black text-slate-100 mb-6 tracking-tight leading-tight">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-100 mb-6 tracking-tight leading-tight">
                     Augment Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)]">Intelligence.</span>
                 </h1>
 
