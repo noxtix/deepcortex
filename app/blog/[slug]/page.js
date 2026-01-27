@@ -85,6 +85,9 @@ export default function BlogPost({ params }) {
                                         src={post.image}
                                         alt={post.title}
                                         fill
+                                        quality={95}
+                                        priority
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
                                         className="object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
