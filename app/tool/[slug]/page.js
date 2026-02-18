@@ -1,52 +1,70 @@
-'use client';
 import Link from 'next/link';
-import { Star, ExternalLink, ArrowRight, Share2, Info, Check, X, ThumbsUp, ThumbsDown, Zap, Shield, BookOpen, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
+import { Star, ExternalLink, ArrowRight, Check, X, Shield, ThumbsDown, AlertTriangle, ArrowLeft, BookOpen, Clock, Zap, Info } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import AdUnit from '@/components/AdUnit';
-import toolsData from '@/data/tools.json';
-import { useState } from 'react';
+import { getTools } from '@/lib/adminUtils';
+import ToolLogo from '@/components/ToolLogo';
+import { notFound } from 'next/navigation';
+import JsonLd from '@/components/JsonLd';
 
-// Helper component for Logo 
-const ToolLogo = ({ tool, className, iconClassName }) => {
-    const [imageError, setImageError] = useState(false);
-    const logoSrc = tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=128`;
+export async function generateMetadata({ params }) {
+    const toolsData = await getTools();
+    const tool = toolsData.find(t => t.id === params.slug);
+    if (!tool) return {};
 
-    if (!imageError) {
-        return (
-            <img
-                src={logoSrc}
-                alt={`${tool.name} logo`}
-                className={`object-contain bg-slate-800/50 p-1 ring-1 ring-slate-700/50 rounded-xl ${className}`}
-                onError={() => setImageError(true)}
-            />
-        );
-    }
+    return {
+        title: `${tool.name} Review | DeepCortex`,
+        description: tool.shortDescription,
+        openGraph: {
+            title: `${tool.name} - ${tool.tagline}`,
+            description: tool.shortDescription,
+            images: [tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=128`],
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${tool.name} - ${tool.tagline}`,
+            description: tool.shortDescription,
+        },
+    };
+}
 
-    return (
-        <div className={`bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center font-bold text-emerald-400 shadow-[0_0_40px_rgba(16,185,129,0.1)] ${className} ${iconClassName}`}>
-            {tool.name.charAt(0)}
-        </div>
-    );
-};
-
-// Simple function to get similar tools 
-const getSimilarTools = (currentTool) => {
-    return toolsData
-        .filter(t => t.category === currentTool.category && t.id !== currentTool.id)
-        .slice(0, 3);
-};
-
-export default function ToolPage({ params }) {
+export default async function ToolPage({ params }) {
+    const toolsData = await getTools();
     const tool = toolsData.find(t => t.id === params.slug);
 
     if (!tool) {
         notFound();
     }
 
-    const similarTools = getSimilarTools(tool);
+    const similarTools = toolsData
+        .filter(t => t.category === tool.category && t.id !== tool.id)
+        .slice(0, 3);
+
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: tool.name,
+        description: tool.shortDescription,
+        applicationCategory: tool.category,
+        aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: tool.rating,
+            ratingCount: 1, // Assuming at least one rating if value exists
+            bestRating: 5,
+            worstRating: 1
+        },
+        offers: {
+            '@type': 'Offer',
+            price: tool.pricing === 'Free' ? '0' : '0', // Approximate or use text
+            priceCurrency: 'USD',
+            availability: 'https://schema.org/InStock'
+        }
+    };
 
     return (
         <main className="min-h-screen text-slate-200 font-sans selection:bg-emerald-500/30">
+            <JsonLd data={jsonLd} />
             <Navbar />
 
             {/* Hero Section */}

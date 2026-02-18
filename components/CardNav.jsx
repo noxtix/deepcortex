@@ -1,198 +1,110 @@
 'use client';
-import { useLayoutEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-// using lucide-react since it matches the project's icons
-import { ArrowUpRight } from 'lucide-react';
-import './CardNav.css';
+import Image from 'next/image';
 
-const CardNav = ({
-    logo,
-    logoAlt = 'Logo',
-    items,
-    className = '',
-    ease = 'power3.out',
-    baseColor = '#000', // Defaulting to black/dark for DeepCortex
-    menuColor = '#fff',
-    buttonBgColor = '#00FF94',
-    buttonTextColor = '#000'
-}) => {
-    const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
-    const [isExpanded, setIsExpanded] = useState(false);
-    const navRef = useRef(null);
-    const cardsRef = useRef([]);
-    const tlRef = useRef(null);
+const CardNav = ({ items, baseColor, menuColor, buttonBgColor, buttonTextColor, ease, logo, logoAlt }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const calculateHeight = () => {
-        const navEl = navRef.current;
-        if (!navEl) return 260;
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        if (isMobile) {
-            const contentEl = navEl.querySelector('.card-nav-content');
-            if (contentEl) {
-                const wasVisible = contentEl.style.visibility;
-                const wasPointerEvents = contentEl.style.pointerEvents;
-                const wasPosition = contentEl.style.position;
-                const wasHeight = contentEl.style.height;
+  return (
+    <div className="fixed top-6 left-0 right-0 z-50 px-4 md:px-0">
+      <div className="max-w-xl mx-auto relative">
+        <div
+          className="rounded-full px-6 py-3 flex items-center justify-between shadow-2xl backdrop-blur-md border border-white/10"
+          style={{ backgroundColor: baseColor }}
+        >
+          {/* Logo Section */}
+          <Link href="/" className="flex items-center gap-2 z-20 group">
+            {logo && (
+              <div className="relative w-8 h-8 rounded-lg overflow-hidden group-hover:scale-105 transition-transform">
+                <Image
+                  src={logo}
+                  alt={logoAlt || "Logo"}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <span className="text-white font-bold text-lg tracking-tight group-hover:text-emerald-400 transition-colors">
+              {logoAlt}
+            </span>
+          </Link>
 
-                contentEl.style.visibility = 'visible';
-                contentEl.style.pointerEvents = 'auto';
-                contentEl.style.position = 'static';
-                contentEl.style.height = 'auto';
-
-                contentEl.offsetHeight; // force reflow
-
-                const topBar = 60;
-                const padding = 16;
-                const contentHeight = contentEl.scrollHeight;
-
-                // Restore functionality
-                contentEl.style.visibility = wasVisible;
-                contentEl.style.pointerEvents = wasPointerEvents;
-                contentEl.style.position = wasPosition;
-                contentEl.style.height = wasHeight;
-
-                return topBar + contentHeight + padding;
-            }
-        }
-        return 320; // Increased height for desktop to fit content comfortably
-    };
-
-    const createTimeline = () => {
-        const navEl = navRef.current;
-        if (!navEl) return null;
-
-        gsap.set(navEl, { height: 60, overflow: 'hidden' });
-        gsap.set(cardsRef.current, { y: 50, opacity: 0 });
-
-        const tl = gsap.timeline({ paused: true });
-
-        tl.to(navEl, {
-            height: calculateHeight,
-            duration: 0.4,
-            ease
-        });
-
-        tl.to(cardsRef.current, { y: 0, opacity: 1, duration: 0.4, ease, stagger: 0.08 }, '-=0.1');
-
-        return tl;
-    };
-
-    useLayoutEffect(() => {
-        const tl = createTimeline();
-        tlRef.current = tl;
-
-        return () => {
-            tl?.kill();
-            tlRef.current = null;
-        };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [ease, items]);
-
-    useLayoutEffect(() => {
-        const handleResize = () => {
-            if (!tlRef.current) return;
-
-            if (isExpanded) {
-                const newHeight = calculateHeight();
-                gsap.set(navRef.current, { height: newHeight });
-
-                tlRef.current.kill();
-                const newTl = createTimeline();
-                if (newTl) {
-                    newTl.progress(1);
-                    tlRef.current = newTl;
-                }
-            } else {
-                tlRef.current.kill();
-                const newTl = createTimeline();
-                if (newTl) {
-                    tlRef.current = newTl;
-                }
-            }
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isExpanded]);
-
-    const toggleMenu = () => {
-        const tl = tlRef.current;
-        if (!tl) return;
-        if (!isExpanded) {
-            setIsHamburgerOpen(true);
-            setIsExpanded(true);
-            tl.play(0);
-        } else {
-            setIsHamburgerOpen(false);
-            tl.eventCallback('onReverseComplete', () => setIsExpanded(false));
-            tl.reverse();
-        }
-    };
-
-    const setCardRef = i => el => {
-        if (el) cardsRef.current[i] = el;
-    };
-
-    return (
-        <div className={`card-nav-container ${className}`}>
-            <nav ref={navRef} className={`card-nav ${isExpanded ? 'open' : ''}`} style={{ backgroundColor: baseColor }}>
-                <div className="card-nav-top">
-                    <div
-                        className={`hamburger-menu ${isHamburgerOpen ? 'open' : ''}`}
-                        onClick={toggleMenu}
-                        role="button"
-                        aria-label={isExpanded ? 'Close menu' : 'Open menu'}
-                        tabIndex={0}
-                        style={{ color: menuColor || '#fff' }}
-                    >
-                        <div className="hamburger-line" />
-                        <div className="hamburger-line" />
-                    </div>
-
-                    <div className="logo-container">
-                        <img src={logo} alt={logoAlt} className="logo" />
-                        {/* Optional: Add text next to logo if needed, but styling is absolute center */}
-                    </div>
-
-                </div>
-
-                <div className="card-nav-content" aria-hidden={!isExpanded}>
-                    {(items || []).slice(0, 3).map((item, idx) => (
-                        <div
-                            key={`${item.label}-${idx}`}
-                            className="nav-card"
-                            ref={setCardRef(idx)}
-                            style={{ backgroundColor: item.bgColor, color: item.textColor }}
-                        >
-                            <div className="nav-card-label">{item.label}</div>
-                            <div className="nav-card-links">
-                                {item.links?.map((lnk, i) => (
-                                    <Link
-                                        key={`${lnk.label}-${i}`}
-                                        href={lnk.href || '#'}
-                                        className="nav-card-link"
-                                        aria-label={lnk.ariaLabel}
-                                        onClick={() => {
-                                            // Close menu on navigation
-                                            setIsHamburgerOpen(false);
-                                            tlRef.current?.reverse();
-                                            tlRef.current?.eventCallback('onReverseComplete', () => setIsExpanded(false));
-                                        }}
-                                    >
-                                        <ArrowUpRight className="nav-card-link-icon w-4 h-4" aria-hidden="true" />
-                                        {lnk.label}
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </nav>
+          {/* Hamburger Button */}
+          <button
+            onClick={toggleMenu}
+            className="p-2 rounded-full hover:bg-white/10 transition-colors z-20 focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            {isMenuOpen ? (
+              <X className="text-white w-6 h-6" />
+            ) : (
+              <Menu className="text-white w-6 h-6" />
+            )}
+          </button>
         </div>
-    );
+
+        {/* Dropdown Menu */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: ease || "easeInOut" }}
+              className="absolute top-16 left-0 right-0 bg-slate-900 rounded-3xl p-2 shadow-2xl border border-slate-800 overflow-hidden"
+            >
+              <div className="grid gap-2">
+                {items.map((section, idx) => (
+                  <div key={idx} className="bg-slate-950/50 rounded-2xl p-4">
+                    <h3
+                      className="text-xs font-bold uppercase tracking-wider mb-3 ml-2"
+                      style={{ color: section.textColor }} // Use the passed text color, probably white
+                    >
+                      {section.label}
+                    </h3>
+                    <div className="grid grid-cols-1 gap-1">
+                      {section.links.map((link, linkIdx) => (
+                        <Link
+                          key={linkIdx}
+                          href={link.href}
+                          onClick={() => setIsMenuOpen(false)}
+                          className="flex items-center justify-between px-4 py-3 rounded-xl hover:bg-slate-800 transition-colors group"
+                        >
+                          <span className="text-slate-300 font-medium group-hover:text-white transition-colors">
+                            {link.label}
+                          </span>
+                          {/* Optional Arrow or Icon */}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Button in Menu */}
+              <div className="mt-2">
+                <Link
+                  href="/tools"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block w-full py-4 text-center font-bold rounded-2xl transition-transform hover:scale-[0.98]"
+                  style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+                >
+                  Explore Directory
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
 };
 
 export default CardNav;
