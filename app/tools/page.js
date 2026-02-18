@@ -1,5 +1,5 @@
 'use client';
-import { useState, Suspense } from 'react';
+import { useState, Suspense, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
@@ -9,7 +9,13 @@ import { useSearchParams, useRouter } from 'next/navigation';
 function ToolsDirectory() {
     const searchParams = useSearchParams();
     const router = useRouter();
-    const [searchQuery, setSearchQuery] = useState('');
+    const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
+
+    // Sync search from URL (e.g. from Home page navigation)
+    useEffect(() => {
+        const query = searchParams.get('search');
+        setSearchQuery(query || '');
+    }, [searchParams]);
 
     // Get active filters directly from URL
     const selectedCategory = searchParams.get('category') || 'All';
@@ -28,6 +34,14 @@ function ToolsDirectory() {
         } else {
             params.delete(key);
         }
+
+        // Keep search query in sync with URL
+        if (searchQuery) {
+            params.set('search', searchQuery);
+        } else {
+            params.delete('search');
+        }
+
         router.push(`/tools?${params.toString()}`, { scroll: false });
     };
 

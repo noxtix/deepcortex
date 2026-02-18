@@ -22,21 +22,18 @@ export const metadata = {
   },
 };
 
-import SmoothScrolling from '@/components/SmoothScrolling';
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
-        {/* AnimatedBackground removed for pitch black theme */}
-        <SmoothScrolling>
-          <div className="relative z-10">
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <main className="flex-grow">
             {children}
-            <Footer />
-          </div>
-        </SmoothScrolling>
+          </main>
+          <Footer />
+        </div>
         <GoogleAnalytics gaId="G-GYW5Y6HMJJ" />
       </body>
     </html>

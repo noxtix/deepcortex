@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import { getAllPosts } from '@/lib/mdx';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Blog - DeepCortex',
     description: 'Deep dives, comparisons, and reviews of the latest AI tools.',
+    openGraph: {
+        title: 'Blog - DeepCortex',
+        description: 'Deep dives, comparisons, and reviews of the latest AI tools.',
+        type: 'website',
+    }
 };
 
 export default function BlogIndex() {
@@ -34,10 +40,11 @@ export default function BlogIndex() {
                         >
                             <div className="h-48 bg-slate-800/50 relative overflow-hidden group">
                                 {post.image ? (
-                                    <img
+                                    <Image
                                         src={post.image}
                                         alt={post.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
                                 ) : (
                                     <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
