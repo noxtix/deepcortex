@@ -23,10 +23,32 @@ const components = {
 };
 
 export async function generateMetadata({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'excerpt']);
+    const post = getPostBySlug(params.slug, ['title', 'excerpt', 'coverImage', 'date']);
+    const siteUrl = 'https://deepcortex.tech';
     return {
-        title: `${post.title} - DeepCortex`,
+        title: `${post.title} | DeepCortex Blog`,
         description: post.excerpt,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            url: `${siteUrl}/blog/${params.slug}`,
+            type: 'article',
+            publishedTime: post.date,
+            images: [
+                {
+                    url: post.coverImage || `${siteUrl}/icon.png`,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.excerpt,
+            images: [post.coverImage || `${siteUrl}/icon.png`],
+        },
     };
 }
 
@@ -38,13 +60,31 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPost({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image']);
+    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image', 'excerpt', 'author']);
 
     // Get random tools for sidebar
     const sidebarTools = toolsData.sort(() => 0.5 - Math.random()).slice(0, 3);
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.title,
+        image: post.image || 'https://deepcortex.tech/icon.png',
+        datePublished: post.date,
+        dateModified: post.date,
+        author: {
+            '@type': 'Person',
+            name: post.author?.name || 'DeepCortex Team',
+        },
+        description: post.excerpt || post.title,
+    };
+
     return (
         <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Navbar />
 
             <article className="pt-32 pb-12 px-4">

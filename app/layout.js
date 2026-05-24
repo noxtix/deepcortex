@@ -15,10 +15,36 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "DeepCortex | The Brain of AI Tools",
-  description: "Curated directory of the best AI tools for coding, writing, and productivity.",
+  metadataBase: new URL('https://deepcortex.tech'),
+  title: "DeepCortex | The Brain of AI Tools - Discover Top AI Software",
+  description: "The ultimate curated directory of the best AI tools for developers, creators, marketers, and businesses. Compare features, pricing, and reviews.",
+  keywords: ['AI tools', 'best artificial intelligence tools', 'AI software directory', 'ChatGPT alternatives', 'AI coding tools', 'AI for productivity', 'DeepCortex'],
   icons: {
     icon: '/icon.png',
+  },
+  openGraph: {
+    title: 'DeepCortex | The Brain of AI Tools',
+    description: 'The ultimate curated directory of the best AI tools for developers, creators, marketers, and businesses.',
+    url: 'https://deepcortex.tech',
+    siteName: 'DeepCortex',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DeepCortex | The Brain of AI Tools',
+    description: 'Discover the best AI tools, read detailed reviews, and supercharge your productivity.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
