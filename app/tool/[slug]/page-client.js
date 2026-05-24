@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import { Star, ExternalLink, ArrowRight, Share2, Info, Check, X, ThumbsUp, ThumbsDown, Zap, Shield, BookOpen, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import AdUnit from '@/components/AdUnit';
