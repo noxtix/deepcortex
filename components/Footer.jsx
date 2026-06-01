@@ -59,9 +59,8 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-slate-900 mt-8 pt-6 flex flex-col items-center gap-2 text-slate-600 text-[10px]">
+                <div className="border-t border-slate-900 mt-8 pt-6 flex justify-center text-slate-600 text-[10px]">
                     <span>&copy; {new Date().getFullYear()} DeepCortex. All rights reserved.</span>
-                    <span>Design & Build by Fluxora Studio</span>
                 </div>
             </div>
         </footer>

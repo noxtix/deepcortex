@@ -1,23 +1,12 @@
 'use client';
-import { notFound } from 'next/navigation';
-import { stacks } from '@/data/stacks';
-import toolsData from '@/data/tools.json';
 import Navbar from '@/components/Navbar';
 import ToolCard from '@/components/ToolCard';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function StackDetailClient({ params }) {
-    const stack = stacks.find(s => s.id === params.slug);
+export default function StackClientPage({ stack, tools }) {
     const [copied, setCopied] = useState(false);
-
-    if (!stack) {
-        notFound();
-    }
-
-    // Resolve tools
-    const tools = stack.toolIds.map(id => toolsData.find(t => t.id === id)).filter(Boolean);
 
     const copyLink = () => {
         navigator.clipboard.writeText(window.location.href);

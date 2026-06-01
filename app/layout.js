@@ -16,46 +16,67 @@ const geistMono = localFont({
 
 export const metadata = {
   metadataBase: new URL('https://deepcortex.tech'),
-  title: "DeepCortex | The Brain of AI Tools - Discover Top AI Software",
-  description: "The ultimate curated directory of the best AI tools for developers, creators, marketers, and businesses. Compare features, pricing, and reviews.",
-  keywords: ['AI tools', 'best artificial intelligence tools', 'AI software directory', 'ChatGPT alternatives', 'AI coding tools', 'AI for productivity', 'DeepCortex'],
-  icons: {
-    icon: '/icon.png',
+  title: {
+    default: "DeepCortex | The Brain of AI Tools",
+    template: "%s | DeepCortex"
   },
+  description: "Curated directory of the best AI tools for coding, writing, and productivity. Find the ultimate AI software to automate and accelerate your workflow.",
+  keywords: ["AI tools", "Artificial Intelligence", "AI software directory", "best AI apps", "productivity AI", "coding AI tools"],
   openGraph: {
-    title: 'DeepCortex | The Brain of AI Tools',
-    description: 'The ultimate curated directory of the best AI tools for developers, creators, marketers, and businesses.',
+    title: "DeepCortex | The Brain of AI Tools",
+    description: "Curated directory of the best AI tools for coding, writing, and productivity.",
     url: 'https://deepcortex.tech',
     siteName: 'DeepCortex',
+    images: [
+      {
+        url: '/icon.png',
+        width: 800,
+        height: 600,
+        alt: 'DeepCortex Logo',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DeepCortex | The Brain of AI Tools',
-    description: 'Discover the best AI tools, read detailed reviews, and supercharge your productivity.',
+    description: 'Curated directory of the best AI tools for coding, writing, and productivity.',
+    images: ['/icon.png'],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+  icons: {
+    icon: '/icon.png',
+  },
+  alternates: {
+    canonical: 'https://deepcortex.tech',
   },
 };
 
 import SmoothScrolling from '@/components/SmoothScrolling';
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'DeepCortex',
+    url: 'https://deepcortex.tech',
+    description: metadata.description,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://deepcortex.tech/tools?q={search_term_string}',
+      'query-input': 'required name=search_term_string'
+    }
+  };
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-emerald-500/30`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* AnimatedBackground removed for pitch black theme */}
         <SmoothScrolling>
           <div className="relative z-10">

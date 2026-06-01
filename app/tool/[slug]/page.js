@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import toolsData from '@/data/tools.json';
 import ToolClientPage from './page-client';
 
@@ -6,62 +7,68 @@ export async function generateMetadata({ params }) {
 
     if (!tool) {
         return {
-            title: 'Tool Not Found - DeepCortex',
+            title: 'Tool Not Found',
         };
     }
 
+    const title = `${tool.name} | DeepCortex`;
+    const description = tool.shortDescription || `Learn about ${tool.name} on DeepCortex.`;
+
     return {
-        title: `${tool.name} - Reviews, Pros, Cons & Pricing | DeepCortex`,
-        description: tool.tagline || `Detailed review of ${tool.name}. Discover pros, cons, alternatives and if it's the right AI tool for you.`,
-        keywords: [tool.name, `${tool.name} AI`, `${tool.name} review`, 'AI tools', tool.category, 'DeepCortex'],
+        title,
+        description,
         openGraph: {
-            title: `${tool.name} AI Review & Guide | DeepCortex`,
-            description: tool.tagline || `Discover if ${tool.name} is worth your time. Read our comprehensive review, pros and cons.`,
+            title,
+            description,
             url: `https://deepcortex.tech/tool/${tool.id}`,
-            siteName: 'DeepCortex',
             images: [
                 {
-                    url: tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=512`,
-                    width: 512,
-                    height: 512,
+                    url: tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=128`,
+                    width: 800,
+                    height: 600,
                     alt: `${tool.name} Logo`,
                 },
             ],
             type: 'article',
         },
         twitter: {
-            card: 'summary',
-            title: `${tool.name} Review | DeepCortex`,
-            description: tool.shortDescription || tool.tagline,
-            images: [tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=512`],
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [tool.logoUrl || `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(tool.affiliateLink)}&size=128`],
+        },
+        alternates: {
+            canonical: `https://deepcortex.tech/tool/${tool.id}`,
         },
     };
 }
 
-export default function Page({ params }) {
+export default function ToolPage({ params }) {
     const tool = toolsData.find(t => t.id === params.slug);
 
     if (!tool) {
-        return <ToolClientPage params={params} />;
+        notFound();
     }
 
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
         name: tool.name,
-        operatingSystem: 'Any',
+        description: tool.shortDescription,
         applicationCategory: tool.category,
-        aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: tool.rating,
-            ratingCount: Math.floor(Math.random() * 500) + 100, // Simulated count for rich snippets
-        },
+        url: `https://deepcortex.tech/tool/${tool.id}`,
         offers: {
             '@type': 'Offer',
-            price: tool.pricing === 'Free' ? '0' : (tool.price || '0'),
+            price: tool.pricing === 'Free' ? '0' : undefined,
             priceCurrency: 'USD',
         },
-        description: tool.shortDescription || tool.tagline,
+        aggregateRating: tool.rating ? {
+            '@type': 'AggregateRating',
+            ratingValue: tool.rating,
+            bestRating: '5',
+            worstRating: '1',
+            ratingCount: 1 // Fallback or retrieve actual count if available
+        } : undefined,
     };
 
     return (
@@ -70,7 +77,7 @@ export default function Page({ params }) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <ToolClientPage params={params} />
+            <ToolClientPage tool={tool} />
         </>
     );
 }
