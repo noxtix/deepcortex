@@ -23,7 +23,7 @@ const components = {
 };
 
 export async function generateMetadata({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'excerpt', 'coverImage', 'date']);
+    const post = getPostBySlug(params.slug, ['title', 'excerpt', 'image', 'date']);
     const siteUrl = 'https://deepcortex.tech';
     return {
         title: `${post.title} | DeepCortex Blog`,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
             publishedTime: post.date,
             images: [
                 {
-                    url: post.coverImage || `${siteUrl}/icon.png`,
+                    url: post.image || `${siteUrl}/icon.png`,
                     width: 1200,
                     height: 630,
                     alt: post.title,
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt,
-            images: [post.coverImage || `${siteUrl}/icon.png`],
+            images: [post.image || `${siteUrl}/icon.png`],
         },
     };
 }
