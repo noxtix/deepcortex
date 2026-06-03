@@ -1,3 +1,4 @@
+import toolsData from "@/data/tools.json";
 'use client';
 import Link from 'next/link';
 import { Star, ExternalLink, ArrowRight, Share2, Info, Check, X, ThumbsUp, ThumbsDown, Zap, Shield, BookOpen, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
@@ -35,7 +36,6 @@ const getSimilarTools = (currentTool) => {
         .slice(0, 3);
 };
 
-import toolsData from '@/data/tools.json';
 
 export default function ToolClientPage({ tool }) {
     const similarTools = getSimilarTools(tool);
