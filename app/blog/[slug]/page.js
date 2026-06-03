@@ -23,10 +23,39 @@ const components = {
 };
 
 export async function generateMetadata({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'excerpt']);
+    const post = getPostBySlug(params.slug, ['title', 'excerpt', 'image', 'date']);
+    const title = `${post.title} | DeepCortex Blog`;
+    const description = post.excerpt || `Read ${post.title} on the DeepCortex blog.`;
+    const url = `https://deepcortex.tech/blog/${params.slug}`;
+    const imageUrl = post.image || '/icon.png';
+
     return {
-        title: `${post.title} - DeepCortex`,
-        description: post.excerpt,
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            url,
+            images: [
+                {
+                    url: imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
+            type: 'article',
+            publishedTime: post.date,
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [imageUrl],
+        },
+        alternates: {
+            canonical: url,
+        },
     };
 }
 
@@ -38,13 +67,31 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPost({ params }) {
-    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image']);
+    const post = getPostBySlug(params.slug, ['title', 'date', 'content', 'image', 'excerpt']);
 
     // Get random tools for sidebar
     const sidebarTools = toolsData.sort(() => 0.5 - Math.random()).slice(0, 3);
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.title,
+        image: post.image ? [post.image] : undefined,
+        datePublished: post.date,
+        description: post.excerpt,
+        url: `https://deepcortex.tech/blog/${params.slug}`,
+        author: {
+            '@type': 'Organization',
+            name: 'DeepCortex',
+        }
+    };
+
     return (
         <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-emerald-500/30">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Navbar />
 
             <article className="pt-32 pb-12 px-4">
