@@ -1,5 +1,5 @@
-import toolsData from "@/data/tools.json";
 'use client';
+import toolsData from "@/data/tools.json";
 import Link from 'next/link';
 import { Star, ExternalLink, ArrowRight, Share2, Info, Check, X, ThumbsUp, ThumbsDown, Zap, Shield, BookOpen, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
 import Navbar from '@/components/Navbar';
